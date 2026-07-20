@@ -40,9 +40,13 @@ permalink: /
         <!-- Featured Article -->
         <article class="news-card news-card--featured">
           <div class="news-card__image">
+            {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="news-card__img" loading="lazy">
+            {% else %}
             <div class="news-card__image-placeholder" style="background: linear-gradient(135deg, #1a6dd4, #0d9488);">
               <i class="fas fa-newspaper"></i>
             </div>
+            {% endif %}
           </div>
           <div class="news-card__body">
             <div class="news-card__tags">
@@ -72,9 +76,13 @@ permalink: /
         <!-- Regular Article Card -->
         <article class="news-card">
           <div class="news-card__image">
+            {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="news-card__img" loading="lazy">
+            {% else %}
             <div class="news-card__image-placeholder" style="background: linear-gradient(135deg, {% cycle '#1a6dd4', '#0d9488', '#7c3aed', '#059669', '#d97706', '#dc2626' %}, {% cycle '#1250a0', '#0f766e', '#6d28d9', '#047857', '#b45309', '#b91c1c' %});">
               <i class="fas {% cycle 'fa-code', 'fa-rocket', 'fa-shield-alt', 'fa-paint-brush', 'fa-cogs', 'fa-users' %}"></i>
             </div>
+            {% endif %}
           </div>
           <div class="news-card__body">
             <div class="news-card__tags">
