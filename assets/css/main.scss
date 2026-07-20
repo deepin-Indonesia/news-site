@@ -1,4 +1,4 @@
-﻿---
+---
 ---
 
 /* ==========================================================================
@@ -1532,6 +1532,7 @@ a {
   }
 }
 
+/* ========================================================================
    NEWS-SPECIFIC STYLES - news.deepin.id
    ======================================================================== */
 
@@ -1628,6 +1629,30 @@ a {
 .post-header__title { font-size: 2.5rem; font-weight: 900; color: var(--color-white); margin-bottom: 1.25rem; letter-spacing: -.02em; line-height: 1.25; }
 .post-header__meta { display: flex; flex-wrap: wrap; gap: 1.5rem; font-size: .9rem; color: rgba(255,255,255,.7); }
 .post-header__meta i { margin-right: .35rem; }
+
+/* ===== Post Back Top (pill button inside dark header) ===== */
+.post-header__back {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-size: .8rem; font-weight: 600;
+  color: var(--color-white);
+  background: rgba(26,109,212,.15);
+  border: 1.5px solid rgba(26,109,212,.3);
+  padding: .45rem 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  transition: all var(--transition);
+  backdrop-filter: blur(4px);
+}
+.post-header__back i { font-size: .7rem; transition: transform var(--transition); }
+.post-header__back:hover {
+  color: var(--color-white);
+  background: rgba(26,109,212,.75);
+  border-color: rgba(26,109,212,.9);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+.post-header__back:hover i { transform: translateX(-3px); }
 
 /* ===== Post Content ===== */
 .post-content { padding: 4rem 0; }
@@ -1773,47 +1798,8 @@ a {
 }
 .post-tags-footer__tag:hover { background: var(--deepin-blue-light); color: var(--deepin-blue); }
 
-/* ===== Post Back Top (pill button inside dark header) ===== */
-.post-header__back {
-  display: inline-flex; align-items: center; gap: .5rem;
-  font-size: .8rem; font-weight: 600;
-  color: var(--color-white);
-  background: rgba(26,109,212,.15);
-  border: 1.5px solid rgba(26,109,212,.3);
-  padding: .45rem 1rem;
-  border-radius: 50px;
-  text-decoration: none;
-  margin-bottom: 1.5rem;
-  transition: all var(--transition);
-  backdrop-filter: blur(4px);
-}
-.post-header__back i { font-size: .7rem; transition: transform var(--transition); }
-.post-header__back:hover {
-  color: var(--color-white);
-  background: rgba(26,109,212,.75);
-  border-color: rgba(26,109,212,.9);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0,0,0,.2);
-}
-.post-header__back:hover i { transform: translateX(-3px); }
-
 /* ===== Post Back (bottom) ===== */
 .post-back { margin-bottom: 2rem; }
-
-/* ===== Scroll to Top with Progress Circle ===== */
-.scroll-to-top {
-  position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
-  width: 48px; height: 48px; border-radius: 50%;
-  background: var(--deepin-blue);
-  border: none; cursor: pointer; padding: 0;
-  box-shadow: 0 4px 16px rgba(26,109,212,.35);
-  transition: all var(--transition);
-}
-.scroll-to-top:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(26,109,212,.5);
-}
-.scroll-to-top svg { display: block; }
 
 /* ===== Related Posts ===== */
 .related-posts { padding: 4rem 0; background: var(--color-gray-50); }
