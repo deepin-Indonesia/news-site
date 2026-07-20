@@ -1692,16 +1692,26 @@ a {
 }
 .post-tags-footer__tag:hover { background: var(--deepin-blue-light); color: var(--deepin-blue); }
 
-/* ===== Post Back Top (inside dark post header) ===== */
+/* ===== Post Back Top (pill button inside dark header) ===== */
 .post-header__back {
-  display: inline-flex; align-items: center; gap: .45rem;
-  font-size: .82rem; font-weight: 500;
-  color: rgba(255,255,255,.5);
-  text-decoration: none; margin-bottom: 1.25rem;
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-size: .8rem; font-weight: 600;
+  color: var(--color-white);
+  background: rgba(255,255,255,.1);
+  border: 1.5px solid rgba(255,255,255,.25);
+  padding: .45rem 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
   transition: all var(--transition);
+  backdrop-filter: blur(4px);
 }
 .post-header__back i { font-size: .7rem; transition: transform var(--transition); }
-.post-header__back:hover { color: rgba(255,255,255,.9); }
+.post-header__back:hover {
+  background: rgba(255,255,255,.2);
+  border-color: rgba(255,255,255,.5);
+  transform: translateY(-1px);
+}
 .post-header__back:hover i { transform: translateX(-3px); }
 
 /* ===== Post Back (bottom) ===== */
