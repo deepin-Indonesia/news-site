@@ -73,4 +73,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     lastScroll = currentScroll;
   });
+
+  /* ===== Scroll to Top Button ===== */
+  var scrollBtn = document.createElement('button');
+  scrollBtn.className = 'scroll-to-top';
+  scrollBtn.setAttribute('aria-label', 'Kembali ke atas');
+  scrollBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+  scrollBtn.style.display = 'none';
+  document.body.appendChild(scrollBtn);
+
+  scrollBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 400) {
+      scrollBtn.style.display = 'flex';
+    } else {
+      scrollBtn.style.display = 'none';
+    }
+  });
 });
