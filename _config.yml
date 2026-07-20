@@ -2,8 +2,8 @@
 # Domain: news.deepin.id
 # Tema dari submodule deepin-theme-site
 
-includes_dir: _theme/_includes
-data_dir: _theme/_data
+# === Tema ===
+theme: deepin-theme-site
 
 sass:
   style: compressed
