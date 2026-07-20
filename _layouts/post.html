@@ -45,8 +45,11 @@ layout: default
       <a href="https://t.me/share/url?url={{ site.url }}{{ page.url }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener" class="post-share__btn post-share__btn--telegram" aria-label="Share ke Telegram">
         <i class="fab fa-telegram-plane"></i> Telegram
       </a>
-      <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener" class="post-share__btn post-share__btn--twitter" aria-label="Share ke Twitter">
-        <i class="fab fa-twitter"></i> Twitter
+      <a href="https://api.whatsapp.com/send?text={{ page.title | url_encode }}%20{{ site.url }}{{ page.url | url_encode }}" target="_blank" rel="noopener" class="post-share__btn post-share__btn--whatsapp" aria-label="Share ke WhatsApp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://x.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener" class="post-share__btn post-share__btn--x" aria-label="Share ke X">
+        <i class="fab fa-x-twitter"></i> X
       </a>
       <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" class="post-share__btn post-share__btn--facebook" aria-label="Share ke Facebook">
         <i class="fab fa-facebook"></i> Facebook

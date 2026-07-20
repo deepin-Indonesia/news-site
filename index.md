@@ -8,11 +8,8 @@ permalink: /
 <!-- News Hero -->
 <section class="news-hero">
   <div class="container">
-    <img src="{{ '/assets/images/deepin-id.png' | relative_url }}" alt="deepin News" class="news-hero-logo" width="96" height="96">
-    <h1>📰 News</h1>
-    <p class="news-hero-subtitle">
-      Berita terbaru, tips &amp; tutorial, release notes, dan update komunitas <strong>deepin Linux</strong> di Indonesia.
-    </p>
+    <img src="{{ '/assets/images/deepin-id.png' | relative_url }}" alt="deepin" class="news-hero-logo" width="112" height="112">
+    <h1>News <strong>deepin</strong> Indonesia</h1>
   </div>
 </section>
 
