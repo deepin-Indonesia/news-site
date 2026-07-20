@@ -1692,38 +1692,20 @@ a {
 }
 .post-tags-footer__tag:hover { background: var(--deepin-blue-light); color: var(--deepin-blue); }
 
-/* ===== Post Back ===== */
-.post-back { margin-bottom: 2rem; }
+/* ===== Post Back Top (inside dark post header) ===== */
+.post-header__back {
+  display: inline-flex; align-items: center; gap: .45rem;
+  font-size: .82rem; font-weight: 500;
+  color: rgba(255,255,255,.5);
+  text-decoration: none; margin-bottom: 1.25rem;
+  transition: all var(--transition);
+}
+.post-header__back i { font-size: .7rem; transition: transform var(--transition); }
+.post-header__back:hover { color: rgba(255,255,255,.9); }
+.post-header__back:hover i { transform: translateX(-3px); }
 
-/* ===== Post Back Top (above article) ===== */
-.post-back-top {
-  padding: 1.25rem 0;
-  background: var(--color-white);
-  border-bottom: 1px solid var(--color-gray-100);
-}
-.post-back-link {
-  display: inline-flex; align-items: center; gap: .75rem;
-  text-decoration: none; transition: all var(--transition);
-}
-.post-back-link__icon {
-  display: flex; align-items: center; justify-content: center;
-  width: 36px; height: 36px; border-radius: 50%;
-  background: var(--color-gray-100); color: var(--color-gray-500);
-  font-size: .8rem; transition: all var(--transition);
-}
-.post-back-link:hover .post-back-link__icon {
-  background: var(--deepin-blue); color: var(--color-white);
-  transform: translateX(-3px);
-}
-.post-back-link__text { line-height: 1.3; }
-.post-back-link__text small {
-  display: block; font-size: .7rem; color: var(--color-gray-400);
-  text-transform: uppercase; letter-spacing: .05em; font-weight: 500;
-}
-.post-back-link__text strong {
-  font-size: .95rem; font-weight: 700; color: var(--color-gray-800);
-}
-.post-back-link:hover .post-back-link__text strong { color: var(--deepin-blue); }
+/* ===== Post Back (bottom) ===== */
+.post-back { margin-bottom: 2rem; }
 
 /* ===== Scroll to Top with Progress Circle ===== */
 .scroll-to-top {
@@ -1800,7 +1782,6 @@ a {
   .post-header__meta { flex-direction: column; gap: .35rem; }
   .post-share { flex-direction: column; align-items: flex-start; }
   .post-content__body h2 { font-size: 1.3rem; }
-  .post-back-link__text strong { font-size: .85rem; }
   .scroll-to-top { bottom: 1.25rem; right: 1.25rem; width: 42px; height: 42px; }
   .scroll-to-top svg { width: 42px; height: 42px; }
 }

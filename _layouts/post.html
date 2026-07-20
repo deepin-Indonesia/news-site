@@ -2,24 +2,12 @@
 layout: default
 ---
 
-<!-- Back button -->
-<div class="post-back-top">
-  <div class="container">
-    <a href="{{ '/' | relative_url }}" class="post-back-link">
-      <span class="post-back-link__icon">
-        <i class="fas fa-arrow-left"></i>
-      </span>
-      <span class="post-back-link__text">
-        <small>Kembali ke</small>
-        <strong>News</strong>
-      </span>
-    </a>
-  </div>
-</div>
-
 <!-- Post Header -->
 <header class="post-header">
   <div class="container">
+    <a href="{{ '/' | relative_url }}" class="post-header__back">
+      <i class="fas fa-arrow-left"></i> News
+    </a>
     <div class="post-header__tags">
       {% for tag in page.tags %}
       <a href="{{ '/tag/' | append: tag | downcase | replace: ' ', '-' | relative_url }}" class="post-header__tag">{{ tag }}</a>
