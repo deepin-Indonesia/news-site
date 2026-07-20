@@ -1,7 +1,7 @@
 ---
 layout: default
 title: News
-description: Portal berita resmi deepin Indonesia — berita terbaru, tips & tutorial, release notes, dan update komunitas deepin Linux di Indonesia.
+description: Portal artikel resmi deepin Indonesia — artikel terbaru, tips & tutorial, release notes, dan update komunitas deepin Linux di Indonesia.
 permalink: /
 ---
 
@@ -112,8 +112,8 @@ permalink: /
         <div class="news-empty__icon">
           <i class="fas fa-newspaper"></i>
         </div>
-        <h2>Belum ada berita</h2>
-        <p>Konten berita sedang dalam proses. Kunjungi kembali nanti untuk membaca berita terbaru seputar deepin Linux!</p>
+        <h2>Belum ada artikel</h2>
+        <p>Konten artikel sedang dalam proses. Kunjungi kembali nanti untuk membaca artikel terbaru seputar deepin Linux!</p>
         <a href="https://deepin.id" class="btn btn-primary">
           <i class="fas fa-home"></i> Kembali ke deepin.id
         </a>
@@ -130,7 +130,7 @@ permalink: /
       <div class="news-cta__content">
         <h2><i class="fas fa-paper-plane"></i> Ikuti Update Terbaru</h2>
         <p>
-          Gabung ke grup Telegram <strong>deepin Indonesia</strong> untuk mendapatkan update berita,
+          Gabung ke grup Telegram <strong>deepin Indonesia</strong> untuk mendapatkan update artikel,
           tips, dan diskusi seputar deepin Linux langsung di chat kamu.
         </p>
         <a href="https://t.me/Linux_deepin_ID" target="_blank" rel="noopener" class="btn btn-telegram">
