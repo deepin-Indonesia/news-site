@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Presentasi deepin di Kampus Buktikan NVIDIA Optimus On-Demand Jauh Lebih Efisien Dibanding Ubuntu — HDMI Tetap Jalan Tanpa Boros Baterai"
+title: "Presentasi deepin Buktikan NVIDIA Optimus On-Demand Jauh Lebih Efisien Dibanding Ubuntu — HDMI Tetap Jalan Tanpa Boros Baterai"
 date: 2025-11-12 10:15:00 +0700
 categories: tips
 tags: [Tips deepin, Komunitas Update]
 author: deepin Indonesia
 description: >-
-  Presentasi deepin di kampus mengungkap keunggulan deepin dibanding Ubuntu: NVIDIA Optimus mode On-Demand
+  Presentasi deepin mengungkap keunggulan deepin dibanding Ubuntu: NVIDIA Optimus mode On-Demand
   tetap bisa output HDMI tanpa mengorbankan baterai. Simak pengalaman lengkapnya di sini.
 image: /assets/images/deepin-nvidia-presentation-1.jpg
 ---
