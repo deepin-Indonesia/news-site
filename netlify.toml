@@ -2,7 +2,7 @@
 # Production (main branch) menggunakan GitHub Pages, bukan Netlify
 
 [build]
-  command = "bundle exec jekyll build --url $DEPLOY_PRIME_URL"
+  command = "echo 'url: \"'$DEPLOY_PRIME_URL'\"' > _config_netlify.yml && bundle exec jekyll build --config _config.yml,_config_netlify.yml"
   publish = "_site"
 
 [build.environment]

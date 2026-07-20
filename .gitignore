@@ -6,3 +6,4 @@ vendor/
 *.gem
 *.pdf
 *-orig.*
+_config_netlify.yml
