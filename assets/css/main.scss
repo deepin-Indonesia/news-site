@@ -1697,8 +1697,8 @@ a {
   display: inline-flex; align-items: center; gap: .5rem;
   font-size: .8rem; font-weight: 600;
   color: var(--color-white);
-  background: rgba(255,255,255,.1);
-  border: 1.5px solid rgba(255,255,255,.25);
+  background: rgba(26,109,212,.15);
+  border: 1.5px solid rgba(26,109,212,.3);
   padding: .45rem 1rem;
   border-radius: 50px;
   text-decoration: none;
@@ -1708,8 +1708,8 @@ a {
 }
 .post-header__back i { font-size: .7rem; transition: transform var(--transition); }
 .post-header__back:hover {
-  background: var(--deepin-blue);
-  border-color: var(--deepin-blue);
+  background: rgba(26,109,212,.75);
+  border-color: rgba(26,109,212,.9);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(0,0,0,.2);
 }
