@@ -1665,6 +1665,16 @@ a {
 }
 .post-content__body hr { border: none; border-top: 1px solid var(--color-gray-200); margin: 2.5rem 0; }
 .post-content__body img { border-radius: var(--radius-md); margin: 1.5rem auto; }
+.post-content__body figure {
+  margin: 1.5rem 0; text-align: center;
+}
+.post-content__body figure img {
+  margin-bottom: .25rem;
+}
+.post-content__body figcaption {
+  font-size: .82rem; color: var(--color-gray-400);
+  font-style: normal; margin-top: .5rem;
+}
 .post-content__body img + em {
   display: block; text-align: center; font-size: .82rem;
   color: var(--color-gray-400); margin-top: .5rem; font-style: normal;
