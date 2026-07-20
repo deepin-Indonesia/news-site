@@ -3,7 +3,7 @@ layout: post
 title: "Mengenal UOS AI — Asisten Cerdas di deepin 25"
 date: 2026-06-10 09:00:00 +0700
 categories: fitur
-tags: [Fitur Baru, Tips deepin]
+tags: [Tips deepin]
 author: deepin Indonesia
 description: >-
   UOS AI adalah asisten AI terintegrasi di deepin 25. Pelajari fitur-fiturnya:

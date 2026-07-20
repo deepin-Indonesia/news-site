@@ -3,7 +3,7 @@ layout: post
 title: "deepin 25.1 Kini Hadir dengan Dukungan Wayland yang Lebih Matang"
 date: 2026-06-28 16:00:00 +0700
 categories: release
-tags: [Release Notes, Fitur Baru]
+tags: [Release Notes]
 author: deepin Indonesia
 description: >-
   deepin 25.1 membawa dukungan Wayland yang lebih matang melalui Treeland, peningkatan UOS AI,

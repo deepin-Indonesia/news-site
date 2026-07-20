@@ -3,7 +3,7 @@ layout: post
 title: "deepin 25.2.0 Dirilis — Update Penting dengan Peningkatan Stabilitas"
 date: 2026-07-15 10:00:00 +0700
 categories: release
-tags: [Release Notes, Fitur Baru]
+tags: [Release Notes]
 author: deepin Indonesia
 description: >-
   deepin 25.2.0 kini tersedia dengan berbagai peningkatan stabilitas, perbaikan bug,

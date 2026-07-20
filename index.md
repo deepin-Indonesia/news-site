@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Berita deepin
+title: News
 description: Portal berita resmi deepin Indonesia — berita terbaru, tips & tutorial, release notes, dan update komunitas deepin Linux di Indonesia.
 permalink: /
 ---
@@ -8,7 +8,8 @@ permalink: /
 <!-- News Hero -->
 <section class="news-hero">
   <div class="container">
-    <h1>📰 Berita deepin</h1>
+    <img src="{{ '/assets/images/deepin-id.png' | relative_url }}" alt="deepin News" class="news-hero-logo" width="96" height="96">
+    <h1>📰 News</h1>
     <p class="news-hero-subtitle">
       Berita terbaru, tips &amp; tutorial, release notes, dan update komunitas <strong>deepin Linux</strong> di Indonesia.
     </p>
@@ -19,22 +20,11 @@ permalink: /
 <section class="tag-filter">
   <div class="container">
     <div class="tag-filter__bar">
-      <a href="{{ '/' | relative_url }}" class="tag-filter__item active">Semua</a>
-      <a href="{{ '/tag/release-notes/' | relative_url }}" class="tag-filter__item">
-        <i class="fas fa-tag"></i> Release Notes
-      </a>
-      <a href="{{ '/tag/tips-deepin/' | relative_url }}" class="tag-filter__item">
-        <i class="fas fa-lightbulb"></i> Tips deepin
-      </a>
-      <a href="{{ '/tag/komunitas-update/' | relative_url }}" class="tag-filter__item">
-        <i class="fas fa-users"></i> Komunitas Update
-      </a>
-      <a href="{{ '/tag/fitur-baru/' | relative_url }}" class="tag-filter__item">
-        <i class="fas fa-star"></i> Fitur Baru
-      </a>
-      <a href="{{ '/tag/event/' | relative_url }}" class="tag-filter__item">
-        <i class="fas fa-calendar"></i> Event
-      </a>
+      <a href="{{ '/' | relative_url }}" class="tag-filter__item active">📰 Semua</a>
+      <a href="{{ '/tag/release-notes/' | relative_url }}" class="tag-filter__item">📋 Release Notes</a>
+      <a href="{{ '/tag/tips-deepin/' | relative_url }}" class="tag-filter__item">💡 Tips deepin</a>
+      <a href="{{ '/tag/komunitas-update/' | relative_url }}" class="tag-filter__item">🤝 Komunitas Update</a>
+      <a href="{{ '/tag/event/' | relative_url }}" class="tag-filter__item">📅 Event</a>
     </div>
   </div>
 </section>
@@ -60,7 +50,7 @@ permalink: /
           <div class="news-card__body">
             <div class="news-card__tags">
               {% for tag in post.tags %}
-              <a href="{{ '/tag/' | append: tag | slugify | relative_url }}" class="news-card__tag">{{ tag }}</a>
+              <a href="{{ '/tag/' | append: tag | downcase | replace: ' ', '-' | relative_url }}" class="news-card__tag">{{ tag }}</a>
               {% endfor %}
             </div>
             <h2 class="news-card__title">
@@ -92,7 +82,7 @@ permalink: /
           <div class="news-card__body">
             <div class="news-card__tags">
               {% for tag in post.tags limit:2 %}
-              <a href="{{ '/tag/' | append: tag | slugify | relative_url }}" class="news-card__tag">{{ tag }}</a>
+              <a href="{{ '/tag/' | append: tag | downcase | replace: ' ', '-' | relative_url }}" class="news-card__tag">{{ tag }}</a>
               {% endfor %}
             </div>
             <h3 class="news-card__title">

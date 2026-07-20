@@ -191,6 +191,7 @@ a:hover { color: var(--deepin-blue-dark); }
               radial-gradient(ellipse at 70% 80%, rgba(16,185,129,.15) 0%, transparent 50%);
 }
 .news-hero .container { position: relative; z-index: 2; }
+.news-hero-logo { margin: 0 auto 1.25rem; border-radius: 50%; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
 .news-hero h1 { font-size: 2.75rem; font-weight: 900; color: var(--color-white); margin-bottom: 1rem; letter-spacing: -.02em; }
 .news-hero-subtitle { font-size: 1.15rem; color: rgba(255,255,255,.8); max-width: 700px; margin: 0 auto; line-height: 1.8; }
 .news-hero-subtitle strong { color: var(--color-white); }
