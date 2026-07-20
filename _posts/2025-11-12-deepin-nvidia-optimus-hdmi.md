@@ -11,7 +11,9 @@ description: >-
 image: /assets/images/deepin-nvidia-presentation-1.jpg
 ---
 
-Halo pengguna deepin! Hari ini saya ingin berbagi pengalaman menarik dari presentasi deepin yang saya bawakan di depan teman-teman sekelas di program studi saya. Meskipun fokus utama presentasi adalah dasar-dasar deepin, ada satu momen yang benar-benar mencuri perhatian — saat saya mendemonstrasikan bagaimana deepin menangani **NVIDIA Optimus** (kombinasi integrated dan dedicated GPU) dengan jauh lebih baik dibandingkan Ubuntu.
+Halo pengguna deepin! Hari ini saya ingin berbagi pengalaman menarik dari presentasi deepin yang saya bawakan di depan teman-teman sekelas di program studi saya. Meskipun fokus utama presentasi adalah dasar-dasar **deepin Linux**, ada satu momen yang benar-benar mencuri perhatian — saat saya mendemonstrasikan bagaimana deepin menangani **NVIDIA Optimus** (teknologi dual graphics: integrated GPU dan dedicated GPU) dengan jauh lebih baik dibandingkan Ubuntu.
+
+Buat kamu yang belum familiar, NVIDIA Optimus adalah teknologi yang menggabungkan dua kartu grafis dalam satu laptop — integrated GPU untuk aktivitas ringan (hemat baterai) dan dedicated GPU untuk tugas berat seperti gaming atau rendering. Masalahnya, di banyak distro Linux termasuk Ubuntu, teknologi ini sering bikin pusing karena **port HDMI eksternal tidak berfungsi** kecuali dedicated GPU dipaksa menyala terus. Nah, deepin punya solusinya.
 
 ## Laptop yang Saya Gunakan Saat Presentasi
 
@@ -70,6 +72,24 @@ Jelas banget kan bedanya?
 Sayangnya waktu presentasi terbatas — saya cuma kebagian beberapa menit untuk sesi ini. Tapi momen itu cukup membuktikan satu hal: **deepin bukan cuma soal UI cantik dan desktop environment yang enak dipandang**. Di balik tampilannya yang elegan, deepin punya optimasi teknis yang serius — bahkan untuk urusan yang sering dianggap "masalah klasik" seperti NVIDIA Optimus, deepin kasih solusi yang lebih baik dari distro sepopuler Ubuntu.
 
 Saya sangat puas dengan apa yang deepin tawarkan di area ini. Dan melihat antusiasme teman-teman sekelas yang langsung tertarik setelah presentasi, saya yakin deepin punya masa depan cerah di kalangan pengguna Linux Indonesia.
+
+## Pertanyaan yang Sering Muncul
+
+### Apakah semua laptop dengan NVIDIA Optimus bisa pakai mode On-Demand di deepin?
+
+Sebagian besar laptop dengan NVIDIA Optimus mendukung mode On-Demand di deepin, termasuk laptop Lenovo, ASUS, HP, dan Dell yang menggunakan kombinasi Intel integrated GPU + NVIDIA dedicated GPU. deepin sudah menyertakan **NVIDIA Prime Render Offload** secara default, jadi kamu tidak perlu install driver atau tools tambahan. Cukup buka **Control Center** → **Display** → atur ke mode On-Demand.
+
+### Apakah performa gaming tetap optimal di mode On-Demand?
+
+Untuk gaming atau rendering berat, kamu tetap bisa menjalankan aplikasi spesifik menggunakan dedicated GPU tanpa harus mengganti mode global. deepin mendukung **prime-run** — cukup jalankan aplikasi dengan prefix `prime-run` di terminal, dan aplikasi tersebut akan otomatis menggunakan NVIDIA GPU sementara sistem tetap berjalan hemat daya di integrated GPU.
+
+### Apa perbedaan utama NVIDIA Optimus di deepin vs distro Linux lain?
+
+Perbedaan paling mencolok adalah **HDMI tetap berfungsi di mode On-Demand**. Di Ubuntu, Fedora, dan kebanyakan distro lain, kamu harus mengaktifkan mode Performance (GPU Only) agar port HDMI bisa digunakan — yang artinya baterai boros dan suhu laptop naik drastis. deepin berhasil mengatasi ini dengan implementasi NVIDIA Prime Render Offload yang lebih matang.
+
+### Apakah deepin cocok untuk laptop gaming dengan NVIDIA?
+
+Sangat cocok. deepin menawarkan keseimbangan sempurna antara **efisiensi daya saat mobile** dan **performa maksimal saat dibutuhkan**. Ditambah dengan UI DDE yang cantik dan ringan, deepin adalah pilihan solid untuk pengguna laptop gaming yang mencari alternatif selain Ubuntu atau Windows.
 
 ---
 
