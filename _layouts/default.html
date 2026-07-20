@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  {% seo %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,8 +23,8 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   {% if page.image %}
   <meta property="og:image" content="{{ site.url }}{{ page.image }}">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="600">
   {% else %}
   <meta property="og:image" content="{{ site.url }}/assets/images/deepin-id.png">
   <meta property="og:image:width" content="512">
@@ -69,8 +70,8 @@
     ,"image": {
       "@type": "ImageObject",
       "url": "{{ site.url }}{{ page.image }}",
-      "width": "1200",
-      "height": "630"
+      "width": "800",
+      "height": "600"
     }
     {% endif %}
   }
@@ -108,8 +109,6 @@
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all';this.onload=null">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
-
-  {% seo %}
 </head>
 <body>
   {% include header.html %}
