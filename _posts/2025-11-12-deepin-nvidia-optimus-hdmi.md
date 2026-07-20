@@ -75,28 +75,28 @@ Saya sangat puas dengan apa yang deepin tawarkan di area ini. Dan melihat antusi
 
 ## Pertanyaan yang Sering Muncul
 
-<details open>
+<details open markdown="1">
 <summary><strong>Apakah semua laptop dengan NVIDIA Optimus bisa pakai mode On-Demand di deepin?</strong></summary>
 
 Sebagian besar laptop dengan NVIDIA Optimus mendukung mode On-Demand di deepin, termasuk laptop Lenovo, ASUS, HP, dan Dell yang menggunakan kombinasi Intel integrated GPU + NVIDIA dedicated GPU. deepin sudah menyertakan **NVIDIA Prime Render Offload** dan mengaktifkan mode **On-Demand secara default** setelah instalasi, jadi kamu tidak perlu install driver atau tools tambahan — langsung pakai saja.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><strong>Apakah performa gaming tetap optimal di mode On-Demand?</strong></summary>
 
 Untuk gaming atau rendering berat, kamu tetap bisa menjalankan aplikasi spesifik menggunakan dedicated GPU tanpa harus mengganti mode global. deepin mendukung **prime-run** — cukup jalankan aplikasi dengan prefix `prime-run` di terminal, dan aplikasi tersebut akan otomatis menggunakan NVIDIA GPU sementara sistem tetap berjalan hemat daya di integrated GPU.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><strong>Apa perbedaan utama NVIDIA Optimus di deepin vs distro Linux lain?</strong></summary>
 
 Perbedaan paling mencolok adalah **HDMI tetap berfungsi di mode On-Demand**. Di Ubuntu, Fedora, dan kebanyakan distro lain, kamu harus mengaktifkan mode Performance (GPU Only) agar port HDMI bisa digunakan — yang artinya baterai boros dan suhu laptop naik drastis. deepin berhasil mengatasi ini dengan implementasi NVIDIA Prime Render Offload yang lebih matang.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><strong>Apakah deepin cocok untuk laptop gaming dengan NVIDIA?</strong></summary>
 
 Sangat cocok. deepin menawarkan keseimbangan sempurna antara **efisiensi daya saat mobile** dan **performa maksimal saat dibutuhkan**. Ditambah dengan UI DDE yang cantik dan ringan, deepin adalah pilihan solid untuk pengguna laptop gaming yang mencari alternatif selain Ubuntu atau Windows.
