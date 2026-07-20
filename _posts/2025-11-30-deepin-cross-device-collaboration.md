@@ -111,7 +111,7 @@ Klik ikon title bar dan pilih **Settings** untuk mengakses konfigurasi lengkap:
 
 ## Pertanyaan yang Sering Muncul
 
-<details open markdown="1">
+<details markdown="1">
 <summary><strong>Kenapa perangkat saya tidak muncul di device list?</strong></summary>
 
 Beberapa kemungkinan penyebabnya:

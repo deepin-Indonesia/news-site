@@ -75,7 +75,7 @@ Saya sangat puas dengan apa yang deepin tawarkan di area ini. Dan melihat antusi
 
 ## Pertanyaan yang Sering Muncul
 
-<details open markdown="1">
+<details markdown="1">
 <summary><strong>Apakah semua laptop dengan NVIDIA Optimus bisa pakai mode On-Demand di deepin?</strong></summary>
 
 Sebagian besar laptop dengan NVIDIA Optimus mendukung mode On-Demand di deepin, termasuk laptop Lenovo, ASUS, HP, dan Dell yang menggunakan kombinasi Intel integrated GPU + NVIDIA dedicated GPU. deepin sudah menyertakan **NVIDIA Prime Render Offload** dan mengaktifkan mode **On-Demand secara default** setelah instalasi, jadi kamu tidak perlu install driver atau tools tambahan — langsung pakai saja.

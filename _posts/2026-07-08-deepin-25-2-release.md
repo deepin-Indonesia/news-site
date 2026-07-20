@@ -115,19 +115,32 @@ Bagi yang ingin install ulang, ISO terbaru bisa di-download di **[os.deepin.id](
 
 ---
 
-<details open markdown="1">
-<summary><strong>❓ FAQ Singkat deepin 25.2.0</strong></summary>
+## Pertanyaan yang Sering Muncul
 
-**Apakah deepin 25.2.0 sudah stabil untuk daily driver?**<br>
+<details markdown="1">
+<summary><strong>Apakah deepin 25.2.0 sudah stabil untuk daily driver?</strong></summary>
+
 Ya. Dengan 20+ fix di Treeland dan ratusan perbaikan lainnya, deepin 25.2.0 sangat direkomendasikan untuk penggunaan sehari-hari.
 
-**Apa itu Treeland dan kenapa penting?**<br>
+</details>
+
+<details markdown="1">
+<summary><strong>Apa itu Treeland dan kenapa penting?</strong></summary>
+
 Treeland adalah Wayland compositor modern buatan deepin yang menggantikan X11. Di versi 25.2.0, Treeland sudah cukup matang dengan dukungan penuh multi-monitor, dynamic wallpaper, dan integrasi DDE.
 
-**Apakah fitur AI image search tersedia default?**<br>
+</details>
+
+<details markdown="1">
+<summary><strong>Apakah fitur AI image search tersedia default?</strong></summary>
+
 Fitur ini perlu di-enable manual di File Manager → Settings → Image Text Content Search Indexing. Setelah diaktifkan, deepin akan meng-index teks dalam gambar untuk pencarian cepat.
 
-**Berapa lama proses upgrade dari 25.1 ke 25.2.0?**<br>
+</details>
+
+<details markdown="1">
+<summary><strong>Berapa lama proses upgrade dari 25.1 ke 25.2.0?</strong></summary>
+
 Tergantung kecepatan internet dan spesifikasi laptop. Rata-rata 15-30 menit melalui Control Center.
 
 </details>
