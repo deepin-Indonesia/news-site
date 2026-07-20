@@ -8,7 +8,7 @@ author: deepin Indonesia
 description: >-
   Pelajari cara menggunakan Cross-Device Collaboration di deepin untuk transfer file, sharing keyboard
   dan mouse, clipboard sharing, serta screen mirroring dari HP ke PC. Panduan lengkap dengan gambar.
-image: /assets/images/cooperation-screencast.jpg
+image: /assets/images/cooperation-screencast-2.jpg
 ---
 
 Salah satu fitur yang bikin **deepin** dan **UOS** makin powerful adalah **Cross-Device Collaboration** — tools bawaan yang memungkinkan kamu menghubungkan beberapa perangkat sekaligus untuk transfer file, berbagi keyboard dan mouse, berbagi clipboard, bahkan mirroring layar HP ke PC dan mengontrolnya langsung dari desktop. Semua berjalan dalam satu jaringan lokal tanpa perlu kabel tambahan.
@@ -91,7 +91,9 @@ Setelah terhubung, di perangkat mobile:
 
 Setelah itu, layar HP akan tampil di perangkat deepin/UOS dan kamu bisa **mengontrol HP langsung dari desktop** dengan mengklik layar yang di-mirror.
 
-![Screen mirroring HP ke deepin — kontrol langsung dari desktop]({{ '/assets/images/cooperation-screencast.jpg' | relative_url }})
+![Screen mirroring HP ke deepin — kontrol langsung dari desktop]({{ '/assets/images/cooperation-screencast-1.jpg' | relative_url }})
+
+![Screen mirroring HP ke deepin — kontrol langsung dari desktop]({{ '/assets/images/cooperation-screencast-2.jpg' | relative_url }})
 
 ## Pengaturan Cross-Device Collaboration
 
