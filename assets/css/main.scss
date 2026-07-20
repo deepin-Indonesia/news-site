@@ -1708,9 +1708,10 @@ a {
 }
 .post-header__back i { font-size: .7rem; transition: transform var(--transition); }
 .post-header__back:hover {
-  background: rgba(255,255,255,.2);
-  border-color: rgba(255,255,255,.5);
+  background: var(--deepin-blue);
+  border-color: var(--deepin-blue);
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
 }
 .post-header__back:hover i { transform: translateX(-3px); }
 
