@@ -1,0 +1,58 @@
+<header class="site-header" role="banner">
+  <div class="header-container">
+    <!-- Logo -->
+    <div class="site-branding">
+      <a href="https://deepin.id" class="site-logo">
+        <img src="{{ '/assets/images/deepin-id-text.png' | relative_url }}" alt="{{ site.title }} logo" width="138" height="34">
+      </a>
+      <span class="site-tagline--news">Berita</span>
+    </div>
+
+    <!-- Mobile menu toggle -->
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="menu-icon-bar"></span>
+      <span class="menu-icon-bar"></span>
+      <span class="menu-icon-bar"></span>
+    </button>
+
+    <!-- Main Navigation -->
+    <nav class="main-navigation" role="navigation" aria-label="Main navigation">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="https://deepin.id" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://os.deepin.id" class="nav-link">Download</a>
+        </li>
+        <li class="nav-item {% if page.url == '/' %}active{% endif %}">
+          <a href="{{ '/' | relative_url }}" class="nav-link">News</a>
+        </li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            Kategori <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </button>
+          <ul class="dropdown-menu" aria-label="Kategori submenu">
+            <li class="dropdown-item">
+              <a href="{{ '/tag/release-notes/' | relative_url }}" class="dropdown-link">📋 Release Notes</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="{{ '/tag/tips-deepin/' | relative_url }}" class="dropdown-link">💡 Tips deepin</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="{{ '/tag/komunitas-update/' | relative_url }}" class="dropdown-link">🤝 Komunitas Update</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="{{ '/tag/fitur-baru/' | relative_url }}" class="dropdown-link">⭐ Fitur Baru</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="{{ '/tag/event/' | relative_url }}" class="dropdown-link">📅 Event</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="https://t.me/Linux_deepin_ID" target="_blank" rel="noopener" class="nav-link">Gabung Komunitas</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

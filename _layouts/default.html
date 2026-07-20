@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="deepin, deepin Indonesia, deepin Linux, Linux Indonesia, deepin OS, berita deepin, news deepin, tips deepin, komunitas deepin, release notes deepin">
+  <meta name="author" content="deepin Indonesia">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1a6dd4">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:type" content="{% if page.url == '/' %}website{% else %}article{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/images/deepin-id.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@deepinID">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{{ site.url }}/assets/images/deepin-id.png">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Berita deepin",
+    "alternateName": "News deepin Indonesia",
+    "url": "{{ site.url }}",
+    "description": "{{ site.description | strip_newlines | strip }}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "deepin Indonesia",
+      "url": "https://deepin.id",
+      "logo": "https://deepin.id/assets/images/deepin-id.png"
+    }
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ '/assets/images/deepin-id.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/deepin-id.png' | relative_url }}">
+
+  <!-- Stylesheet -->
+  <link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+  <!-- Font Awesome -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+
+  {% seo %}
+</head>
+<body>
+  {% include header.html %}
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

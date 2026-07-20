@@ -1,0 +1,16 @@
+# Netlify configuration — Preview deploy untuk news.deepin.id
+# Production (main branch) menggunakan GitHub Pages, bukan Netlify
+
+[build]
+  command = "bundle exec jekyll build"
+  publish = "_site"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+  RUBY_VERSION = "3.3"
+
+# Redirect & headers untuk Jekyll
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
