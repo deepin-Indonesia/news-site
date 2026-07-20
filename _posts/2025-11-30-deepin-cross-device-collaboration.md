@@ -30,9 +30,10 @@ Untuk pengguna deepin/UOS, aplikasi ini bisa diunduh langsung dari **App Store**
 
 Saat aplikasi Cross-Device Collaboration dibuka, aplikasi akan otomatis memindai perangkat lain yang berada di **segmen jaringan yang sama**. Perangkat yang terdeteksi akan muncul di device list aplikasi.
 
-![Device list Cross-Device Collaboration — menampilkan perangkat yang terdeteksi di jaringan lokal]({{ '/assets/images/cooperation-devices.png' | relative_url }})
-
-*Sumber gambar: Manual deepin*
+<figure>
+<img src="{{ '/assets/images/cooperation-devices.png' | relative_url }}" alt="Device list Cross-Device Collaboration — menampilkan perangkat yang terdeteksi di jaringan lokal" loading="lazy">
+<figcaption>Sumber gambar: Manual deepin</figcaption>
+</figure>
 
 Ada dua cara untuk menghubungkan perangkat:
 
