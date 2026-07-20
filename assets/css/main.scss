@@ -1,4 +1,4 @@
----
+﻿---
 ---
 
 /* ==========================================================================
@@ -566,54 +566,6 @@ a {
         color: var(--color-gray-800);
       }
     }
-  }
-}
-
-.intro-screenshot {
-  margin-top: 2rem;
-  text-align: center;
-
-  img {
-    display: block;
-    max-width: 900px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: var(--radius-lg);
-    box-shadow: 0 8px 40px rgba(0,0,0,.12);
-    border: 1px solid var(--color-gray-200);
-  }
-}
-
-.distrowatch-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: .4rem;
-  margin: .25rem auto 0;
-  padding: .45rem .9rem;
-  background: var(--color-gray-50);
-  border: 1px solid var(--color-gray-200);
-  border-radius: 50px;
-  font-size: .8rem;
-  color: var(--color-gray-500);
-  text-decoration: none;
-  transition: all var(--transition);
-
-  i.fa-chart-bar { color: var(--deepin-blue); }
-
-  strong { color: var(--color-gray-700); font-weight: 600; }
-
-  .fa-external-link-alt {
-    font-size: .65rem;
-    opacity: .5;
-  }
-
-  &:hover {
-    border-color: var(--deepin-blue);
-    background: var(--deepin-blue-light);
-    color: var(--deepin-blue-dark);
-
-    .fa-external-link-alt { opacity: 1; }
   }
 }
 
@@ -1331,6 +1283,28 @@ a {
   }
 }
 
+.footer-distrowatch {
+  margin-top: .25rem;
+
+  .distrowatch-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    font-size: .78rem;
+    color: var(--color-gray-300);
+    text-decoration: none;
+    padding: .45rem .9rem;
+    border: 1px solid var(--deepin-blue);
+    border-radius: 6px;
+    transition: all var(--transition);
+
+    &:hover {
+      background: var(--deepin-blue);
+      color: var(--color-white);
+    }
+  }
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,.08);
   padding-top: 1.5rem;
@@ -1341,6 +1315,25 @@ a {
     line-height: 1.6;
 
     i.fa-heart {
+      color: #ef4444;
+    }
+  }
+
+  .footer-siberin-bottom {
+    margin-top: .35rem;
+    font-size: .8rem;
+
+    a {
+      color: #ef4444;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    strong {
       color: #ef4444;
     }
   }
@@ -1539,7 +1532,6 @@ a {
   }
 }
 
-/* ========================================================================
    NEWS-SPECIFIC STYLES - news.deepin.id
    ======================================================================== */
 
