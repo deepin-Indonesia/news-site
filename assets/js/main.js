@@ -74,23 +74,93 @@ document.addEventListener('DOMContentLoaded', function() {
     lastScroll = currentScroll;
   });
 
-  /* ===== Scroll to Top Button ===== */
+  /* ===== Scroll to Top with Progress Circle ===== */
+  var svgNS = 'http://www.w3.org/2000/svg';
+
   var scrollBtn = document.createElement('button');
   scrollBtn.className = 'scroll-to-top';
   scrollBtn.setAttribute('aria-label', 'Kembali ke atas');
-  scrollBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
   scrollBtn.style.display = 'none';
+
+  var svg = document.createElementNS(svgNS, 'svg');
+  svg.setAttribute('viewBox', '0 0 48 48');
+  svg.setAttribute('width', '48');
+  svg.setAttribute('height', '48');
+
+  var bgCircle = document.createElementNS(svgNS, 'circle');
+  bgCircle.setAttribute('cx', '24');
+  bgCircle.setAttribute('cy', '24');
+  bgCircle.setAttribute('r', '22');
+  bgCircle.setAttribute('fill', 'none');
+  bgCircle.setAttribute('stroke', 'rgba(255,255,255,.2)');
+  bgCircle.setAttribute('stroke-width', '2.5');
+
+  var progressCircle = document.createElementNS(svgNS, 'circle');
+  progressCircle.setAttribute('cx', '24');
+  progressCircle.setAttribute('cy', '24');
+  progressCircle.setAttribute('r', '22');
+  progressCircle.setAttribute('fill', 'none');
+  progressCircle.setAttribute('stroke', '#fff');
+  progressCircle.setAttribute('stroke-width', '2.5');
+  progressCircle.setAttribute('stroke-linecap', 'round');
+  progressCircle.setAttribute('stroke-dasharray', '138.23');
+  progressCircle.setAttribute('stroke-dashoffset', '138.23');
+  progressCircle.setAttribute('transform', 'rotate(-90 24 24)');
+
+  var arrow = document.createElementNS(svgNS, 'line');
+  arrow.setAttribute('x1', '24');
+  arrow.setAttribute('y1', '30');
+  arrow.setAttribute('x2', '24');
+  arrow.setAttribute('y2', '18');
+  arrow.setAttribute('stroke', '#fff');
+  arrow.setAttribute('stroke-width', '2.5');
+  arrow.setAttribute('stroke-linecap', 'round');
+
+  var arrowLeft = document.createElementNS(svgNS, 'line');
+  arrowLeft.setAttribute('x1', '18');
+  arrowLeft.setAttribute('y1', '24');
+  arrowLeft.setAttribute('x2', '24');
+  arrowLeft.setAttribute('y2', '18');
+  arrowLeft.setAttribute('stroke', '#fff');
+  arrowLeft.setAttribute('stroke-width', '2.5');
+  arrowLeft.setAttribute('stroke-linecap', 'round');
+
+  var arrowRight = document.createElementNS(svgNS, 'line');
+  arrowRight.setAttribute('x1', '30');
+  arrowRight.setAttribute('y1', '24');
+  arrowRight.setAttribute('x2', '24');
+  arrowRight.setAttribute('y2', '18');
+  arrowRight.setAttribute('stroke', '#fff');
+  arrowRight.setAttribute('stroke-width', '2.5');
+  arrowRight.setAttribute('stroke-linecap', 'round');
+
+  svg.appendChild(bgCircle);
+  svg.appendChild(progressCircle);
+  svg.appendChild(arrow);
+  svg.appendChild(arrowLeft);
+  svg.appendChild(arrowRight);
+  scrollBtn.appendChild(svg);
   document.body.appendChild(scrollBtn);
 
   scrollBtn.addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 400) {
-      scrollBtn.style.display = 'flex';
+  function updateScrollProgress() {
+    var scrollY = window.pageYOffset;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = docHeight > 0 ? scrollY / docHeight : 0;
+    var circumference = 138.23;
+    var offset = circumference - (progress * circumference);
+    progressCircle.setAttribute('stroke-dashoffset', offset);
+
+    if (scrollY > 400) {
+      scrollBtn.style.display = 'block';
     } else {
       scrollBtn.style.display = 'none';
     }
-  });
+  }
+
+  window.addEventListener('scroll', updateScrollProgress);
+  updateScrollProgress();
 });
