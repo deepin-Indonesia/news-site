@@ -47,7 +47,7 @@ Masukkan IP address perangkat target di kolom pencarian, klik Connect, dan konek
 Setelah dua perangkat terhubung, kamu bisa mengirim file dengan dua cara:
 
 **Via tombol File Transfer di device list**<br>
-Klik ikon kirim (📤) di tampilan device list. Pilih file yang ingin dikirim di jendela file selection, klik OK, dan transfer akan dimulai.
+Klik ikon kirim (<i class="fas fa-paper-plane"></i>) di tampilan device list. Pilih file yang ingin dikirim di jendela file selection, klik OK, dan transfer akan dimulai.
 
 **Via right-click menu (context menu)**<br>
 Klik kanan file yang ingin dikirim, pilih **Send to → File Transfer**, lalu pilih perangkat target dari daftar. Kalau mengirim ke perangkat Windows, pastikan aplikasi Cross-Device Collaboration di Windows tetap terbuka.
