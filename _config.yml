@@ -7,8 +7,6 @@ theme: deepin-theme-site
 
 sass:
   style: compressed
-  load_paths:
-    - _theme/assets/css
 
 # Site settings
 title: News
