@@ -1,6 +1,6 @@
 # News Site
 
-Portal berita resmi deepin Indonesia — [news.deepin.id](https://news.deepin.id/)
+Portal artikel resmi deepin Indonesia — [news.deepin.id](https://news.deepin.id/)
 
 Dibangun dengan [Jekyll](https://jekyllrb.com/), menggunakan tema bersama dari [deepin-theme-site](https://github.com/deepin-Indonesia/deepin-theme-site) sebagai Git submodule.
 
