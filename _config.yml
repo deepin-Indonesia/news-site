@@ -1,0 +1,76 @@
+# ===== deepin Indonesia — News Site =====
+# Domain: news.deepin.id
+# Tema dari submodule deepin-theme-site
+
+# === Tema ===
+theme: deepin-theme-site
+
+sass:
+  style: compressed
+
+# Site settings
+title: News
+tagline: News, Tips, dan Update Komunitas deepin Indonesia
+email: deepin@siberin.id
+description: >-
+  Portal berita resmi deepin Indonesia. Baca berita terbaru seputar deepin Linux,
+  tips & tutorial, release notes, update komunitas, dan informasi seputar ekosistem deepin.
+baseurl: ""
+url: "https://news.deepin.id"
+github_username: deepin-Indonesia
+telegram_group: Linux_deepin_ID
+
+# SEO & Social
+locale: id_ID
+twitter:
+  username: deepinID
+  card: summary_large_image
+social:
+  name: deepin Indonesia
+  links:
+    - https://t.me/Linux_deepin_ID
+    - https://github.com/deepin-Indonesia
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# jekyll-feed
+feed:
+  path: /feed.xml
+  posts_limit: 20
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - netlify.toml
+
+include:
+  - robots.txt
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      lang: "id"
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+  - scope:
+      path: "tag"
+    values:
+      layout: "tag"
+  - scope:
+      path: "assets/images"
+    values:
+      image: true

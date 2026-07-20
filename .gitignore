@@ -1,0 +1,9 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+*.gem
+*.pdf
+*-orig.*
+_config_netlify.yml

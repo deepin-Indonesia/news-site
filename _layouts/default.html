@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="deepin, deepin Indonesia, deepin Linux, Linux Indonesia, deepin OS, komunitas deepin, berita deepin, tips deepin, release notes, NVIDIA Optimus deepin">
+  <meta name="author" content="deepin Indonesia">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1a6dd4">
+  <link rel="canonical" href="{{ page.url | absolute_url | replace:'index.html','' }}">
+
+  <!-- Open Graph — Facebook, Telegram, WhatsApp, LinkedIn, Discord -->
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="News deepin Indonesia">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image | absolute_url }}">
+  <meta property="og:image:secure_url" content="{{ page.image | absolute_url }}">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="600">
+  {% else %}
+  <meta property="og:image" content="{{ '/assets/images/deepin-id.png' | absolute_url }}">
+  <meta property="og:image:secure_url" content="{{ '/assets/images/deepin-id.png' | absolute_url }}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  {% endif %}
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@deepinID">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.image %}
+  <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+  {% else %}
+  <meta name="twitter:image" content="{{ '/assets/images/deepin-id.png' | absolute_url }}">
+  {% endif %}
+
+  <!-- JSON-LD Article -->
+  {% if page.layout == 'post' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title | strip_html | escape }}",
+    "description": "{{ page.description | strip_html | strip_newlines | escape }}",
+    "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+    "author": { "@type": "Organization", "name": "deepin Indonesia", "url": "{{ site.url }}" },
+    "publisher": { "@type": "Organization", "name": "deepin Indonesia", "url": "{{ site.url }}", "logo": { "@type": "ImageObject", "url": "{{ '/assets/images/deepin-id.png' | absolute_url }}" } }
+    {% if page.image %},"image": { "@type": "ImageObject", "url": "{{ page.image | absolute_url }}" }{% endif %}
+  }
+  </script>
+  {% endif %}
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ '/assets/images/deepin-id.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/deepin-id.png' | relative_url }}">
+
+  <!-- Stylesheet -->
+  <link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+  <!-- Font Awesome -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+</head>
+<body>
+  {% include header.html %}
+  <main>{{ content }}</main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
