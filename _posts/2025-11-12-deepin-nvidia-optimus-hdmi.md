@@ -73,4 +73,4 @@ Saya sangat puas dengan apa yang deepin tawarkan di area ini. Dan melihat antusi
 
 ---
 
-Punya pengalaman serupa dengan NVIDIA Optimus di deepin? Atau penasaran dan mau tanya-tanya lebih lanjut? Yuk diskusi di [grup Telegram deepin Indonesia](https://t.me/Linux_deepin_ID)! 🐧✨
+Punya pengalaman serupa dengan NVIDIA Optimus di deepin? Atau penasaran dan mau tanya-tanya lebih lanjut? Yuk diskusi di [grup Telegram deepin Indonesia](https://t.me/Linux_deepin_ID){:target="_blank" rel="noopener"}! 🐧✨
