@@ -1666,6 +1666,31 @@ a {
 .post-content__body hr { border: none; border-top: 1px solid var(--color-gray-200); margin: 2.5rem 0; }
 .post-content__body img { border-radius: var(--radius-md); margin: 1.5rem auto; }
 
+/* FAQ Accordion */
+.post-content__body details {
+  border: 1px solid var(--color-gray-200); border-radius: var(--radius-md);
+  margin-bottom: .75rem; overflow: hidden;
+}
+.post-content__body details[open] {
+  border-color: var(--deepin-blue-light); background: var(--color-gray-50);
+}
+.post-content__body summary {
+  padding: 1rem 1.25rem; font-size: 1rem; font-weight: 600;
+  color: var(--color-gray-800); cursor: pointer;
+  list-style: none; display: flex; align-items: center; gap: .5rem;
+  transition: all var(--transition);
+}
+.post-content__body summary::-webkit-details-marker { display: none; }
+.post-content__body summary::before {
+  content: '+'; font-size: 1.2rem; font-weight: 400; color: var(--deepin-blue);
+  width: 20px; text-align: center; transition: transform var(--transition);
+}
+.post-content__body details[open] summary::before { content: '−'; }
+.post-content__body summary:hover { color: var(--deepin-blue); }
+.post-content__body details[open] summary { color: var(--deepin-blue); border-bottom: 1px solid var(--color-gray-200); }
+.post-content__body details > *:not(summary) { padding: 1rem 1.25rem; }
+.post-content__body details > *:not(summary) p { margin-bottom: 0; }
+
 /* ===== Post Share ===== */
 .post-share { display: flex; align-items: center; gap: .75rem; margin: 3rem 0 1.5rem; flex-wrap: wrap; }
 .post-share__label { font-size: .9rem; font-weight: 600; color: var(--color-gray-500); }
