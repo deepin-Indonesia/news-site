@@ -84,15 +84,19 @@ layout: default
 <section class="related-posts">
   <div class="container">
     <div class="section-header">
-      <h2>Berita Terkait</h2>
+      <h2>Artikel Terkait</h2>
     </div>
     <div class="news-grid">
       {% for post in related_posts %}
       <article class="news-card">
         <div class="news-card__image">
+          {% if post.image %}
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="news-card__img" loading="lazy">
+          {% else %}
           <div class="news-card__image-placeholder" style="background: linear-gradient(135deg, #1a6dd4, #1250a0);">
             <i class="fas fa-newspaper"></i>
           </div>
+          {% endif %}
         </div>
         <div class="news-card__body">
           <div class="news-card__tags">
