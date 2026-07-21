@@ -111,7 +111,7 @@ Buka **Control Center** → **Update** → klik **Check for Updates**. Atau via 
 sudo apt update && sudo apt upgrade
 ```
 
-Bagi yang ingin install ulang, ISO terbaru bisa di-download di **[os.deepin.id](https://os.deepin.id)**.
+Bagi yang ingin install ulang, ISO terbaru bisa di-download di **[os.deepin.id](https://os.deepin.id){:target="_blank" rel="noopener"}**.
 
 ---
 
