@@ -20,22 +20,17 @@ url: "https://news.deepin.id"
 github_username: deepin-Indonesia
 telegram_group: Linux_deepin_ID
 
-# SEO & Social
+# SEO
 locale: id_ID
 twitter:
   username: deepinID
   card: summary_large_image
-social:
-  name: deepin Indonesia
-  links:
-    - https://t.me/Linux_deepin_ID
-    - https://github.com/deepin-Indonesia
+google_analytics: G-2J4TLB9W7H
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-sitemap
 
 # jekyll-feed
