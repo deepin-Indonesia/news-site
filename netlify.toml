@@ -9,8 +9,4 @@
   JEKYLL_ENV = "production"
   RUBY_VERSION = "3.3"
 
-# Redirect & headers untuk Jekyll
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+
