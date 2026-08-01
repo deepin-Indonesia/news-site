@@ -1,14 +1,10 @@
 ---
-layout: post
 title: "deepin 25.2.0 Resmi Dirilis — Treeland Makin Stabil, Pencarian Gambar Pakai AI, dan Ratusan Perbaikan Bug"
-date: 2026-07-08 10:00:00 +0700
-categories: release
+date: 2026-07-08
 tags: [Release Notes]
 author: deepin Indonesia
-description: >-
-  deepin 25.2.0 resmi rilis dengan peningkatan besar di Treeland, pencarian gambar berbasis AI,
-  taskbar split mode, kernel terbaru, dan ratusan bug fix. Simak changelog lengkapnya di sini.
-image: /assets/images/deepin-25-2-release.jpg
+description: "deepin 25.2.0 resmi rilis dengan peningkatan besar di Treeland, pencarian gambar berbasis AI, taskbar split mode, kernel terbaru."
+image: /images/deepin-25-2-release.jpg
 ---
 
 Komunitas deepin resmi merilis **deepin 25.2.0**! Update ini membawa peningkatan signifikan pada stabilitas dan usability **Treeland** (Wayland compositor deepin), kemampuan pencarian file dan gambar yang lebih cerdas, penyempurnaan interaksi **DDE (Deepin Desktop Environment)**, serta pembaruan kernel dan patch keamanan. Total ada ratusan perbaikan bug yang membuat deepin 25 semakin solid untuk penggunaan sehari-hari.

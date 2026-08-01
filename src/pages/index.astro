@@ -1,6 +1,7 @@
 ---
 import Layout from '@/components/Layout.astro';
 import { SITE } from '@/data/site';
+import { getCollection } from 'astro:content';
 
 const tags = [
   { slug: 'all', label: 'Semua Artikel', icon: '📰' },
@@ -10,19 +11,17 @@ const tags = [
   { slug: 'event', label: 'Event', icon: '📅' },
 ];
 
-import type { CollectionEntry } from 'astro:content';
-const allPosts = (await import.meta.glob('../content/posts/*.md', { eager: true })) as Record<string, any>;
-
-const posts = Object.entries(allPosts)
-  .map(([path, mod]: [string, any]) => ({
-    slug: path.split('/').pop()?.replace('.md', '') ?? '',
-    ...mod.frontmatter,
-    excerpt: mod.frontmatter.description || mod.compiledContent?.().slice(0, 150),
+const allPosts = await getCollection('posts');
+const posts = allPosts
+  .map((p) => ({
+    slug: p.slug,
+    ...p.data,
+    excerpt: p.data.description,
   }))
-  .sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 const activeTag = Astro.url.searchParams.get('tag') || 'all';
-const filtered = activeTag === 'all' ? posts : posts.filter((p: any) => p.tags?.includes(activeTag));
+const filtered = activeTag === 'all' ? posts : posts.filter((p) => p.tags?.includes(activeTag));
 
 const featured = filtered[0];
 const rest = filtered.slice(1, 10);
