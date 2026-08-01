@@ -1,0 +1,120 @@
+---
+import Layout from '@/components/Layout.astro';
+import { SITE } from '@/data/site';
+
+const tags = [
+  { slug: 'all', label: 'Semua Artikel', icon: '📰' },
+  { slug: 'release-notes', label: 'Release Notes', icon: '📋' },
+  { slug: 'tips-deepin', label: 'Tips deepin', icon: '💡' },
+  { slug: 'komunitas-update', label: 'Komunitas Update', icon: '🤝' },
+  { slug: 'event', label: 'Event', icon: '📅' },
+];
+
+import type { CollectionEntry } from 'astro:content';
+const allPosts = (await import.meta.glob('../content/posts/*.md', { eager: true })) as Record<string, any>;
+
+const posts = Object.entries(allPosts)
+  .map(([path, mod]: [string, any]) => ({
+    slug: path.split('/').pop()?.replace('.md', '') ?? '',
+    ...mod.frontmatter,
+    excerpt: mod.frontmatter.description || mod.compiledContent?.().slice(0, 150),
+  }))
+  .sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+const activeTag = Astro.url.searchParams.get('tag') || 'all';
+const filtered = activeTag === 'all' ? posts : posts.filter((p: any) => p.tags?.includes(activeTag));
+
+const featured = filtered[0];
+const rest = filtered.slice(1, 10);
+---
+
+<Layout title="News" description={SITE.description}>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-gray-900 via-slate-800 to-deepin-900 py-16 lg:py-24">
+    <div class="container-main relative text-center">
+      <img src="/images/deepin-id.png" alt="deepin" width="80" height="80" class="w-20 h-20 mx-auto mb-4 drop-shadow-xl" />
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white">
+        News <span class="text-deepin-400">deepin</span> Indonesia
+      </h1>
+      <p class="mt-3 text-deepin-200">Berita, tips, tutorial, dan update komunitas deepin Indonesia.</p>
+    </div>
+  </section>
+
+  <!-- Tag Filter -->
+  <section class="py-6 bg-white border-b border-gray-100 sticky top-[72px] z-30 glass">
+    <div class="container-main">
+      <div class="flex flex-wrap justify-center gap-2">
+        {tags.map((t) => (
+          <a
+            href={t.slug === 'all' ? '/news' : `/news?tag=${t.slug}`}
+            class={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+              activeTag === t.slug ? 'bg-deepin-600 text-white shadow-md' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            }`}
+          >
+            {t.icon} {t.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Posts Grid -->
+  <section class="py-12 bg-gray-50">
+    <div class="container-main">
+      {filtered.length === 0 ? (
+        <div class="text-center py-16">
+          <div class="text-5xl mb-4">📭</div>
+          <h3 class="text-xl font-bold text-gray-700">Belum ada artikel</h3>
+          <p class="text-gray-500 mt-1">Belum ada artikel dengan tag ini. Nantikan update selanjutnya!</p>
+        </div>
+      ) : (
+        <>
+          {/* Featured */}
+          {featured && (
+            <a href={`/news/${featured.slug}`} class="card block mb-8 overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+              <div class="grid md:grid-cols-5">
+                <div class="md:col-span-2 bg-gradient-to-br from-deepin-500 to-deepin-700 flex items-center justify-center p-8 min-h-[200px]">
+                  <i class="fas fa-newspaper text-6xl text-white/30" />
+                </div>
+                <div class="md:col-span-3 p-6 md:p-8">
+                  <div class="flex gap-2 mb-3">
+                    {featured.tags?.slice(0, 2).map((tag: string) => (
+                      <span class="px-2.5 py-0.5 rounded-full bg-deepin-50 text-deepin-700 text-xs font-medium">{tag}</span>
+                    ))}
+                  </div>
+                  <h2 class="text-2xl font-extrabold text-gray-900 group-hover:text-deepin-600 transition-colors mb-3">{featured.title}</h2>
+                  <p class="text-gray-500 text-sm leading-relaxed mb-4">{featured.excerpt}</p>
+                  <div class="flex items-center gap-3 text-xs text-gray-400">
+                    <span><i class="far fa-calendar mr-1" /> {new Date(featured.date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+                    <span><i class="far fa-user mr-1" /> {featured.author || 'deepin Indonesia'}</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          )}
+
+          {/* Grid */}
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {rest.map((post: any) => (
+              <a href={`/news/${post.slug}`} class="card overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+                <div class="bg-gradient-to-br from-deepin-400 to-deepin-600 h-40 flex items-center justify-center">
+                  <i class="fas fa-newspaper text-4xl text-white/30" />
+                </div>
+                <div class="p-5">
+                  <div class="flex gap-2 mb-2">
+                    {post.tags?.slice(0, 2).map((tag: string) => (
+                      <span class="px-2 py-0.5 rounded-full bg-deepin-50 text-deepin-700 text-[10px] font-medium">{tag}</span>
+                    ))}
+                  </div>
+                  <h3 class="font-bold text-gray-900 group-hover:text-deepin-600 transition-colors line-clamp-2 mb-2">{post.title}</h3>
+                  <p class="text-xs text-gray-500 line-clamp-2 mb-3">{post.excerpt}</p>
+                  <span class="text-xs text-gray-400"><i class="far fa-calendar mr-1" /> {new Date(post.date).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  </section>
+</Layout>
