@@ -1,21 +1,8 @@
 {"message":"connected.","label":"vite","level":"info"}
-{"message":"Generated 1ms","label":"types","level":"info"}
+{"message":"Generated 10ms","label":"types","level":"info"}
 {"message":"connected.","label":"vite","level":"info"}
 {"message":"Syncing content","label":"content","level":"info"}
 {"message":"Synced content","label":"content","level":"info"}
-{"message":"Re-optimizing dependencies because vite config has changed","label":"vite","level":"info"}
-{"message":" astro  v7.1.6 ready in 2769 ms\n┃ Local    http://localhost:4327/\n┃ Network  use --host to expose","label":"SKIP_FORMAT","level":"info"}
+{"message":" astro  v7.1.6 ready in 6692 ms\n┃ Local    http://localhost:4327/\n┃ Network  use --host to expose","label":"SKIP_FORMAT","level":"info"}
 {"message":"watching for file changes...","label":null,"level":"info"}
-{"message":"[200] / 88ms","label":null,"level":"info"}
-{"message":"[200] / 3ms","label":null,"level":"info"}
-{"message":"[200] /news/2026-07-08-deepin-25-2-release 101ms","label":null,"level":"info"}
-{"message":"program reload","label":"vite","level":"info"}
-{"message":"src/pages/index.astro","label":"watch","level":"info"}
-{"message":"Reloaded data from 2025-11-12-deepin-nvidia-optimus-hdmi.md","label":"glob-loader","level":"info"}
-{"message":"Reloaded data from 2026-07-08-deepin-25-2-release.md","label":"glob-loader","level":"info"}
-{"message":"Reloaded data from 2025-11-30-deepin-cross-device-collaboration.md","label":"glob-loader","level":"info"}
-{"message":"An error happened during full reload\nFailed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\nError: Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\n    at loadAndTransform (file:///d:/GitHub/deepin-Indonesia/news-site/node_modules/vite/dist/node/chunks/node.js:20583:31)","label":"vite","level":"error"}
-{"message":"[200] /news/2026-07-08-deepin-25-2-release 20ms","label":null,"level":"info"}
-{"message":"program reload","label":"vite","level":"info"}
-{"message":"program reload","label":"vite","level":"info"}
-{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 581ms","label":null,"level":"info"}
