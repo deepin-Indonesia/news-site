@@ -3,7 +3,7 @@ title: "Panduan Lengkap Cross-Device Collaboration deepin — Transfer File, Sha
 date: 2025-11-30
 tags: [tips-deepin]
 author: deepin Indonesia
-description: "Pelajari cara menggunakan Cross-Device Collaboration di deepin untuk transfer file, sharing keyboard dan mouse, clipboard sharing, serta screen mirroring."
+description: "Pelajari cara menggunakan Cross-Device Collaboration di deepin untuk transfer file, sharing keyboard dan mouse, clipboard sharing, serta screen mirroring dari HP ke PC."
 image: /images/cooperation-screencast-2.jpg
 ---
 
@@ -27,7 +27,7 @@ Untuk pengguna deepin/UOS, aplikasi ini bisa diunduh langsung dari **App Store**
 Saat aplikasi Cross-Device Collaboration dibuka, aplikasi akan otomatis memindai perangkat lain yang berada di **segmen jaringan yang sama**. Perangkat yang terdeteksi akan muncul di device list aplikasi.
 
 <figure>
-<img src="{{ '/assets/images/cooperation-devices.png' | relative_url }}" alt="Device list Cross-Device Collaboration — menampilkan perangkat yang terdeteksi di jaringan lokal" loading="lazy">
+<img src="{{ '/images/cooperation-devices.png' | relative_url }}" alt="Device list Cross-Device Collaboration — menampilkan perangkat yang terdeteksi di jaringan lokal" loading="lazy">
 <figcaption>Sumber gambar: Manual deepin</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ Ini fitur yang sangat berguna untuk setup multi-device. Ketika perangkat A dan B
 - Mouse bisa bergerak **antar layar kedua perangkat** sesuai pengaturan screen alignment
 - Tidak perlu KVM switch fisik — semuanya lewat software
 
-![Menghubungkan perangkat mobile ke deepin via QR code]({{ '/assets/images/cooperation-connect.jpg' | relative_url }})
+![Menghubungkan perangkat mobile ke deepin via QR code]({{ '/images/cooperation-connect.jpg' | relative_url }})
 
 ### 4. Clipboard Sharing
 
@@ -88,9 +88,9 @@ Setelah terhubung, di perangkat mobile:
 
 Setelah itu, layar HP akan tampil di perangkat deepin/UOS dan kamu bisa **mengontrol HP langsung dari desktop** dengan mengklik layar yang di-mirror.
 
-![Screen mirroring HP ke deepin — kontrol langsung dari desktop]({{ '/assets/images/cooperation-screencast-1.jpg' | relative_url }})
+![Screen mirroring HP ke deepin — kontrol langsung dari desktop]({{ '/images/cooperation-screencast-1.jpg' | relative_url }})
 
-![Screen mirroring HP ke deepin — kontrol langsung dari desktop]({{ '/assets/images/cooperation-screencast-2.jpg' | relative_url }})
+![Screen mirroring HP ke deepin — kontrol langsung dari desktop]({{ '/images/cooperation-screencast-2.jpg' | relative_url }})
 
 ## Pengaturan Cross-Device Collaboration
 
@@ -108,7 +108,7 @@ Klik ikon title bar dan pilih **Settings** untuk mengakses konfigurasi lengkap:
 
 ## Pertanyaan yang Sering Muncul
 
-<details markdown="1">
+<details>
 <summary><strong>Kenapa perangkat saya tidak muncul di device list?</strong></summary>
 
 Beberapa kemungkinan penyebabnya:
@@ -119,7 +119,7 @@ Beberapa kemungkinan penyebabnya:
 
 </details>
 
-<details markdown="1">
+<details>
 <summary><strong>Bagaimana cara cek apakah dua perangkat ada di network segment yang sama?</strong></summary>
 
 Bandingkan **tiga bagian pertama IP address** kedua perangkat. Kalau sama, perangkat berada di segment yang sama.
@@ -128,21 +128,21 @@ Contoh: `192.168.1.10` dan `192.168.1.25` → segment sama. `192.168.1.10` dan `
 
 </details>
 
-<details markdown="1">
+<details>
 <summary><strong>Apakah transfer data di Cross-Device Collaboration aman?</strong></summary>
 
 Ya, data di-serialisasi menggunakan **protobuf** dan dienkripsi dengan **SSL/TLS 1.3** — standar keamanan yang sama dengan yang digunakan perbankan online. Transfer file dan sharing clipboard semuanya terenkripsi end-to-end dalam jaringan lokal.
 
 </details>
 
-<details markdown="1">
+<details>
 <summary><strong>Kenapa HP Android saya tidak bisa terkoneksi ke komputer?</strong></summary>
 
 Saat ini Cross-Device Collaboration untuk mobile hanya mendukung **model Android tertentu**. Daftar model yang didukung akan bertambah di update mendatang. Pastikan juga HP dan komputer berada di jaringan Wi-Fi yang sama.
 
 </details>
 
-<details markdown="1">
+<details>
 <summary><strong>Bagaimana cara mengontrol HP dari komputer setelah screen mirroring?</strong></summary>
 
 Setelah screen mirroring aktif, buka **Settings HP → Accessibility → Installed Services**, cari **UOS Assistant**, dan aktifkan. Langkah pastinya tergantung model HP. Contoh untuk Huawei nova 9 Pro (HarmonyOS 4.2.0): Settings → Accessibility → Installed Services → UOS Assistant → Enable.

@@ -3,8 +3,8 @@
 <h2 id="laptop-yang-saya-gunakan-saat-presentasi">Laptop yang Saya Gunakan Saat Presentasi</h2>
 <p>Laptop Lenovo yang saya pakai memiliki konfigurasi hardware yang sangat umum: <strong>port HDMI eksternal terhubung langsung (hardwired) ke dedicated NVIDIA GPU</strong>. Buat yang belum tahu, ini adalah konfigurasi standar di banyak laptop gaming dan workstation, dan sering banget bikin pusing pengguna Linux. Masalahnya simpel: kalau kamu mau pakai HDMI, dedicated GPU harus nyala terus. Dan GPU yang nyala terus artinya baterai boros, suhu naik, kipas berisik.</p>
 <p>Nah, di sinilah deepin menunjukkan kelasnya.</p>
-<p>![Suasana presentasi deepin di kampus — mendemonstrasikan pengaturan NVIDIA Optimus]({{ ‘/assets/images/deepin-nvidia-presentation-1.jpg’ | relative_url }})</p>
-<p>![Sesi presentasi deepin — memperlihatkan perbedaan handling GPU antara deepin dan Ubuntu]({{ ‘/assets/images/deepin-nvidia-presentation-2.jpg’ | relative_url }})</p>
+<p>![Suasana presentasi deepin di kampus — mendemonstrasikan pengaturan NVIDIA Optimus]({{ ‘/images/deepin-nvidia-presentation-1.jpg’ | relative_url }})</p>
+<p>![Sesi presentasi deepin — memperlihatkan perbedaan handling GPU antara deepin dan Ubuntu]({{ ‘/images/deepin-nvidia-presentation-2.jpg’ | relative_url }})</p>
 <h2 id="perbandingan-langsung-ubuntu-vs-deepin">Perbandingan Langsung: Ubuntu vs deepin</h2>
 <h3 id="pengalaman-saya-di-ubuntu">Pengalaman Saya di Ubuntu</h3>
 <p>Sebelum pakai deepin, saya sudah cukup lama menggunakan Ubuntu. Dan setiap kali ingin menyambungkan laptop ke proyektor atau monitor eksternal lewat HDMI, saya <strong>harus</strong> mengatur NVIDIA driver ke mode <strong>NVIDIA (Performance Mode)</strong> alias <strong>GPU Only</strong>. Tidak ada pilihan lain.</p>
@@ -68,19 +68,19 @@
 <p>Sayangnya waktu presentasi terbatas — saya cuma kebagian beberapa menit untuk sesi ini. Tapi momen itu cukup membuktikan satu hal: <strong>deepin bukan cuma soal UI cantik dan desktop environment yang enak dipandang</strong>. Di balik tampilannya yang elegan, deepin punya optimasi teknis yang serius — bahkan untuk urusan yang sering dianggap “masalah klasik” seperti NVIDIA Optimus, deepin kasih solusi yang lebih baik dari distro sepopuler Ubuntu.</p>
 <p>Saya sangat puas dengan apa yang deepin tawarkan di area ini. Dan melihat antusiasme teman-teman sekelas yang langsung tertarik setelah presentasi, saya yakin deepin punya masa depan cerah di kalangan pengguna Linux Indonesia.</p>
 <h2 id="pertanyaan-yang-sering-muncul">Pertanyaan yang Sering Muncul</h2>
-<details markdown="1">
+<details>
 <summary><strong>Apakah semua laptop dengan NVIDIA Optimus bisa pakai mode On-Demand di deepin?</strong></summary>
 <p>Sebagian besar laptop dengan NVIDIA Optimus mendukung mode On-Demand di deepin, termasuk laptop Lenovo, ASUS, HP, dan Dell yang menggunakan kombinasi Intel integrated GPU + NVIDIA dedicated GPU. deepin sudah menyertakan <strong>NVIDIA Prime Render Offload</strong> dan mengaktifkan mode <strong>On-Demand secara default</strong> setelah instalasi, jadi kamu tidak perlu install driver atau tools tambahan — langsung pakai saja.</p>
 </details>
-<details markdown="1">
+<details>
 <summary><strong>Apakah performa gaming tetap optimal di mode On-Demand?</strong></summary>
 <p>Untuk gaming atau rendering berat, kamu tetap bisa menjalankan aplikasi spesifik menggunakan dedicated GPU tanpa harus mengganti mode global. deepin mendukung <strong>prime-run</strong> — cukup jalankan aplikasi dengan prefix <code>prime-run</code> di terminal, dan aplikasi tersebut akan otomatis menggunakan NVIDIA GPU sementara sistem tetap berjalan hemat daya di integrated GPU.</p>
 </details>
-<details markdown="1">
+<details>
 <summary><strong>Apa perbedaan utama NVIDIA Optimus di deepin vs distro Linux lain?</strong></summary>
 <p>Perbedaan paling mencolok adalah <strong>HDMI tetap berfungsi di mode On-Demand</strong>. Di Ubuntu, Fedora, dan kebanyakan distro lain, kamu harus mengaktifkan mode Performance (GPU Only) agar port HDMI bisa digunakan — yang artinya baterai boros dan suhu laptop naik drastis. deepin berhasil mengatasi ini dengan implementasi NVIDIA Prime Render Offload yang lebih matang.</p>
 </details>
-<details markdown="1">
+<details>
 <summary><strong>Apakah deepin cocok untuk laptop gaming dengan NVIDIA?</strong></summary>
 <p>Sangat cocok. deepin menawarkan keseimbangan sempurna antara <strong>efisiensi daya saat mobile</strong> dan <strong>performa maksimal saat dibutuhkan</strong>. Ditambah dengan UI DDE yang cantik dan ringan, deepin adalah pilihan solid untuk pengguna laptop gaming yang mencari alternatif selain Ubuntu atau Windows.</p>
 </details>

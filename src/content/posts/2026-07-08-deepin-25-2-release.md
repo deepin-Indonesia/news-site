@@ -3,13 +3,13 @@ title: "deepin 25.2.0 Resmi Dirilis — Treeland Makin Stabil, Pencarian Gambar 
 date: 2026-07-08
 tags: [release-notes]
 author: deepin Indonesia
-description: "deepin 25.2.0 resmi rilis dengan peningkatan besar di Treeland, pencarian gambar berbasis AI, taskbar split mode, kernel terbaru."
+description: "deepin 25.2.0 resmi rilis dengan peningkatan besar di Treeland, pencarian gambar berbasis AI, taskbar split mode, kernel terbaru, dan ratusan bug fix."
 image: /images/deepin-25-2-release.jpg
 ---
 
 Komunitas deepin resmi merilis **deepin 25.2.0**! Update ini membawa peningkatan signifikan pada stabilitas dan usability **Treeland** (Wayland compositor deepin), kemampuan pencarian file dan gambar yang lebih cerdas, penyempurnaan interaksi **DDE (Deepin Desktop Environment)**, serta pembaruan kernel dan patch keamanan. Total ada ratusan perbaikan bug yang membuat deepin 25 semakin solid untuk penggunaan sehari-hari.
 
-![deepin 25.2.0 — Treeland, AI image search, dan DDE enhancements]({{ '/assets/images/deepin-25-2-release.jpg' | relative_url }})
+![deepin 25.2.0 — Treeland, AI image search, dan DDE enhancements]({{ '/images/deepin-25-2-release.jpg' | relative_url }})
 
 ## Sorotan deepin 25.2.0
 
@@ -113,28 +113,28 @@ Bagi yang ingin install ulang, ISO terbaru bisa di-download di **[os.deepin.id](
 
 ## Pertanyaan yang Sering Muncul
 
-<details markdown="1">
+<details>
 <summary><strong>Apakah deepin 25.2.0 sudah stabil untuk daily driver?</strong></summary>
 
 Ya. Dengan 20+ fix di Treeland dan ratusan perbaikan lainnya, deepin 25.2.0 sangat direkomendasikan untuk penggunaan sehari-hari.
 
 </details>
 
-<details markdown="1">
+<details>
 <summary><strong>Apa itu Treeland dan kenapa penting?</strong></summary>
 
 Treeland adalah Wayland compositor modern buatan deepin yang menggantikan X11. Di versi 25.2.0, Treeland sudah cukup matang dengan dukungan penuh multi-monitor, dynamic wallpaper, dan integrasi DDE.
 
 </details>
 
-<details markdown="1">
+<details>
 <summary><strong>Apakah fitur AI image search tersedia default?</strong></summary>
 
 Fitur ini perlu di-enable manual di File Manager → Settings → Image Text Content Search Indexing. Setelah diaktifkan, deepin akan meng-index teks dalam gambar untuk pencarian cepat.
 
 </details>
 
-<details markdown="1">
+<details>
 <summary><strong>Berapa lama proses upgrade dari 25.1 ke 25.2.0?</strong></summary>
 
 Tergantung kecepatan internet dan spesifikasi laptop. Rata-rata 15-30 menit melalui Control Center.
