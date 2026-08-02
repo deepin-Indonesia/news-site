@@ -24,16 +24,13 @@ const posts = allPosts
 
 const activeTag = 'all';
 const filtered = posts;
-
-const featured = filtered[0];
-const rest = filtered.slice(1, 10);
 ---
 
 <Layout title="News" description={SITE.description}>
   <!-- Hero -->
   <section class="relative overflow-hidden bg-gradient-to-br from-gray-900 via-slate-800 to-deepin-900 py-16 lg:py-24">
     <div class="container-main relative text-center">
-      <img src="/images/deepin-id.png" alt="deepin" width="80" height="80" class="w-20 h-20 mx-auto mb-4 drop-shadow-xl" />
+      <img src="/images/deepin-id.png" alt="deepin" width="80" height="80" class="w-20 h-20 mx-auto mb-4 drop-shadow-xl" loading="eager" decoding="async" fetchpriority="high" />
       <h1 class="text-4xl sm:text-5xl font-extrabold text-white">
         News <span class="text-deepin-400">deepin</span> Indonesia
       </h1>
@@ -62,47 +59,14 @@ const rest = filtered.slice(1, 10);
   <!-- Posts Grid -->
   <section class="py-12 bg-gray-50">
     <div class="container-main">
-      {filtered.length === 0 ? (
-        <div class="text-center py-16">
-          <div class="text-5xl mb-4">📭</div>
-          <h3 class="text-xl font-bold text-gray-700">Belum ada artikel</h3>
-          <p class="text-gray-500 mt-1">Belum ada artikel dengan tag ini. Nantikan update selanjutnya!</p>
-        </div>
-      ) : (
-        <>
-          {/* Featured */}
-          {featured && (
-            <a href={`/news/${featured.slug}`} data-tags={JSON.stringify(featured?.tags || [])} class="card block mb-8 overflow-hidden group hover:-translate-y-1 transition-all duration-300">
-              <div class="grid md:grid-cols-5">
-                <div class="md:col-span-2 min-h-[280px] overflow-hidden bg-gray-200">
-                  {featured.image ? (
-                    <img src={featured.image} alt={featured.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="eager" />
-                  ) : (
-                    <div class="bg-gradient-to-br from-deepin-500 to-deepin-700 flex items-center justify-center h-full">
-                      <i class="fas fa-newspaper text-6xl text-white/30" />
-                    </div>
-                  )}
-                </div>
-                <div class="md:col-span-3 p-6 md:p-8">
-                  <div class="flex gap-2 mb-3">
-                    {featured.tags?.slice(0, 2).map((tag: string) => (
-                      <span class="px-2.5 py-0.5 rounded-full bg-deepin-50 text-deepin-700 text-xs font-medium">{tagLabel[tag] || tag}</span>
-                    ))}
-                  </div>
-                  <h2 class="text-2xl font-extrabold text-gray-900 group-hover:text-deepin-600 transition-colors mb-3">{featured.title}</h2>
-                  <p class="text-gray-500 text-sm leading-relaxed mb-4">{featured.excerpt}</p>
-                  <div class="flex items-center gap-3 text-xs text-gray-400">
-                    <span><i class="far fa-calendar mr-1" /> {new Date(featured.date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
-                    <span><i class="far fa-user mr-1" /> {featured.author || 'deepin Indonesia'}</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          )}
-
-          {/* Grid */}
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {rest.map((post: any) => (
+      {/* Empty state - shown by JS when no posts match */}
+      <div id="empty-state" class="text-center py-16 hidden">
+        <div class="text-5xl mb-4">📭</div>
+        <h3 class="text-xl font-bold text-gray-700">Belum ada artikel</h3>
+        <p class="text-gray-500 mt-1">Belum ada artikel dengan tag ini. Nantikan update selanjutnya!</p>
+      </div>
+      <div id="posts-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {filtered.map((post: any) => (
               <a href={`/news/${post.slug}`} data-tags={JSON.stringify(post.tags || [])} class="card overflow-hidden group hover:-translate-y-1 transition-all duration-300">
                 <div class="h-52 overflow-hidden bg-gray-200">
                   {post.image ? (
@@ -125,36 +89,46 @@ const rest = filtered.slice(1, 10);
                 </div>
               </a>
             ))}
-          </div>
-        </>
-      )}
+      </div>
     </div>
   </section>
 </Layout>
 
 <script>
-  // Client-side tag filter
   const params = new URLSearchParams(window.location.search);
   const activeTag = params.get('tag') || 'all';
   
-  // Highlight active tag button
   document.querySelectorAll('.tag-filter a').forEach(link => {
     const href = link.getAttribute('href') || '';
-    if (activeTag === 'all' && href === '/') link.classList.add('bg-deepin-600','text-white','shadow-md');
-    else if (href.includes('tag=' + activeTag)) link.classList.add('bg-deepin-600','text-white','shadow-md');
+    const isActive = (activeTag === 'all' && href === '/') || href.includes('tag=' + activeTag);
+    // Remove all color classes
+    link.classList.remove('bg-deepin-600','text-white','shadow-md','bg-gray-100','text-gray-600','hover:bg-gray-200');
+    if (isActive) {
+      link.classList.add('bg-deepin-600','text-white','shadow-md');
+    } else {
+      link.classList.add('bg-gray-100','text-gray-600','hover:bg-gray-200');
+    }
   });
   
-  // Filter posts
   if (activeTag !== 'all') {
+    let visibleCount = 0;
     document.querySelectorAll('a[data-tags]').forEach(card => {
       try {
         const tags = JSON.parse(card.getAttribute('data-tags') || '[]');
-        if (!tags.includes(activeTag)) card.style.display = 'none';
+        if (!tags.includes(activeTag)) {
+          card.style.display = 'none';
+        } else {
+          visibleCount++;
+        }
       } catch(e) {}
     });
+    // Show empty state if no posts match
+    if (visibleCount === 0) {
+      document.getElementById('empty-state')?.classList.remove('hidden');
+      document.getElementById('posts-grid')?.classList.add('hidden');
+    }
   }
 
-  // Update URL without reload on tag click
   document.querySelectorAll('.tag-filter a').forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
