@@ -2,23 +2,6 @@
 import { MAIN_NAV, ABOUT_NAV } from '@/data/site';
 
 const currentPath = Astro.url.pathname;
-const currentUrl = Astro.url.href;
-const langLabel: Record<string, string> = {
-  'id': '🇮🇩 Indonesia',
-  'en': '🇬🇧 English',
-  'zh-CN': '🇨🇳 中文',
-};
-const langMore: Record<string, string> = {
-  'ja': '🇯🇵 日本語',
-  'ko': '🇰🇷 한국어',
-  'ar': '🇸🇦 العربية',
-  'ru': '🇷🇺 Русский',
-  'pt': '🇧🇷 Português',
-  'fr': '🇫🇷 Français',
-  'de': '🇩🇪 Deutsch',
-  'es': '🇪🇸 Español',
-};
-const langKeys = ['id', 'en', 'zh-CN'];
 ---
 
 <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b-2 border-gray-200 shadow-[0_1px_3px_rgba(0,0,0,0.08)]" id="header">
@@ -71,31 +54,6 @@ const langKeys = ['id', 'en', 'zh-CN'];
           {ABOUT_NAV[0].children?.map((child) => (
             <a href={child.url} class={`block px-4 py-2 text-sm hover:bg-gray-50 hover:text-deepin-600 transition-colors ${child.highlight ? 'text-deepin-600 font-semibold' : 'text-gray-700'}`}>
               {child.title}
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <!-- Bahasa Dropdown -->
-      <div class="relative group">
-        <button class="btn-ghost text-sm font-medium py-2 flex items-center gap-1">
-          <i class="fas fa-language text-sm" />
-          <span class="hidden xl:inline">Bahasa</span>
-          <i class="fas fa-chevron-down text-[10px] ml-0.5 opacity-50 group-hover:rotate-180 transition-transform" />
-        </button>
-        <div class="absolute top-full right-0 mt-1 bg-white rounded-xl border border-gray-100 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[180px] py-2">
-          <a href={currentUrl} class="flex items-center gap-2 px-4 py-2 text-sm text-deepin-600 font-semibold bg-deepin-50 hover:bg-deepin-100 transition-colors">
-            {langLabel['id']}
-          </a>
-          {['en', 'zh-CN'].map((code) => (
-            <a href={`https://translate.google.com/translate?sl=id&tl=${code}&u=${encodeURIComponent(currentUrl)}`} data-lang={code} class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
-              {langLabel[code]}
-            </a>
-          ))}
-          <hr class="my-1 border-gray-100" />
-          {Object.entries(langMore).map(([code, label]) => (
-            <a href={`https://translate.google.com/translate?sl=id&tl=${code}&u=${encodeURIComponent(currentUrl)}`} data-lang={code} class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
-              {label}
             </a>
           ))}
         </div>
@@ -157,24 +115,6 @@ const langKeys = ['id', 'en', 'zh-CN'];
           {ABOUT_NAV[0].children?.map((child) => (
             <a href={child.url} class={`block py-2.5 px-4 rounded-lg text-sm hover:bg-gray-50 ${child.highlight ? 'text-deepin-600 font-semibold' : 'text-gray-600'}`}>
               {child.title}
-            </a>
-          ))}
-        </div>
-      </details>
-
-      <!-- Bahasa Mobile -->
-      <details class="group">
-        <summary class="flex items-center justify-between py-3 px-4 rounded-xl text-gray-800 font-medium cursor-pointer hover:bg-gray-50">
-          <span class="flex items-center gap-2"><i class="fas fa-language text-sm" /> Bahasa</span>
-          <i class="fas fa-chevron-down text-xs opacity-40 group-open:rotate-180 transition-transform" />
-        </summary>
-        <div class="ml-4 mt-1 space-y-1">
-          <a href={currentUrl} class="block py-2.5 px-4 rounded-lg text-sm text-deepin-600 font-semibold bg-deepin-50">
-            {langLabel['id']}
-          </a>
-          {[...['en', 'zh-CN'], ...Object.keys(langMore)].map((code) => (
-            <a href={`https://translate.google.com/translate?sl=id&tl=${code}&u=${encodeURIComponent(currentUrl)}`} data-lang={code} class="block py-2.5 px-4 rounded-lg text-sm text-gray-600 hover:bg-gray-50">
-              {langLabel[code] || langMore[code]}
             </a>
           ))}
         </div>
