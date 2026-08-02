@@ -46,7 +46,7 @@ const tagLabels: Record<string, string> = {
 };
 ---
 
-<Layout title={post.data.title} description={post.data.description} image={post.data.image}>
+<Layout title={post.data.title} description={post.data.description} image={post.data.image} type="article" date={post.data.date.toISOString()} authorName={post.data.author} tags={post.data.tags}>
   <article class="bg-white">
     {/* Soft gradient header */}
     <div class="bg-gradient-to-b from-deepin-50 to-white pt-10 pb-4">
