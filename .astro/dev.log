@@ -328,3 +328,15 @@
 {"message":"src/components/Header.astro","label":"watch","level":"info"}
 {"message":"[200] / 34ms","label":null,"level":"info"}
 {"message":"[200] / 34ms","label":null,"level":"info"}
+{"message":"src/pages/index.astro","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] / 26ms","label":null,"level":"info"}
+{"message":"[200] / 26ms","label":null,"level":"info"}
+{"message":"src/pages/index.astro","label":"watch","level":"info"}
+{"message":"[200] / 129ms","label":null,"level":"info"}
+{"message":"src/pages/index.astro","label":"watch","level":"info"}
+{"message":"[200] / 141ms","label":null,"level":"info"}
+{"message":"[200] /_image 1245ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 30ms","label":null,"level":"info"}

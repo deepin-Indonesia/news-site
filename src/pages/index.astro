@@ -2,6 +2,8 @@
 import Layout from '@/components/Layout.astro';
 import { SITE } from '@/data/site';
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import heroImg from '../assets/images/deepin-id.png';
 
 const tags = [
   { slug: 'all', label: 'Semua Artikel', icon: '📰' },
@@ -30,7 +32,7 @@ const filtered = posts;
   <!-- Hero -->
   <section class="relative overflow-hidden bg-gradient-to-br from-gray-900 via-slate-800 to-deepin-900 py-16 lg:py-24">
     <div class="container-main relative text-center">
-      <img src="/images/deepin-id.png" alt="deepin" width="80" height="80" class="w-20 h-20 mx-auto mb-4 drop-shadow-xl" loading="eager" decoding="async" fetchpriority="high" />
+      <Image src={heroImg} alt="deepin" width={80} height={80} class="w-20 h-20 mx-auto mb-4 drop-shadow-xl" loading="eager" decoding="async" fetchpriority="high" />
       <h1 class="text-4xl sm:text-5xl font-extrabold text-white">
         News <span class="text-deepin-400">deepin</span> Indonesia
       </h1>
