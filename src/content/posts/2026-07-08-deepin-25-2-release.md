@@ -13,12 +13,10 @@ Komunitas deepin resmi merilis **deepin 25.2.0**! Update ini membawa peningkatan
 
 ## Sorotan deepin 25.2.0
 
-<div>
-<div>
-<iframe src="https://www.youtube-nocookie.com/embed/dzOo36Qpae8?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+<div class="relative w-full max-w-2xl mx-auto my-6" style="aspect-ratio:16/9">
+<iframe src="https://www.youtube.com/embed/dzOo36Qpae8?rel=0" class="absolute inset-0 w-full h-full rounded-xl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
 </div>
-<p>Video rilis deepin 25.2.0 — lihat fitur baru dalam aksi</p>
-</div>
+<p class="text-center text-sm text-gray-400 mt-2 mb-6">Video rilis deepin 25.2.0 — lihat fitur baru dalam aksi</p>
 
 ### Treeland Desktop Environment — Upgrade Besar
 
