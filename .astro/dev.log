@@ -566,3 +566,452 @@
 {"message":"[200] /news/2025-11-30-deepin-cross-device-collaboration 22ms","label":null,"level":"info"}
 {"message":"/src/styles/global.css","label":"watch","level":"info"}
 {"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"Failed to reload 2026-08-01-dummy-10-tips-deepin.md: **posts → 2026-08-01-dummy-10-tips-deepin** data does not match collection schema.\n\n  **title**: **title**: Required\n  **date**: **date**: Required\n  **description**: **description**: Required\n","label":"glob-loader","level":"error"}
+{"message":"Reloaded data from 2026-08-01-dummy-10-tips-deepin.md","label":"glob-loader","level":"info"}
+{"message":"Failed to reload 2026-08-01-dummy-community-meetup.md: **posts → 2026-08-01-dummy-community-meetup** data does not match collection schema.\n\n  **title**: **title**: Required\n  **date**: **date**: Required\n  **description**: **description**: Required\n","label":"glob-loader","level":"error"}
+{"message":"Reloaded data from 2026-08-01-dummy-community-meetup.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Failed to reload 2026-08-01-dummy-docker-deepin.md: **posts → 2026-08-01-dummy-docker-deepin** data does not match collection schema.\n\n  **title**: **title**: Required\n  **date**: **date**: Required\n  **description**: **description**: Required\n","label":"glob-loader","level":"error"}
+{"message":"Reloaded data from 2026-08-01-dummy-docker-deepin.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Failed to reload 2026-08-02-dummy-deepin-2521-preview.md: **posts → 2026-08-02-dummy-deepin-2521-preview** data does not match collection schema.\n\n  **title**: **title**: Required\n  **date**: **date**: Required\n  **description**: **description**: Required\n","label":"glob-loader","level":"error"}
+{"message":"Reloaded data from 2026-08-02-dummy-deepin-2521-preview.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 34ms","label":null,"level":"info"}
+{"message":"[200] /_image 21ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-08-01-dummy-community-meetup.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-08-01-dummy-10-tips-deepin.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-08-02-dummy-deepin-2521-preview.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-08-01-dummy-docker-deepin.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 127ms","label":null,"level":"info"}
+{"message":"[200] / 127ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-08-01-dummy-10-tips-deepin.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-08-01-dummy-docker-deepin.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-08-01-dummy-community-meetup.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-08-02-dummy-deepin-2521-preview.md","label":"glob-loader","level":"info"}
+{"message":"[200] / 22ms","label":null,"level":"info"}
+{"message":"[200] / 22ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 22ms","label":null,"level":"info"}
+{"message":"src/pages/index.astro","label":"watch","level":"info"}
+{"message":"[200] / 22ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-08-01-dummy-docker-deepin.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-08-01-dummy-community-meetup.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-08-02-dummy-deepin-2521-preview.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-08-01-dummy-10-tips-deepin.md","label":"glob-loader","level":"info"}
+{"message":"src/pages/index.astro","label":"watch","level":"info"}
+{"message":"Reloaded data from 2026-08-02-dummy-deepin-2521-preview.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 331ms","label":null,"level":"info"}
+{"message":"[200] / 331ms","label":null,"level":"info"}
+{"message":"src/pages/index.astro","label":"watch","level":"info"}
+{"message":"[200] / 25ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-08-01-dummy-community-meetup 34ms","label":null,"level":"info"}
+{"message":"src/pages/index.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-08-01-dummy-community-meetup 8ms","label":null,"level":"info"}
+{"message":"Failed to reload 2025-07-15-dummy-deepin-migration.md: **posts → 2025-07-15-dummy-deepin-migration** data does not match collection schema.\n\n  **title**: **title**: Required\n  **date**: **date**: Required\n  **description**: **description**: Required\n","label":"glob-loader","level":"error"}
+{"message":"Reloaded data from 2025-07-15-dummy-deepin-migration.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-08-01-dummy-community-meetup 15ms","label":null,"level":"info"}
+{"message":"[200] / 26ms","label":null,"level":"info"}
+{"message":"Failed to reload 2025-06-20-dummy-telegram-500.md: **posts → 2025-06-20-dummy-telegram-500** data does not match collection schema.\n\n  **title**: **title**: Required\n  **date**: **date**: Required\n  **description**: **description**: Required\n","label":"glob-loader","level":"error"}
+{"message":"Reloaded data from 2025-06-20-dummy-telegram-500.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 23ms","label":null,"level":"info"}
+{"message":"Failed to reload 2025-05-10-dummy-moderator.md: **posts → 2025-05-10-dummy-moderator** data does not match collection schema.\n\n  **title**: **title**: Required\n  **date**: **date**: Required\n  **description**: **description**: Required\n","label":"glob-loader","level":"error"}
+{"message":"Reloaded data from 2025-05-10-dummy-moderator.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 23ms","label":null,"level":"info"}
+{"message":"Failed to reload 2025-04-25-dummy-workshop-ui.md: **posts → 2025-04-25-dummy-workshop-ui** data does not match collection schema.\n\n  **title**: **title**: Required\n  **date**: **date**: Required\n  **description**: **description**: Required\n","label":"glob-loader","level":"error"}
+{"message":"Reloaded data from 2025-04-25-dummy-workshop-ui.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 25ms","label":null,"level":"info"}
+{"message":"Failed to reload 2025-03-15-dummy-install-fest.md: **posts → 2025-03-15-dummy-install-fest** data does not match collection schema.\n\n  **title**: **title**: Required\n  **date**: **date**: Required\n  **description**: **description**: Required\n","label":"glob-loader","level":"error"}
+{"message":"Reloaded data from 2025-03-15-dummy-install-fest.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 23ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 18ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2025-06-20-dummy-telegram-500.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-05-10-dummy-moderator.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-04-25-dummy-workshop-ui.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-07-15-dummy-deepin-migration.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-04-25-dummy-workshop-ui.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-05-10-dummy-moderator.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-03-15-dummy-install-fest.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 113ms","label":null,"level":"info"}
+{"message":"[200] / 113ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 12ms","label":null,"level":"info"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[200] /news/2025-11-12-deepin-nvidia-optimus-hdmi 4ms","label":null,"level":"info"}
+{"message":"[200] / 6ms","label":null,"level":"info"}
+{"message":"Failed to reload 2026-07-31-deepin-skills-open-source.md: **posts → 2026-07-31-deepin-skills-open-source** data does not match collection schema.\n\n  **title**: **title**: Required\n  **date**: **date**: Required\n  **description**: **description**: Required\n","label":"glob-loader","level":"error"}
+{"message":"Reloaded data from 2026-07-31-deepin-skills-open-source.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 247ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 92ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-07-31-deepin-skills-open-source.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-07-31-deepin-skills-open-source.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-25-2-release.jpg 13ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 12ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 3ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-07-31-deepin-skills-open-source.md","label":"glob-loader","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 31ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 9ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-07-31-deepin-skills-open-source.md","label":"glob-loader","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 17ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2025-11-12-deepin-nvidia-optimus-hdmi.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-11-30-deepin-cross-device-collaboration.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 94ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 94ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-Skills.png 7ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dtk.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dde-shell.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-control-center.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dde-tray.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-nvidia-presentation-1.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/cooperation-screencast-2.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-25-2-release.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-Skills.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dtk.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dde-shell.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-control-center.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dde-tray.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-nvidia-presentation-1.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/cooperation-screencast-2.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-25-2-release.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-25-2-release.jpg 1ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 8ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-Skills.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dtk.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dde-shell.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-control-center.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dde-tray.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-25-2-release.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-Skills.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dtk.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dde-shell.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-control-center.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dde-tray.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-25-2-release.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-25-2-release.jpg 1ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-07-08-deepin-25-2-release.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-07-31-deepin-skills-open-source.md","label":"glob-loader","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 61ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 20ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[404] /images/deepin-Skills.png 6ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dtk.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dde-shell.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-control-center.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dde-tray.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-25-2-release.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-Skills.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dtk.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dde-shell.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-control-center.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-skills-dde-tray.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-25-2-release.jpg 1ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 7ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 13ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-07-08-deepin-25-2-release.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-11-12-deepin-nvidia-optimus-hdmi.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-11-30-deepin-cross-device-collaboration.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-07-31-deepin-skills-open-source.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 90ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 90ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 6ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 3ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-07-31-deepin-skills-open-source.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 762ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 33ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 693ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-07-31-deepin-skills-open-source.md","label":"glob-loader","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 19ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-07-31-deepin-skills-open-source.md","label":"glob-loader","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 21ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 8ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-07-31-deepin-skills-open-source.md","label":"glob-loader","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 27ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2025-11-30-deepin-cross-device-collaboration.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-11-12-deepin-nvidia-optimus-hdmi.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-07-08-deepin-25-2-release.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 86ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 86ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 8ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-07-08-deepin-25-2-release.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-11-12-deepin-nvidia-optimus-hdmi.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-11-30-deepin-cross-device-collaboration.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-07-08-deepin-25-2-release.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 121ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 121ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 12ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2025-11-30-deepin-cross-device-collaboration.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-11-12-deepin-nvidia-optimus-hdmi.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 89ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 89ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 7ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-07-08-deepin-25-2-release.md","label":"glob-loader","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 22ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 7ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 13ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 9ms","label":null,"level":"info"}
+{"message":"[200] /news/2025-11-12-deepin-nvidia-optimus-hdmi 3ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2025-11-12-deepin-nvidia-optimus-hdmi.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-07-08-deepin-25-2-release.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-11-30-deepin-cross-device-collaboration.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2025-11-12-deepin-nvidia-optimus-hdmi 105ms","label":null,"level":"info"}
+{"message":"[200] /news/2025-11-12-deepin-nvidia-optimus-hdmi 105ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 7ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 19ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 52ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 3ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 16ms","label":null,"level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 17ms","label":null,"level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 18ms","label":null,"level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 21ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 61ms","label":null,"level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 20ms","label":null,"level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 122ms","label":null,"level":"info"}
+{"message":"currentUrl is not defined\n  Stack trace:\n    at eval (D:\\GitHub\\deepin-Indonesia\\news-site\\src\\components\\Header.astro:85:14)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 18ms","label":null,"level":"info"}
+{"message":"currentUrl is not defined\n  Stack trace:\n    at eval (D:\\GitHub\\deepin-Indonesia\\news-site\\src\\components\\Header.astro:85:14)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 125ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 109ms","label":null,"level":"info"}
+{"message":"currentUrl is not defined\n  Stack trace:\n    at eval (D:\\GitHub\\deepin-Indonesia\\news-site\\src\\components\\Header.astro:170:14)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"currentUrl is not defined\n  Stack trace:\n    at eval (D:\\GitHub\\deepin-Indonesia\\news-site\\src\\components\\Header.astro:170:14)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 18ms","label":null,"level":"info"}
+{"message":"currentUrl is not defined\n  Stack trace:\n    at eval (D:\\GitHub\\deepin-Indonesia\\news-site\\src\\components\\Header.astro:170:14)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 19ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 3ms","label":null,"level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 20ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 63ms","label":null,"level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 15ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-31-deepin-skills-open-source 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-31-deepin-skills-open-source:3125:4826\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-31-deepin-skills-open-source:3125:4826\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-31-deepin-skills-open-source:3125:4998\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-31-deepin-skills-open-source:3125:4998\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-31-deepin-skills-open-source:3125:4998\n","label":"vite","level":"error"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 2ms","label":null,"level":"info"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4998\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4998\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4998\n","label":"vite","level":"error"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 92ms","label":null,"level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 95ms","label":null,"level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 101ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 606ms","label":null,"level":"info"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4826\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4826\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4998\n","label":"vite","level":"error"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 3ms","label":null,"level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 17ms","label":null,"level":"info"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4998\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4998\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4998\n","label":"vite","level":"error"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 2ms","label":null,"level":"info"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4826\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4826\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4826\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4826\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4998\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4998\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4998\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] ReferenceError: setLang is not defined\n > HTMLButtonElement.onclick ../../../news/2026-07-08-deepin-25-2-release:3125:4826\n","label":"vite","level":"error"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 106ms","label":null,"level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 18ms","label":null,"level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 120ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 115ms","label":null,"level":"info"}
+{"message":"src/components/Header.astro","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 15ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 4ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 2ms","label":null,"level":"info"}
+{"message":"Configuration file updated. Restarting...","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 15ms","label":null,"level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"Re-optimizing dependencies because vite config has changed","label":"vite","level":"info"}
+{"message":"server restarted.","label":"vite","level":"info"}
+{"message":"[optimizer] bundling dependencies...","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 77ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"An error happened during full reload\nFailed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\nError: Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\n    at loadAndTransform (file:///d:/GitHub/deepin-Indonesia/news-site/node_modules/vite/dist/node/chunks/node.js:20583:31)","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 47ms","label":null,"level":"info"}
+{"message":"Configuration file updated. Restarting...","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 8ms","label":null,"level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"Re-optimizing dependencies because vite config has changed","label":"vite","level":"info"}
+{"message":"server restarted.","label":"vite","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 75ms","label":null,"level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/a 30ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/a 82ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"An error happened during full reload\nFailed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\nError: Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\n    at loadAndTransform (file:///d:/GitHub/deepin-Indonesia/news-site/node_modules/vite/dist/node/chunks/node.js:20583:31)","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/a 204ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/a 63ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/a 185ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/a 65ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/a 57ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/a 53ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/a 58ms","label":null,"level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/a 2ms","label":null,"level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/aadsdsdasdas 3ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/aadsdsdasdas 60ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/aadsdsdasdas 56ms","label":null,"level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/aadsdsdasdas 2ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/aadsdsdasdas 81ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[404] /news/2026-07-08-deepin-25-2-release/aadsdsdasdas 57ms","label":null,"level":"info"}
+{"message":"A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/news/2026-07-s`.\n\nPossible dynamic routes being matched: src/pages/news/[slug].astro.","label":"router","level":"warn"}
+{"message":"[404] /news/2026-07-s 1ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/news/2026-07-s`.\n\nPossible dynamic routes being matched: src/pages/news/[slug].astro.","label":"router","level":"warn"}
+{"message":"[404] /news/2026-07-s 19ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[404] /dd 1ms","label":null,"level":"info"}

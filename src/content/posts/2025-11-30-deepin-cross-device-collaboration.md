@@ -1,15 +1,17 @@
 ---
-title: "Panduan Lengkap Cross-Device Collaboration deepin — Transfer File, Sharing Keyboard Mouse, dan Screen Mirroring Beda Perangkat"
+title: "Panduan Cross-Device Collaboration deepin: Transfer File, Sharing Keyboard, dan Mirror HP"
 date: 2025-11-30
 tags: [tips-deepin]
 author: deepin Indonesia
-description: "Pelajari cara menggunakan Cross-Device Collaboration di deepin untuk transfer file, sharing keyboard dan mouse, clipboard sharing, serta screen mirroring dari HP ke PC."
-image: /images/cooperation-screencast-2.jpg
+description: "Panduan lengkap Cross-Device Collaboration deepin: transfer file antar PC, sharing keyboard & mouse, clipboard, hingga mirror layar HP ke desktop. Semua via WiFi tanpa kabel."
+image: /images/deepin-cross-device-collaboration/cooperation-screencast-2.jpg
 ---
 
 Salah satu fitur yang bikin **deepin** dan **UOS** makin powerful adalah **Cross-Device Collaboration** — tools bawaan yang memungkinkan kamu menghubungkan beberapa perangkat sekaligus untuk transfer file, berbagi keyboard dan mouse, berbagi clipboard, bahkan mirroring layar HP ke PC dan mengontrolnya langsung dari desktop. Semua berjalan dalam satu jaringan lokal tanpa perlu kabel tambahan.
 
 Di artikel ini, kita akan bahas tuntas cara menggunakannya — dari koneksi antar komputer, transfer file, keyboard/mouse sharing, hingga mobile screen mirroring.
+
+> **Baca juga:** [deepin 25.2.0 Resmi Dirilis: Treeland Stabil, AI Image Search, dan Ratusan Bug Fix](/news/2026-07-08-deepin-25-2-release) — versi terbaru deepin dengan penyempurnaan fitur kolaborasi.
 
 ## Apa Itu Cross-Device Collaboration?
 
@@ -27,7 +29,7 @@ Untuk pengguna deepin/UOS, aplikasi ini bisa diunduh langsung dari **App Store**
 Saat aplikasi Cross-Device Collaboration dibuka, aplikasi akan otomatis memindai perangkat lain yang berada di **segmen jaringan yang sama**. Perangkat yang terdeteksi akan muncul di device list aplikasi.
 
 <figure>
-<img src="/images/cooperation-devices.png" alt="Device list Cross-Device Collaboration — menampilkan perangkat yang terdeteksi di jaringan lokal" loading="lazy">
+<img src="/images/deepin-cross-device-collaboration/cooperation-devices.png" alt="Device list Cross-Device Collaboration — menampilkan perangkat yang terdeteksi di jaringan lokal" loading="lazy">
 <figcaption>Sumber gambar: Manual deepin</figcaption>
 </figure>
 
@@ -57,7 +59,7 @@ Ini fitur yang sangat berguna untuk setup multi-device. Ketika perangkat A dan B
 - Mouse bisa bergerak **antar layar kedua perangkat** sesuai pengaturan screen alignment
 - Tidak perlu KVM switch fisik — semuanya lewat software
 
-![Menghubungkan perangkat mobile ke deepin via QR code](/images/cooperation-connect.jpg)
+![Menghubungkan perangkat mobile ke deepin via QR code](/images/deepin-cross-device-collaboration/cooperation-connect.jpg)
 
 ### 4. Clipboard Sharing
 
@@ -88,9 +90,9 @@ Setelah terhubung, di perangkat mobile:
 
 Setelah itu, layar HP akan tampil di perangkat deepin/UOS dan kamu bisa **mengontrol HP langsung dari desktop** dengan mengklik layar yang di-mirror.
 
-![Screen mirroring HP ke deepin — kontrol langsung dari desktop](/images/cooperation-screencast-1.jpg)
+![Screen mirroring HP ke deepin — kontrol langsung dari desktop](/images/deepin-cross-device-collaboration/cooperation-screencast-1.jpg)
 
-![Screen mirroring HP ke deepin — kontrol langsung dari desktop](/images/cooperation-screencast-2.jpg)
+![Screen mirroring HP ke deepin — kontrol langsung dari desktop](/images/deepin-cross-device-collaboration/cooperation-screencast-2.jpg)
 
 ## Pengaturan Cross-Device Collaboration
 
@@ -152,6 +154,8 @@ Setelah screen mirroring aktif, buka **Settings HP → Accessibility → Install
 ---
 
 Fitur Cross-Device Collaboration ini adalah salah satu alasan kenapa deepin dan UOS unggul dalam ekosistem produktivitas. Dengan satu aplikasi, kamu bisa menghubungkan PC, laptop, dan HP dalam satu workflow mulus — tanpa kabel, tanpa aplikasi pihak ketiga.
+
+> **Baca juga:** [NVIDIA Optimus di deepin: HDMI Tetap Jalan, Baterai Tetap Hemat](/news/2025-11-12-deepin-nvidia-optimus-hdmi) — bagaimana deepin menangani dual GPU lebih baik dari Ubuntu.
 
 
 

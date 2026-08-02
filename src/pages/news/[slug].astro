@@ -29,8 +29,8 @@ const relatedIds = new Set(relatedPosts.map(p => p.id));
 const nonRelated = otherPosts.filter(p => !relatedIds.has(p.id));
 const randomPosts = [...nonRelated].sort(() => Math.random() - 0.5).slice(0, 3);
 
-// 3. Latest: most recent from non-related
-const latestPosts = [...nonRelated]
+// 3. Latest: most recent from all other posts (not just non-related)
+const latestPosts = [...otherPosts]
   .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
   .slice(0, 3);
 

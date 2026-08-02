@@ -1,15 +1,17 @@
 ---
-title: "Presentasi deepin Buktikan NVIDIA Optimus On-Demand Jauh Lebih Efisien Dibanding Ubuntu — HDMI Tetap Jalan Tanpa Boros Baterai"
+title: "NVIDIA Optimus di deepin: HDMI Tetap Jalan, Baterai Tetap Hemat — Bandingkan dengan Ubuntu"
 date: 2025-11-12
 tags: [tips-deepin, komunitas-update]
 author: deepin Indonesia
-description: "Presentasi deepin mengungkap keunggulan deepin dibanding Ubuntu: NVIDIA Optimus mode On-Demand tetap bisa output HDMI tanpa mengorbankan baterai."
-image: /images/deepin-nvidia-presentation-1.jpg
+description: "deepin buktikan NVIDIA Optimus On-Demand lebih efisien dari Ubuntu. HDMI eksternal tetap berfungsi tanpa boros baterai. Simak perbandingan lengkapnya."
+image: /images/deepin-nvidia-optimus-hdmi/deepin-nvidia-presentation-1.jpg
 ---
 
 Halo pengguna deepin! Hari ini saya ingin berbagi pengalaman menarik dari presentasi deepin yang saya bawakan di depan teman-teman sekelas di program studi saya. Meskipun fokus utama presentasi adalah dasar-dasar **deepin Linux**, ada satu momen yang benar-benar mencuri perhatian — saat saya mendemonstrasikan bagaimana deepin menangani **NVIDIA Optimus** (teknologi dual graphics: integrated GPU dan dedicated GPU) dengan jauh lebih baik dibandingkan Ubuntu.
 
 Buat kamu yang belum familiar, NVIDIA Optimus adalah teknologi yang menggabungkan dua kartu grafis dalam satu laptop — integrated GPU untuk aktivitas ringan (hemat baterai) dan dedicated GPU untuk tugas berat seperti gaming atau rendering. Masalahnya, di banyak distro Linux termasuk Ubuntu, teknologi ini sering bikin pusing karena **port HDMI eksternal tidak berfungsi** kecuali dedicated GPU dipaksa menyala terus. Nah, deepin punya solusinya.
+
+> **Baca juga:** [Panduan Cross-Device Collaboration deepin: Transfer File, Sharing Keyboard, dan Mirror HP](/news/2025-11-30-deepin-cross-device-collaboration) — fitur produktivitas deepin yang bikin kerja makin efisien.
 
 ## Laptop yang Saya Gunakan Saat Presentasi
 
@@ -17,9 +19,9 @@ Laptop Lenovo yang saya pakai memiliki konfigurasi hardware yang sangat umum: **
 
 Nah, di sinilah deepin menunjukkan kelasnya.
 
-![Suasana presentasi deepin di kampus — mendemonstrasikan pengaturan NVIDIA Optimus](/images/deepin-nvidia-presentation-1.jpg)
+![Suasana presentasi deepin di kampus — mendemonstrasikan pengaturan NVIDIA Optimus](/images/deepin-nvidia-optimus-hdmi/deepin-nvidia-presentation-1.jpg)
 
-![Sesi presentasi deepin — memperlihatkan perbedaan handling GPU antara deepin dan Ubuntu](/images/deepin-nvidia-presentation-2.jpg)
+![Sesi presentasi deepin — memperlihatkan perbedaan handling GPU antara deepin dan Ubuntu](/images/deepin-nvidia-optimus-hdmi/deepin-nvidia-presentation-2.jpg)
 
 ## Perbandingan Langsung: Ubuntu vs deepin
 
@@ -68,6 +70,8 @@ Jelas banget kan bedanya?
 Sayangnya waktu presentasi terbatas — saya cuma kebagian beberapa menit untuk sesi ini. Tapi momen itu cukup membuktikan satu hal: **deepin bukan cuma soal UI cantik dan desktop environment yang enak dipandang**. Di balik tampilannya yang elegan, deepin punya optimasi teknis yang serius — bahkan untuk urusan yang sering dianggap "masalah klasik" seperti NVIDIA Optimus, deepin kasih solusi yang lebih baik dari distro sepopuler Ubuntu.
 
 Saya sangat puas dengan apa yang deepin tawarkan di area ini. Dan melihat antusiasme teman-teman sekelas yang langsung tertarik setelah presentasi, saya yakin deepin punya masa depan cerah di kalangan pengguna Linux Indonesia.
+
+> **Baca juga:** [deepin 25.2.0 Resmi Dirilis: Treeland Stabil, AI Image Search, dan Ratusan Bug Fix](/news/2026-07-08-deepin-25-2-release) — update terbaru deepin dengan kernel 6.18 dan perbaikan grafis.
 
 ## Pertanyaan yang Sering Muncul
 
