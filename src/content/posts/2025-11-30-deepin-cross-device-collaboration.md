@@ -1,7 +1,7 @@
 ---
 title: "Panduan Lengkap Cross-Device Collaboration deepin — Transfer File, Sharing Keyboard Mouse, dan Screen Mirroring Beda Perangkat"
 date: 2025-11-30
-tags: [Tips deepin]
+tags: [tips-deepin]
 author: deepin Indonesia
 description: "Pelajari cara menggunakan Cross-Device Collaboration di deepin untuk transfer file, sharing keyboard dan mouse, clipboard sharing, serta screen mirroring."
 image: /images/cooperation-screencast-2.jpg

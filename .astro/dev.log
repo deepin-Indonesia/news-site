@@ -1,10 +1,13 @@
-[31m[LegacyContentConfigError][39m Found legacy content config file in "src\content\config.ts". Please move this file to "src/content.config.ts" and ensure each collection has a loader defined.
-  [1mHint:[22m
-[33m    See [4mhttps://docs.astro.build/en/guides/upgrade-to/v6/#removed-legacy-content-collections[24m for more information on updating collections.[39m
-  [1mError reference:[22m
-    [36m[4mhttps://docs.astro.build/en/reference/errors/legacy-content-config-error/[24m[39m
-  [1mStack trace:[22m
-[2m    at getContentPaths (file:///C:/Users/zakyn/AppData/Local/npm-cache/_npx/aa98e6899c6baff3/node_modules/astro/dist/content/utils.js:525:15)
-    at createSettings (file:///C:/Users/zakyn/AppData/Local/npm-cache/_npx/aa98e6899c6baff3/node_modules/astro/dist/core/config/settings.js:147:20)
-    at async dev (file:///C:/Users/zakyn/AppData/Local/npm-cache/_npx/aa98e6899c6baff3/node_modules/astro/dist/core/dev/dev.js:27:19)
-    at async runCommand (file:///C:/Users/zakyn/AppData/Local/npm-cache/_npx/aa98e6899c6baff3/node_modules/astro/dist/cli/index.js:183:22)[22m
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"Generated 1ms","label":"types","level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"Syncing content","label":"content","level":"info"}
+{"message":"Synced content","label":"content","level":"info"}
+{"message":"Re-optimizing dependencies because vite config has changed","label":"vite","level":"info"}
+{"message":" astro  v7.1.6 ready in 2844 ms\n┃ Local    http://localhost:4327/\n┃ Network  use --host to expose","label":"SKIP_FORMAT","level":"info"}
+{"message":"watching for file changes...","label":null,"level":"info"}
+{"message":"[200] / 143ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
