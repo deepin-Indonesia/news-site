@@ -2,12 +2,11 @@
 {"message":"Generated 1ms","label":"types","level":"info"}
 {"message":"connected.","label":"vite","level":"info"}
 {"message":"Syncing content","label":"content","level":"info"}
+{"message":"Astro config changed","label":"content","level":"info"}
+{"message":"Clearing content store","label":"content","level":"info"}
 {"message":"Synced content","label":"content","level":"info"}
 {"message":"Re-optimizing dependencies because vite config has changed","label":"vite","level":"info"}
-{"message":" astro  v7.1.6 ready in 2844 ms\n┃ Local    http://localhost:4327/\n┃ Network  use --host to expose","label":"SKIP_FORMAT","level":"info"}
+{"message":" astro  v7.1.6 ready in 9409 ms\n┃ Local    http://localhost:4327/\n┃ Network  use --host to expose","label":"SKIP_FORMAT","level":"info"}
 {"message":"watching for file changes...","label":null,"level":"info"}
-{"message":"[200] / 143ms","label":null,"level":"info"}
-{"message":"[200] / 4ms","label":null,"level":"info"}
-{"message":"[200] / 3ms","label":null,"level":"info"}
-{"message":"[200] / 2ms","label":null,"level":"info"}
-{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 85ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 3ms","label":null,"level":"info"}
