@@ -84,7 +84,7 @@ const langKeys = ['id', 'en', 'zh-CN'];
           <i class="fas fa-chevron-down text-[10px] ml-0.5 opacity-50 group-hover:rotate-180 transition-transform" />
         </button>
         <div class="absolute top-full right-0 mt-1 bg-white rounded-xl border border-gray-100 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[180px] py-2">
-          <a href={currentUrl} data-lang="id" class="flex items-center gap-2 px-4 py-2 text-sm text-deepin-600 font-semibold bg-deepin-50 hover:bg-deepin-100 transition-colors">
+          <a href={currentUrl} class="flex items-center gap-2 px-4 py-2 text-sm text-deepin-600 font-semibold bg-deepin-50 hover:bg-deepin-100 transition-colors">
             {langLabel['id']}
           </a>
           {['en', 'zh-CN'].map((code) => (
@@ -169,7 +169,7 @@ const langKeys = ['id', 'en', 'zh-CN'];
           <i class="fas fa-chevron-down text-xs opacity-40 group-open:rotate-180 transition-transform" />
         </summary>
         <div class="ml-4 mt-1 space-y-1">
-          <a href={currentUrl} data-lang="id" class="block py-2.5 px-4 rounded-lg text-sm text-deepin-600 font-semibold bg-deepin-50">
+          <a href={currentUrl} class="block py-2.5 px-4 rounded-lg text-sm text-deepin-600 font-semibold bg-deepin-50">
             {langLabel['id']}
           </a>
           {[...['en', 'zh-CN'], ...Object.keys(langMore)].map((code) => (
@@ -184,55 +184,7 @@ const langKeys = ['id', 'en', 'zh-CN'];
 
   <!-- Backdrop -->
   <div class="hidden lg:hidden fixed inset-0 top-[72px] bg-black/30 z-30" id="menu-backdrop"></div>
-
-  <!-- Google Translate (hidden) -->
-  <div id="google_translate_element" style="display:none"></div>
 </header>
-
-<!-- Google Translate: event delegation on [data-lang] links -->
-<script>
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'id',
-      includedLanguages: 'id,en,zh-CN,ja,ko,ar,ru,pt,fr,de,es',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-      autoDisplay: false,
-    }, 'google_translate_element');
-  }
-
-  // Intercept clicks on translate links
-  document.addEventListener('click', function(e) {
-    var link = e.target.closest('[data-lang]');
-    if (!link) return;
-    var lang = link.dataset.lang;
-    if (!lang) return;
-
-    var combo = document.querySelector('.goog-te-combo');
-    if (combo) {
-      e.preventDefault();
-      if (lang === 'id') {
-        for (var i = 0; i < combo.options.length; i++) {
-          if (combo.options[i].value === 'id') {
-            combo.selectedIndex = i;
-            combo.dispatchEvent(new Event('change'));
-            return;
-          }
-        }
-      } else {
-        combo.value = lang;
-        combo.dispatchEvent(new Event('change'));
-      }
-    }
-    // If combo not ready, let <a href> redirect naturally
-  });
-
-  // Load Google Translate
-  if (!document.querySelector('script[src*="translate_a/element.js"]')) {
-    const s = document.createElement('script');
-    s.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    document.head.appendChild(s);
-  }
-</script>
 
 <script>
   const toggle = document.getElementById('menu-toggle')!;
