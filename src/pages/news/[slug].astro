@@ -11,9 +11,11 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 
 const allPosts = await getCollection('posts');
+const otherPosts = allPosts.filter((p) => p.id !== post.id);
 const currentTags = post.data.tags || [];
-const related = allPosts
-  .filter((p) => p.id !== post.id)
+
+// 1. Related: posts with matching tags
+const relatedPosts = otherPosts
   .map((p) => {
     const matchCount = (p.data.tags || []).filter((t: string) => currentTags.includes(t)).length;
     return { ...p, matchCount };
@@ -22,9 +24,13 @@ const related = allPosts
   .sort((a, b) => b.matchCount - a.matchCount)
   .slice(0, 3);
 
-// If no tag-matched related, fallback to recent
-const finalRelated = related.length > 0 ? related : allPosts
-  .filter((p) => p.id !== post.id)
+// 2. Random: random picks from non-related posts
+const relatedIds = new Set(relatedPosts.map(p => p.id));
+const nonRelated = otherPosts.filter(p => !relatedIds.has(p.id));
+const randomPosts = [...nonRelated].sort(() => Math.random() - 0.5).slice(0, 3);
+
+// 3. Latest: most recent from non-related
+const latestPosts = [...nonRelated]
   .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
   .slice(0, 3);
 
@@ -118,16 +124,19 @@ const tagLabels: Record<string, string> = {
     </div>
   </article>
 
-  {/* Related Articles */}
-  {finalRelated.length > 0 && (
-    <section class="py-16 bg-gray-50 mt-8">
-      <div class="container-main max-w-3xl">
-        <h3 class="text-lg font-bold text-gray-900 mb-6 flex items-center gap-2">
-          <i class="fas fa-link text-deepin-500 text-sm" />
-          Artikel Terkait
+  {/* Post Sections */}
+  {[
+    { title: 'Artikel Terkait', icon: 'fa-link', posts: relatedPosts },
+    { title: 'Artikel Random', icon: 'fa-shuffle', posts: randomPosts },
+    { title: 'Artikel Terbaru', icon: 'fa-clock', posts: latestPosts },
+  ].map((section) => section.posts.length > 0 && (
+    <section class="py-12 bg-gray-50">
+      <div class="container-main max-w-5xl">
+        <h3 class="text-xl font-extrabold text-gray-900 mb-8 text-center">
+          {section.title}
         </h3>
-        <div class="grid sm:grid-cols-2 gap-5">
-          {finalRelated.map((r) => (
+        <div class="grid sm:grid-cols-3 gap-5">
+          {section.posts.map((r) => (
             <a href={`/news/${r.id}`} class="card overflow-hidden group hover:-translate-y-1 transition-all duration-300">
               <div class="h-40 bg-gradient-to-br from-deepin-400 to-deepin-600 flex items-center justify-center overflow-hidden">
                 {r.data.image ? (
@@ -140,7 +149,7 @@ const tagLabels: Record<string, string> = {
                 <h4 class="font-semibold text-gray-900 group-hover:text-deepin-600 transition-colors text-sm line-clamp-2 mb-2">{r.data.title}</h4>
                 <div class="flex items-center gap-3 text-xs text-gray-400">
                   <span><i class="far fa-calendar mr-1" /> {new Date(r.data.date).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
-                  {r.data.tags?.slice(0, 1).map((t: string) => (
+                  {r.data.tags?.map((t: string) => (
                     <span class="px-2 py-0.5 rounded-full bg-deepin-50 text-deepin-600 text-[10px] font-medium">{tagLabels[t] || t}</span>
                   ))}
                 </div>
@@ -150,5 +159,5 @@ const tagLabels: Record<string, string> = {
         </div>
       </div>
     </section>
-  )}
+  ))}
 </Layout>
