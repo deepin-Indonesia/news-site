@@ -48,28 +48,31 @@ const tagLabels: Record<string, string> = {
 
 <Layout title={post.data.title} description={post.data.description} image={post.data.image}>
   <article class="bg-white">
-    <!-- Header Bar -->
-    <div class="bg-gradient-to-r from-deepin-600 to-deepin-700 h-2" />
+    {/* Soft gradient header */}
+    <div class="bg-gradient-to-b from-deepin-50 to-white pt-10 pb-4">
+      <div class="container-main max-w-3xl">
+        {/* Back link */}
+        <a href="/" class="inline-flex items-center gap-1.5 text-sm text-deepin-600 hover:text-deepin-800 font-medium mb-4 transition-colors">
+          <i class="fas fa-arrow-left text-xs" /> Kembali ke News
+        </a>
 
-    <div class="container-main max-w-3xl pt-10 relative z-10">
-      {/* Back link */}
-      <a href="/" class="inline-flex items-center gap-2 text-sm text-gray-600 bg-gray-200 hover:bg-deepin-50 hover:text-deepin-700 rounded-full px-4 py-2 mb-6 transition-all">
-        <i class="fas fa-arrow-left text-xs" /> Kembali ke News
-      </a>
+        {/* Tags */}
+        <div class="flex gap-2 mb-4">
+          {post.data.tags?.map((tag: string) => (
+            <a href={`/?tag=${tag}`} class="px-3 py-1.5 rounded-full bg-deepin-100 text-deepin-700 text-xs font-semibold hover:bg-deepin-200 transition-colors">
+              {tagLabels[tag] || tag}
+            </a>
+          ))}
+        </div>
 
-      {/* Tags */}
-      <div class="flex gap-2 mb-5">
-        {post.data.tags?.map((tag: string) => (
-          <a href={`/?tag=${tag}`} class="px-3 py-1.5 rounded-full bg-deepin-50 text-deepin-700 text-xs font-semibold border border-deepin-100 hover:bg-deepin-100 transition-colors">
-            {tagLabels[tag] || tag}
-          </a>
-        ))}
+        {/* Title */}
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-tight">{post.data.title}</h1>
       </div>
+    </div>
 
+    <div class="container-main max-w-3xl pb-10">
       {/* Card Container */}
-      <div class="bg-white rounded-2xl shadow-lg p-6 sm:p-10 -mx-4 sm:mx-0">
-        <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-5 leading-tight">{post.data.title}</h1>
-
+      <div class="bg-white -mt-0">
         <div class="flex flex-wrap items-center gap-4 text-sm text-gray-400 mb-8 pb-8 border-b border-gray-100">
           <span class="inline-flex items-center gap-1.5"><i class="far fa-calendar text-xs" /> {new Date(post.data.date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
           <span class="inline-flex items-center gap-1.5"><i class="far fa-user text-xs" /> {post.data.author}</span>
@@ -86,6 +89,7 @@ const tagLabels: Record<string, string> = {
           prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-xl prose-pre:shadow-lg prose-pre:text-sm
           prose-code:bg-gray-100 prose-code:text-deepin-700 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-sm prose-code:font-normal
           prose-code:before:content-none prose-code:after:content-none
+          [&_pre_code]:bg-transparent [&_pre_code]:text-gray-100 [&_pre_code]:px-0 [&_pre_code]:py-0 [&_pre_code]:rounded-none
           prose-table:border-collapse prose-th:bg-gray-50 prose-th:px-4 prose-th:py-2.5 prose-th:text-left prose-th:text-xs prose-th:font-semibold prose-th:text-gray-500 prose-th:uppercase
           prose-td:px-4 prose-td:py-2.5 prose-td:text-sm prose-td:text-gray-600 prose-td:border-t prose-td:border-gray-100
           prose-li:text-gray-600 prose-li:text-[15px] prose-li:leading-relaxed
@@ -103,7 +107,6 @@ const tagLabels: Record<string, string> = {
         ">
           <Content />
         </div>
-      </div>
 
       {/* Share + CTA */}
       <div class="mt-8 pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
@@ -126,9 +129,8 @@ const tagLabels: Record<string, string> = {
           <i class="fab fa-telegram-plane" /> Gabung Komunitas
         </a>
       </div>
+      </div>
     </div>
-    <!-- Spacer before sections -->
-    <div class="h-8" />
   </article>
 
   {/* Post Sections */}

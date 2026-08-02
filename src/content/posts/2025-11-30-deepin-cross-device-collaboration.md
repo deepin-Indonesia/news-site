@@ -18,7 +18,7 @@ Cross-Device Collaboration (sebelumnya dikenal sebagai **Cross-Device Assistant*
 - **Komputer ke komputer**: Transfer file, sharing keyboard/mouse, sharing clipboard antara deepin/UOS dan Windows
 - **Mobile ke komputer**: Screen mirroring layar HP ke deepin/UOS, plus kontrol langsung HP dari PC
 
-Untuk pengguna deepin/UOS, aplikasi ini bisa diunduh langsung dari **App Store** dengan nama "Cross-Device Collaboration". Untuk Windows dan perangkat mobile (saat ini mendukung model Android tertentu), kunjungi **[chinauos.com/resource/assistant](https://www.chinauos.com/resource/assistant)** untuk mengunduh aplikasinya.
+Untuk pengguna deepin/UOS, aplikasi ini bisa diunduh langsung dari **App Store** dengan nama "Cross-Device Collaboration". Untuk Windows dan perangkat mobile (mendukung semua Android), kunjungi **[chinauos.com/resource/assistant](https://www.chinauos.com/resource/assistant)** untuk mengunduh aplikasinya.
 
 ## Kolaborasi Antar Komputer
 
@@ -138,7 +138,7 @@ Ya, data di-serialisasi menggunakan **protobuf** dan dienkripsi dengan **SSL/TLS
 <details>
 <summary><strong>Kenapa HP Android saya tidak bisa terkoneksi ke komputer?</strong></summary>
 
-Saat ini Cross-Device Collaboration untuk mobile hanya mendukung **model Android tertentu**. Daftar model yang didukung akan bertambah di update mendatang. Pastikan juga HP dan komputer berada di jaringan Wi-Fi yang sama.
+Cross-Device Collaboration kini sudah mendukung **semua perangkat Android**. Pastikan HP dan komputer berada di jaringan Wi-Fi yang sama, dan aplikasi sudah terinstal di kedua perangkat.
 
 </details>
 
@@ -153,10 +153,6 @@ Setelah screen mirroring aktif, buka **Settings HP → Accessibility → Install
 
 Fitur Cross-Device Collaboration ini adalah salah satu alasan kenapa deepin dan UOS unggul dalam ekosistem produktivitas. Dengan satu aplikasi, kamu bisa menghubungkan PC, laptop, dan HP dalam satu workflow mulus — tanpa kabel, tanpa aplikasi pihak ketiga.
 
----
 
-*Artikel ini disusun berdasarkan Manual deepin dan dokumentasi resmi UOS, dengan penyesuaian dan tambahan penjelasan untuk konteks pengguna di Indonesia.*
-
----
 
 Sudah coba fitur Cross-Device Collaboration? Punya tips atau pengalaman menarik? Yuk diskusi di [grup Telegram deepin Indonesia](https://t.me/Linux_deepin_ID)! 🔗✨
