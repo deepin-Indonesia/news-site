@@ -38,6 +38,12 @@ const canonicalUrl = Astro.url.href;
     <meta name="author" content="deepin Indonesia" />
     <link rel="canonical" href={canonicalUrl} />
 
+    <!-- hreflang: translated versions via Google Translate -->
+    <link rel="alternate" hreflang="id" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href={`https://news.deepin.id${Astro.url.pathname}?hl=en`} />
+    <link rel="alternate" hreflang="zh-CN" href={`https://news.deepin.id${Astro.url.pathname}?hl=zh-CN`} />
+    <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
+
     <!-- Open Graph -->
     <meta property="og:type" content={type === 'article' ? 'article' : 'website'} />
     <meta property="og:title" content={pageTitle} />
