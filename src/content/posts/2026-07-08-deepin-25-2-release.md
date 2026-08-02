@@ -9,9 +9,9 @@ image: /images/deepin-25-2-release/deepin-25-2-release.jpg
 
 Komunitas deepin resmi merilis **deepin 25.2.0**! Update ini membawa peningkatan signifikan pada stabilitas dan usability **Treeland** (Wayland compositor deepin), kemampuan pencarian file dan gambar yang lebih cerdas, penyempurnaan interaksi **DDE (Deepin Desktop Environment)**, serta pembaruan kernel dan patch keamanan. Total ada ratusan perbaikan bug yang membuat deepin 25 semakin solid untuk penggunaan sehari-hari.
 
-> **Baca juga:** [Panduan Cross-Device Collaboration deepin: Transfer File, Sharing Keyboard, dan Mirror HP](/news/2025-11-30-deepin-cross-device-collaboration) — fitur produktivitas unggulan deepin yang wajib kamu coba.
+> **Baca juga:** [Panduan Cross-Device Collaboration deepin: Transfer File, Sharing Keyboard, dan Mirror HP](/2025-11-30-deepin-cross-device-collaboration) — fitur produktivitas unggulan deepin yang wajib kamu coba.
 
-> **Baca juga:** [NVIDIA Optimus di deepin: HDMI Tetap Jalan, Baterai Tetap Hemat](/news/2025-11-12-deepin-nvidia-optimus-hdmi) — bagaimana deepin menangani dual GPU lebih baik dari Ubuntu.
+> **Baca juga:** [NVIDIA Optimus di deepin: HDMI Tetap Jalan, Baterai Tetap Hemat](/2025-11-12-deepin-nvidia-optimus-hdmi) — bagaimana deepin menangani dual GPU lebih baik dari Ubuntu.
 
 ![deepin 25.2.0 — Treeland, AI image search, dan DDE enhancements](/images/deepin-25-2-release/deepin-25-2-release.jpg)
 

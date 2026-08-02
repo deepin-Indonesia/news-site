@@ -11,7 +11,7 @@ Halo pengguna deepin! Hari ini saya ingin berbagi pengalaman menarik dari presen
 
 Buat kamu yang belum familiar, NVIDIA Optimus adalah teknologi yang menggabungkan dua kartu grafis dalam satu laptop — integrated GPU untuk aktivitas ringan (hemat baterai) dan dedicated GPU untuk tugas berat seperti gaming atau rendering. Masalahnya, di banyak distro Linux termasuk Ubuntu, teknologi ini sering bikin pusing karena **port HDMI eksternal tidak berfungsi** kecuali dedicated GPU dipaksa menyala terus. Nah, deepin punya solusinya.
 
-> **Baca juga:** [Panduan Cross-Device Collaboration deepin: Transfer File, Sharing Keyboard, dan Mirror HP](/news/2025-11-30-deepin-cross-device-collaboration) — fitur produktivitas deepin yang bikin kerja makin efisien.
+> **Baca juga:** [Panduan Cross-Device Collaboration deepin: Transfer File, Sharing Keyboard, dan Mirror HP](/2025-11-30-deepin-cross-device-collaboration) — fitur produktivitas deepin yang bikin kerja makin efisien.
 
 ## Laptop yang Saya Gunakan Saat Presentasi
 
@@ -71,7 +71,7 @@ Sayangnya waktu presentasi terbatas — saya cuma kebagian beberapa menit untuk 
 
 Saya sangat puas dengan apa yang deepin tawarkan di area ini. Dan melihat antusiasme teman-teman sekelas yang langsung tertarik setelah presentasi, saya yakin deepin punya masa depan cerah di kalangan pengguna Linux Indonesia.
 
-> **Baca juga:** [deepin 25.2.0 Resmi Dirilis: Treeland Stabil, AI Image Search, dan Ratusan Bug Fix](/news/2026-07-08-deepin-25-2-release) — update terbaru deepin dengan kernel 6.18 dan perbaikan grafis.
+> **Baca juga:** [deepin 25.2.0 Resmi Dirilis: Treeland Stabil, AI Image Search, dan Ratusan Bug Fix](/2026-07-08-deepin-25-2-release) — update terbaru deepin dengan kernel 6.18 dan perbaikan grafis.
 
 ## Pertanyaan yang Sering Muncul
 

@@ -28,7 +28,7 @@ Setiap skill dalam deepin-skills memiliki struktur direktori standar:
 
 Singkatnya, deepin-skills adalah **panduan skenario** terlengkap untuk pengembangan native deepin — setiap kendala teknis yang kamu temui saat coding, solusinya sudah tersedia di sini.
 
-> **Baca juga:** [Panduan Lengkap Cross-Device Collaboration deepin — Transfer File, Sharing Keyboard Mouse, dan Screen Mirroring](/news/2025-11-30-deepin-cross-device-collaboration)
+> **Baca juga:** [Panduan Lengkap Cross-Device Collaboration deepin — Transfer File, Sharing Keyboard Mouse, dan Screen Mirroring](/2025-11-30-deepin-cross-device-collaboration)
 
 ---
 
@@ -168,7 +168,7 @@ Proyek deepin-skills sudah **sepenuhnya open source** dan siap digunakan oleh de
 
 Baik kamu ingin berkontribusi ke ekosistem deepin, membangun aplikasi Linux pertama kamu, atau meningkatkan skill development desktop — **deepin-skills** adalah teman coding yang kamu butuhkan. Mari bersama membangun ekosistem open source Indonesia yang lebih kuat! 🚀
 
-> **Baca juga:** [deepin 25.2.0 Resmi Dirilis — Treeland Makin Stabil, Pencarian Gambar Pakai AI, dan Ratusan Perbaikan Bug](/news/2026-07-08-deepin-25-2-release)
+> **Baca juga:** [deepin 25.2.0 Resmi Dirilis — Treeland Makin Stabil, Pencarian Gambar Pakai AI, dan Ratusan Perbaikan Bug](/2026-07-08-deepin-25-2-release)
 
 ---
 

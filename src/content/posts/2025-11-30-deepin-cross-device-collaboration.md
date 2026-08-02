@@ -11,7 +11,7 @@ Salah satu fitur yang bikin **deepin** dan **UOS** makin powerful adalah **Cross
 
 Di artikel ini, kita akan bahas tuntas cara menggunakannya — dari koneksi antar komputer, transfer file, keyboard/mouse sharing, hingga mobile screen mirroring.
 
-> **Baca juga:** [deepin 25.2.0 Resmi Dirilis: Treeland Stabil, AI Image Search, dan Ratusan Bug Fix](/news/2026-07-08-deepin-25-2-release) — versi terbaru deepin dengan penyempurnaan fitur kolaborasi.
+> **Baca juga:** [deepin 25.2.0 Resmi Dirilis: Treeland Stabil, AI Image Search, dan Ratusan Bug Fix](/2026-07-08-deepin-25-2-release) — versi terbaru deepin dengan penyempurnaan fitur kolaborasi.
 
 ## Apa Itu Cross-Device Collaboration?
 
@@ -155,7 +155,7 @@ Setelah screen mirroring aktif, buka **Settings HP → Accessibility → Install
 
 Fitur Cross-Device Collaboration ini adalah salah satu alasan kenapa deepin dan UOS unggul dalam ekosistem produktivitas. Dengan satu aplikasi, kamu bisa menghubungkan PC, laptop, dan HP dalam satu workflow mulus — tanpa kabel, tanpa aplikasi pihak ketiga.
 
-> **Baca juga:** [NVIDIA Optimus di deepin: HDMI Tetap Jalan, Baterai Tetap Hemat](/news/2025-11-12-deepin-nvidia-optimus-hdmi) — bagaimana deepin menangani dual GPU lebih baik dari Ubuntu.
+> **Baca juga:** [NVIDIA Optimus di deepin: HDMI Tetap Jalan, Baterai Tetap Hemat](/2025-11-12-deepin-nvidia-optimus-hdmi) — bagaimana deepin menangani dual GPU lebih baik dari Ubuntu.
 
 
 
