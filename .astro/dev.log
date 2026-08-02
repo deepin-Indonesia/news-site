@@ -10,3 +10,67 @@
 {"message":"watching for file changes...","label":null,"level":"info"}
 {"message":"[200] /news/2026-07-08-deepin-25-2-release 85ms","label":null,"level":"info"}
 {"message":"[200] /news/2026-07-08-deepin-25-2-release 3ms","label":null,"level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at handleCompileResultErrors (d:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\compile\\compile.js:57:8)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] HTML comments are not allowed in modules\n  Stack trace:\n    at D:/GitHub/deepin-Indonesia/news-site/src/pages/index.astro\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 68ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 62ms","label":null,"level":"info"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 56ms","label":null,"level":"info"}

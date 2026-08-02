@@ -3,6 +3,8 @@ import Layout from '@/components/Layout.astro';
 import { SITE } from '@/data/site';
 import { getCollection } from 'astro:content';
 
+export const prerender = false;
+
 const tags = [
   { slug: 'all', label: 'Semua Artikel', icon: '📰' },
   { slug: 'release-notes', label: 'Release Notes', icon: '📋' },
