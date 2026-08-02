@@ -58,3 +58,12 @@
 {"message":"program reload","label":"vite","level":"info"}
 {"message":"/src/styles/global.css","label":"watch","level":"info"}
 {"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 333ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 14ms","label":null,"level":"info"}
+{"message":"[200] /news/2025-11-30-deepin-cross-device-collaboration 2ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"src/pages/index.astro","label":"watch","level":"info"}
+{"message":"[200] / 24ms","label":null,"level":"info"}
