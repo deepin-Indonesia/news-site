@@ -1,8 +1,10 @@
 {"message":"connected.","label":"vite","level":"info"}
-{"message":"Generated 10ms","label":"types","level":"info"}
+{"message":"Generated 6ms","label":"types","level":"info"}
 {"message":"connected.","label":"vite","level":"info"}
 {"message":"Syncing content","label":"content","level":"info"}
 {"message":"Synced content","label":"content","level":"info"}
-{"message":" astro  v7.1.6 ready in 6692 ms\n┃ Local    http://localhost:4327/\n┃ Network  use --host to expose","label":"SKIP_FORMAT","level":"info"}
+{"message":"Re-optimizing dependencies because vite config has changed","label":"vite","level":"info"}
+{"message":" astro  v7.1.6 ready in 6062 ms\n┃ Local    http://localhost:4327/\n┃ Network  use --host to expose","label":"SKIP_FORMAT","level":"info"}
 {"message":"watching for file changes...","label":null,"level":"info"}
-{"message":"[200] /news/2026-07-08-deepin-25-2-release 581ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 113ms","label":null,"level":"info"}
+{"message":"[200] /news/2026-07-08-deepin-25-2-release 4ms","label":null,"level":"info"}
