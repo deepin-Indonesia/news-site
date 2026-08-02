@@ -74,7 +74,7 @@ const rest = filtered.slice(1, 10);
           {featured && (
             <a href={`/news/${featured.slug}`} data-tags={JSON.stringify(featured?.tags || [])} class="card block mb-8 overflow-hidden group hover:-translate-y-1 transition-all duration-300">
               <div class="grid md:grid-cols-5">
-                <div class="md:col-span-2 min-h-[200px] overflow-hidden bg-gray-200">
+                <div class="md:col-span-2 min-h-[280px] overflow-hidden bg-gray-200">
                   {featured.image ? (
                     <img src={featured.image} alt={featured.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="eager" />
                   ) : (
@@ -104,7 +104,7 @@ const rest = filtered.slice(1, 10);
           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {rest.map((post: any) => (
               <a href={`/news/${post.slug}`} data-tags={JSON.stringify(post.tags || [])} class="card overflow-hidden group hover:-translate-y-1 transition-all duration-300">
-                <div class="h-40 overflow-hidden bg-gray-200">
+                <div class="h-52 overflow-hidden bg-gray-200">
                   {post.image ? (
                     <img src={post.image} alt={post.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                   ) : (
