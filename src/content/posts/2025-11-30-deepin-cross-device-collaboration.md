@@ -18,7 +18,7 @@ Cross-Device Collaboration (sebelumnya dikenal sebagai **Cross-Device Assistant*
 - **Komputer ke komputer**: Transfer file, sharing keyboard/mouse, sharing clipboard antara deepin/UOS dan Windows
 - **Mobile ke komputer**: Screen mirroring layar HP ke deepin/UOS, plus kontrol langsung HP dari PC
 
-Untuk pengguna deepin/UOS, aplikasi ini bisa diunduh langsung dari **App Store** dengan nama "Cross-Device Collaboration". Untuk Windows dan perangkat mobile (saat ini mendukung model Android tertentu), kunjungi **[chinauos.com/resource/assistant](https://www.chinauos.com/resource/assistant){:target="_blank" rel="noopener"}** untuk mengunduh aplikasinya.
+Untuk pengguna deepin/UOS, aplikasi ini bisa diunduh langsung dari **App Store** dengan nama "Cross-Device Collaboration". Untuk Windows dan perangkat mobile (saat ini mendukung model Android tertentu), kunjungi **[chinauos.com/resource/assistant](https://www.chinauos.com/resource/assistant)** untuk mengunduh aplikasinya.
 
 ## Kolaborasi Antar Komputer
 
@@ -159,4 +159,4 @@ Fitur Cross-Device Collaboration ini adalah salah satu alasan kenapa deepin dan 
 
 ---
 
-Sudah coba fitur Cross-Device Collaboration? Punya tips atau pengalaman menarik? Yuk diskusi di [grup Telegram deepin Indonesia](https://t.me/Linux_deepin_ID){:target="_blank" rel="noopener"}! 🔗✨
+Sudah coba fitur Cross-Device Collaboration? Punya tips atau pengalaman menarik? Yuk diskusi di [grup Telegram deepin Indonesia](https://t.me/Linux_deepin_ID)! 🔗✨

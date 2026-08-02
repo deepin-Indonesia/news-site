@@ -40,16 +40,16 @@ const tagLabels: Record<string, string> = {
 
     <div class="container-main max-w-3xl {post.data.image ? '-mt-16' : 'pt-12'} relative z-10">
       {/* Back link */}
-      <a href="/" class="inline-flex items-center gap-2 text-sm font-medium text-white/80 hover:text-white bg-white/10 backdrop-blur rounded-full px-4 py-2 mb-8 transition-all {!post.data.image ? '!text-gray-400 !bg-gray-100 hover:!bg-gray-200 hover:!text-gray-600' : ''}">
+      <a href="/" class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-deepin-600 bg-gray-100 hover:bg-gray-200 rounded-full px-4 py-2 mb-6 transition-all">
         <i class="fas fa-arrow-left text-xs" /> Kembali ke News
       </a>
 
       {/* Tags */}
       <div class="flex gap-2 mb-5">
         {post.data.tags?.map((tag: string) => (
-          <a href={`/?tag=${tag}`} class="px-3 py-1.5 rounded-full bg-white/20 backdrop-blur text-white text-xs font-medium hover:bg-white/30 transition-all {!post.data.image ? '!bg-deepin-50 !text-deepin-700 hover:!bg-deepin-100' : ''}">
+          <span class="px-3 py-1.5 rounded-full bg-deepin-50 text-deepin-700 text-xs font-semibold border border-deepin-100">
             {tagLabels[tag] || tag}
-          </a>
+          </span>
         ))}
       </div>
 
@@ -83,7 +83,7 @@ const tagLabels: Record<string, string> = {
           [&_summary]:cursor-pointer [&_summary]:font-semibold [&_summary]:text-gray-800 [&_summary]:bg-gray-50 [&_summary]:px-5 [&_summary]:py-3 [&_summary]:text-sm
           [&_details[open]_summary]:border-b [&_details[open]_summary]:border-gray-200
           [&_details>p]:px-5 [&_details>p]:pb-3 [&_details>p]:pt-2
-          [&_iframe]:rounded-xl [&_iframe]:shadow-lg [&_iframe]:my-6 [&_iframe]:w-full
+          [&_iframe]:rounded-xl [&_iframe]:shadow-lg [&_iframe]:my-6 [&_iframe]:w-full [&_iframe]:aspect-video [&_iframe]:h-auto
           [&_table]:w-full [&_table]:my-5 [&_table]:rounded-xl [&_table]:overflow-hidden [&_table]:border [&_table]:border-gray-200
           [&_p:has(+_p_em)]:mb-1
           [&_p_+_p_>em]:block [&_p_+_p_>em]:text-center [&_p_+_p_>em]:text-sm [&_p_+_p_>em]:text-gray-400 [&_p_+_p_>em]:mt-0 [&_p_+_p_>em]:-mt-4 [&_p_+_p_>em]:mb-6

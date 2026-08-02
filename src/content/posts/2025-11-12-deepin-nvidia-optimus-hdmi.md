@@ -101,4 +101,4 @@ Sangat cocok. deepin menawarkan keseimbangan sempurna antara **efisiensi daya sa
 
 ---
 
-Punya pengalaman serupa dengan NVIDIA Optimus di deepin? Atau penasaran dan mau tanya-tanya lebih lanjut? Yuk diskusi di [grup Telegram deepin Indonesia](https://t.me/Linux_deepin_ID){:target="_blank" rel="noopener"}! 🐧✨
+Punya pengalaman serupa dengan NVIDIA Optimus di deepin? Atau penasaran dan mau tanya-tanya lebih lanjut? Yuk diskusi di [grup Telegram deepin Indonesia](https://t.me/Linux_deepin_ID)! 🐧✨
