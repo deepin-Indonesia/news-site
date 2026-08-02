@@ -8,3 +8,20 @@
 {"message":"watching for file changes...","label":null,"level":"info"}
 {"message":"[200] /news/2026-07-08-deepin-25-2-release 113ms","label":null,"level":"info"}
 {"message":"[200] /news/2026-07-08-deepin-25-2-release 4ms","label":null,"level":"info"}
+{"message":"[200] / 27ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[200] /news/2025-11-30-deepin-cross-device-collaboration 2ms","label":null,"level":"info"}
+{"message":"[404] /news/{{ '/images/cooperation-devices.png' | relative_url }} 27ms","label":null,"level":"info"}
+{"message":"[404] /news/{{ '/images/cooperation-devices.png' | relative_url }} 2ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2025-11-12-deepin-nvidia-optimus-hdmi.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2025-11-30-deepin-cross-device-collaboration.md","label":"glob-loader","level":"info"}
+{"message":"Reloaded data from 2026-07-08-deepin-25-2-release.md","label":"glob-loader","level":"info"}
+{"message":"An error happened during full reload\nFailed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\nError: Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\n    at loadAndTransform (file:///d:/GitHub/deepin-Indonesia/news-site/node_modules/vite/dist/node/chunks/node.js:20583:31)","label":"vite","level":"error"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 978ms","label":null,"level":"info"}
+{"message":"[200] / 94ms","label":null,"level":"info"}
+{"message":"[200] / 94ms","label":null,"level":"info"}

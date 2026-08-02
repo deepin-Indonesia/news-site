@@ -27,7 +27,7 @@ Untuk pengguna deepin/UOS, aplikasi ini bisa diunduh langsung dari **App Store**
 Saat aplikasi Cross-Device Collaboration dibuka, aplikasi akan otomatis memindai perangkat lain yang berada di **segmen jaringan yang sama**. Perangkat yang terdeteksi akan muncul di device list aplikasi.
 
 <figure>
-<img src="{{ '/images/cooperation-devices.png' | relative_url }}" alt="Device list Cross-Device Collaboration — menampilkan perangkat yang terdeteksi di jaringan lokal" loading="lazy">
+<img src="/images/cooperation-devices.png" alt="Device list Cross-Device Collaboration — menampilkan perangkat yang terdeteksi di jaringan lokal" loading="lazy">
 <figcaption>Sumber gambar: Manual deepin</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ Ini fitur yang sangat berguna untuk setup multi-device. Ketika perangkat A dan B
 - Mouse bisa bergerak **antar layar kedua perangkat** sesuai pengaturan screen alignment
 - Tidak perlu KVM switch fisik — semuanya lewat software
 
-![Menghubungkan perangkat mobile ke deepin via QR code]({{ '/images/cooperation-connect.jpg' | relative_url }})
+![Menghubungkan perangkat mobile ke deepin via QR code](/images/cooperation-connect.jpg)
 
 ### 4. Clipboard Sharing
 
@@ -88,9 +88,9 @@ Setelah terhubung, di perangkat mobile:
 
 Setelah itu, layar HP akan tampil di perangkat deepin/UOS dan kamu bisa **mengontrol HP langsung dari desktop** dengan mengklik layar yang di-mirror.
 
-![Screen mirroring HP ke deepin — kontrol langsung dari desktop]({{ '/images/cooperation-screencast-1.jpg' | relative_url }})
+![Screen mirroring HP ke deepin — kontrol langsung dari desktop](/images/cooperation-screencast-1.jpg)
 
-![Screen mirroring HP ke deepin — kontrol langsung dari desktop]({{ '/images/cooperation-screencast-2.jpg' | relative_url }})
+![Screen mirroring HP ke deepin — kontrol langsung dari desktop](/images/cooperation-screencast-2.jpg)
 
 ## Pengaturan Cross-Device Collaboration
 

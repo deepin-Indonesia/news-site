@@ -9,15 +9,15 @@ image: /images/deepin-25-2-release.jpg
 
 Komunitas deepin resmi merilis **deepin 25.2.0**! Update ini membawa peningkatan signifikan pada stabilitas dan usability **Treeland** (Wayland compositor deepin), kemampuan pencarian file dan gambar yang lebih cerdas, penyempurnaan interaksi **DDE (Deepin Desktop Environment)**, serta pembaruan kernel dan patch keamanan. Total ada ratusan perbaikan bug yang membuat deepin 25 semakin solid untuk penggunaan sehari-hari.
 
-![deepin 25.2.0 — Treeland, AI image search, dan DDE enhancements]({{ '/images/deepin-25-2-release.jpg' | relative_url }})
+![deepin 25.2.0 — Treeland, AI image search, dan DDE enhancements](/images/deepin-25-2-release.jpg)
 
 ## Sorotan deepin 25.2.0
 
-<div style="max-width:720px;margin:1.5rem auto">
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px">
-<iframe src="https://www.youtube-nocookie.com/embed/dzOo36Qpae8?rel=0" style="position:absolute;inset:0;width:100%;height:100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+<div>
+<div>
+<iframe src="https://www.youtube-nocookie.com/embed/dzOo36Qpae8?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
 </div>
-<p style="text-align:center;font-size:.85rem;color:var(--color-gray-400);margin-top:.5rem">Video rilis deepin 25.2.0 — lihat fitur baru dalam aksi</p>
+<p>Video rilis deepin 25.2.0 — lihat fitur baru dalam aksi</p>
 </div>
 
 ### Treeland Desktop Environment — Upgrade Besar

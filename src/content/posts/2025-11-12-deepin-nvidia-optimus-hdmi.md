@@ -17,9 +17,9 @@ Laptop Lenovo yang saya pakai memiliki konfigurasi hardware yang sangat umum: **
 
 Nah, di sinilah deepin menunjukkan kelasnya.
 
-![Suasana presentasi deepin di kampus — mendemonstrasikan pengaturan NVIDIA Optimus]({{ '/images/deepin-nvidia-presentation-1.jpg' | relative_url }})
+![Suasana presentasi deepin di kampus — mendemonstrasikan pengaturan NVIDIA Optimus](/images/deepin-nvidia-presentation-1.jpg)
 
-![Sesi presentasi deepin — memperlihatkan perbedaan handling GPU antara deepin dan Ubuntu]({{ '/images/deepin-nvidia-presentation-2.jpg' | relative_url }})
+![Sesi presentasi deepin — memperlihatkan perbedaan handling GPU antara deepin dan Ubuntu](/images/deepin-nvidia-presentation-2.jpg)
 
 ## Perbandingan Langsung: Ubuntu vs deepin
 
