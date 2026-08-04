@@ -1,103 +1,126 @@
-# News Site
+# deepin Indonesia — News Site
 
-Portal artikel resmi deepin Indonesia — [news.deepin.id](https://news.deepin.id/)
+Portal artikel & berita resmi komunitas deepin Indonesia: **[news.deepin.id](https://news.deepin.id)**
 
-Dibangun dengan [Jekyll](https://jekyllrb.com/), menggunakan tema bersama dari [deepin-theme-site](https://github.com/deepin-Indonesia/deepin-theme-site) sebagai Git submodule.
+Fitur: blog dengan tag filter, TOC sidebar ala Medium dengan Intersection Observer scroll spy, artikel terkait/random/terbaru, share buttons, dan SEO metadata lengkap.
 
-## Teknologi
+---
+
+## Tech Stack
 
 | | |
 |---|---|
-| **Static site** | Jekyll 4.x |
-| **Tema** | `_theme/` → submodule [deepin-theme-site](https://github.com/deepin-Indonesia/deepin-theme-site) |
-| **Hosting** | GitHub Pages (`main`) + Netlify (`preview`) |
-| **CSS** | `main.scss` (copy tema + news-specific di append) |
-| **JS** | `main.js` (tema + scroll progress circle) |
-| **Icons** | Font Awesome 6 (CDN) |
+| **Framework** | [Astro 7](https://astro.build) |
+| **Styling** | [Tailwind CSS v4](https://tailwindcss.com) + `@tailwindcss/typography` |
+| **Content** | Astro Content Collections (glob loader) |
+| **Markdown** | `@astrojs/markdown-remark` + `rehype-external-links` |
+| **Icons** | [Font Awesome 6](https://fontawesome.com) (CDN) |
+| **Sitemap** | `@astrojs/sitemap` |
+| **Deploy** | [Cloudflare Pages](https://pages.cloudflare.com) |
+| **Analytics** | Google Analytics 4 (`G-2J4TLB9W7H`) |
+| **Runtime** | Node.js 24 |
 
-## Branch & Deployment
-
-| Branch | Trigger | Deploy ke | URL |
-|---|---|---|---|
-| `preview` | Push | Netlify | `*.netlify.app` |
-| `main` | Push | GitHub Pages | [news.deepin.id](https://news.deepin.id/) |
-
-> ⚠️ **Jangan push langsung ke `main`.** Semua development di branch `preview`. Production via Pull Request `preview` → `main`.
-
-## Local Development
-
-```bash
-git clone --recurse-submodules https://github.com/deepin-Indonesia/news-site.git
-cd news-site
-bundle install
-bundle exec jekyll serve
-```
-
-Buka `http://localhost:4000`
-
-## Struktur
+## Project Structure
 
 ```
 news-site/
-├── _theme/                    # Git submodule → deepin-theme-site
-│   ├── _includes/             # header.html, footer.html
-│   ├── _layouts/              # default.html (override dari tema)
-│   ├── _data/                 # navigation.yml
-│   ├── assets/
-│   │   ├── css/main.scss      # Stylesheet tema
-│   │   ├── js/main.js         # Navigasi, scroll, mobile menu
-│   │   └── images/            # Logo, favicon
-│   └── _config.yml
-│
-├── _layouts/
-│   ├── default.html           # Override tema — custom OG meta + JSON-LD
-│   ├── post.html              # Layout artikel (back btn, share, related)
-│   └── tag.html               # Layout halaman tag filter
-│
-├── _posts/                    # Artikel Markdown
-│   └── YYYY-MM-DD-slug.md
-│
-├── tag/                       # Halaman tag (Release Notes, Tips, dll)
-│   ├── release-notes.md
-│   ├── tips-deepin.md
-│   ├── komunitas-update.md
-│   └── event.md
-│
-├── index.md                   # Halaman utama — hero, tag filter, news grid
-├── _config.yml                # Konfigurasi site (url: news.deepin.id)
-├── 404.html
-├── assets/
-│   ├── css/main.scss          # Tema (copy) + news-specific styles
-│   ├── js/main.js             # Mobile nav + scroll-to-top progress circle
-│   └── images/                # deepin-id.png, gambar artikel
-├── netlify.toml               # Netlify build config (DEPLOY_PRIME_URL)
-├── .github/workflows/
-│   └── pages.yml              # CI/CD GitHub Pages (main branch only)
-├── Gemfile
-├── .gitmodules
-└── .gitignore
+├── src/
+│   ├── components/
+│   │   ├── Layout.astro      # Base layout (HTML head, GA4, SEO meta, JSON-LD)
+│   │   ├── Header.astro      # Sticky header + nav + mobile menu
+│   │   └── Footer.astro      # Footer dengan social links
+│   ├── content/
+│   │   └── posts/             # Artikel Markdown (*.md)
+│   │       └── YYYY-MM-DD-slug.md
+│   ├── data/
+│   │   └── site.ts           # Site config, MAIN_NAV, ABOUT_NAV, social
+│   ├── pages/
+│   │   ├── index.astro       # Homepage — hero, tag filter, post grid
+│   │   ├── [slug].astro      # Post detail — article, TOC sidebar, related posts
+│   │   └── 404.astro         # Custom 404
+│   └── styles/
+│       └── global.css        # Tailwind import + @theme colors
+├── public/
+│   ├── images/               # Logo, favicon, artikel images
+│   └── robots.txt            # Crawler rules + Sitemap directive
+├── astro.config.mjs          # site: https://news.deepin.id, rehype-external-links
+├── package.json
+└── tsconfig.json
 ```
 
-## Panduan Menulis Artikel
+## Getting Started
 
-### 1. Buat file di `_posts/`
+```bash
+git clone https://github.com/deepin-Indonesia/news-site.git
+cd news-site
+npm install
+npm run dev        # → http://localhost:4324
+npm run build      # Production build → dist/
+```
 
-Gunakan format nama: `YYYY-MM-DD-slug-judul.md`
+## Deployment
+
+Push ke branch `main` → Cloudflare Pages auto-deploy.
+
+| Setting | Value |
+|---|---|
+| Build command | `npm run build` |
+| Output directory | `dist` |
+| Branch | `main` |
+
+## Contributing
+
+1. Branch dari `preview`: `git checkout -b feat/deskripsi preview`
+2. Commit & push ke branch kamu
+3. Buat PR ke `preview`
+4. Setelah review, merge `preview` → `main`
+
+> ⚠️ Jangan push langsung ke `main`.
+
+## Menulis Artikel
+
+### 1. Buat file di `src/content/posts/`
+
+Format nama: `YYYY-MM-DD-slug-judul.md`
 
 ### 2. Frontmatter
 
 ```yaml
 ---
-layout: post
 title: "Judul Artikel — Subjudul SEO"
-date: YYYY-MM-DD HH:MM:SS +0700
-categories: tips
-tags: [Tips deepin]
+date: YYYY-MM-DD
+tags: [tips-deepin]       # Hanya: release-notes, tips-deepin, komunitas-update, event
 author: deepin Indonesia
-description: >-
-  Meta description 150-160 karakter untuk SEO.
-image: /assets/images/nama-gambar.jpg
+description: "Meta description 150-160 karakter untuk SEO."
+image: /images/nama-folder/cover.jpg
 ---
+```
+
+### 3. Heading untuk TOC
+
+Gunakan `## Heading` markdown atau `<h2 id="slug">Heading</h2>` — otomatis muncul di TOC sidebar.
+
+### 4. Gambar
+
+Simpan di `public/images/nama-folder/`, referensikan dengan path absolut:
+```markdown
+![Alt text deskriptif](/images/nama-folder/gambar.png)
+```
+
+### 5. Link eksternal
+
+Otomatis `target="_blank"` via `rehype-external-links` — tidak perlu atur manual.
+
+## Tag Filter
+
+Tag yang tersedia (didefinisikan di `src/pages/index.astro`):
+
+| Tag | Slug |
+|---|---|
+| 📋 Release Notes | `release-notes` |
+| 💡 Tips deepin | `tips-deepin` |
+| 🤝 Komunitas Update | `komunitas-update` |
+| 📅 Event | `event` |
 ```
 
 ### 3. Gambar
