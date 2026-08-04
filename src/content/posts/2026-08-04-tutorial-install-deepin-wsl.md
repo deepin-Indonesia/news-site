@@ -82,8 +82,7 @@ winver
 
 Atau via Settings → System → About → cek **Version** dan **OS Build**. Pastikan minimal Build **19041**.
 
-> **🖼️ SCREENSHOT 1 — Tampilan `winver`**
-> Silakan screenshot jendela "About Windows" yang muncul setelah menjalankan `winver`, menampilkan versi Windows dan OS Build.
+![Jendela About Windows — tampilan winver yang menampilkan versi Windows dan OS Build](/images/deepin-wsl-tutorial/01-winver-about-windows.png)
 
 ### Cara Cek Virtualization Sudah Aktif
 
@@ -100,8 +99,7 @@ Jika tertulis **Disabled**, kamu perlu enable **Intel VT-x** atau **AMD-V** di B
 4. Set ke **Enabled**
 5. Save & Exit
 
-> **🖼️ SCREENSHOT 2 — Task Manager Performance Tab**
-> Silakan screenshot Task Manager tab Performance yang menampilkan status Virtualization: Enabled.
+![Task Manager tab Performance — status Virtualization: Enabled](/images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png)
 
 ---
 
@@ -113,8 +111,7 @@ Kita akan mengaktifkan WSL menggunakan **PowerShell dengan hak Administrator**. 
 
 Klik kanan tombol **Start** (logo Windows) → pilih **Terminal (Admin)** atau **Windows PowerShell (Admin)**.
 
-> **🖼️ SCREENSHOT 3 — Start Menu → PowerShell Admin**
-> Silakan screenshot menu klik kanan Start yang menampilkan opsi "Windows PowerShell (Admin)" atau "Terminal (Admin)".
+![Start Menu klik kanan — opsi Windows PowerShell (Admin) atau Terminal (Admin)](/images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png)
 
 ### 1.2 Install WSL
 
@@ -161,8 +158,7 @@ DXCore version: 10.x.x
 Windows version: 10.x.x
 ```
 
-> **🖼️ SCREENSHOT 4 — Output `wsl --version`**
-> Silakan screenshot PowerShell setelah menjalankan `wsl --version`, menampilkan semua versi komponen WSL.
+![PowerShell — output perintah wsl --version yang menampilkan komponen WSL](/images/deepin-wsl-tutorial/04-wsl-version-output.png)
 
 ---
 
@@ -180,8 +176,7 @@ Atau langsung ke halaman download resmi deepin:
 
 👉 **[https://www.deepin.org/en/download/](https://www.deepin.org/en/download/)**
 
-> **🖼️ SCREENSHOT 5 — Halaman Download deepin**
-> Silakan screenshot halaman download deepin (os.deepin.id) yang menampilkan opsi arsitektur — khususnya tab WSL.
+![Halaman download deepin di os.deepin.id — tab WSL dengan pilihan arsitektur](/images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png)
 
 ### 2.2 Pilih Arsitektur yang Tepat
 
@@ -201,8 +196,7 @@ deepin 25 WSL tersedia dalam dua arsitektur. **Pilih sesuai prosesor komputermu*
 
 Klik tombol download yang sesuai. File berformat `.wsl` dengan ukuran sekitar **2-4 GB** (tergantung versi).
 
-> **🖼️ SCREENSHOT 6 — Proses Download file .wsl**
-> Silakan screenshot browser saat mendownload file `.wsl` deepin 25, menampilkan progress download dan nama file.
+![Browser — proses download file .wsl deepin 25 dengan progress bar](/images/deepin-wsl-tutorial/06-proses-download-file-wsl.png)
 
 > **💡 Tips:** Gunakan **download manager** seperti IDM atau Free Download Manager untuk mempercepat download dan mencegah korupsi file jika koneksi terputus.
 
@@ -216,8 +210,7 @@ Ini bagian paling mudah! deepin 25 menggunakan format `.wsl` yang support **inst
 
 Buka folder tempat kamu menyimpan file `.wsl`, lalu **double-click** file tersebut.
 
-> **🖼️ SCREENSHOT 7 — Double-click file .wsl**
-> Silakan screenshot Windows Explorer yang menampilkan file `.wsl` deepin 25 dengan kursor siap double-click.
+![Windows Explorer — file .wsl deepin 25 siap di-double-click](/images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png)
 
 ### 3.2 Installation Wizard
 
@@ -227,8 +220,7 @@ Akan muncul jendela instalasi. Ikuti langkah-langkah wizard:
 2. Pilih **Install** untuk memulai proses
 3. Tunggu proses ekstraksi dan instalasi selesai (biasanya 2-5 menit)
 
-> **🖼️ SCREENSHOT 8 — WSL Installation Wizard**
-> Silakan screenshot jendela wizard instalasi WSL deepin 25 yang sedang berlangsung.
+![WSL Installation Wizard — proses instalasi deepin 25 sedang berlangsung](/images/deepin-wsl-tutorial/08-wsl-installation-wizard.png)
 
 ### 3.3 Instalasi Selesai
 
@@ -245,8 +237,7 @@ Kamu bisa menjalankan deepin 25 WSL dengan beberapa cara:
 **Cara A — Dari Start Menu:**
 Klik Start → cari "deepin25" → klik ikonnya.
 
-> **🖼️ SCREENSHOT 9 — Start Menu deepin25**
-> Silakan screenshot Start Menu Windows yang menampilkan aplikasi "deepin25" di daftar.
+![Start Menu Windows — aplikasi deepin25 muncul di daftar](/images/deepin-wsl-tutorial/09-start-menu-deepin25.png)
 
 **Cara B — Dari PowerShell / CMD:**
 ```powershell
@@ -256,8 +247,7 @@ wsl -d deepin25
 **Cara C — Dari Windows Terminal:**
 Buka Windows Terminal → klik dropdown (⌄) di tab bar → pilih **deepin25**.
 
-> **🖼️ SCREENSHOT 10 — Windows Terminal dengan deepin25**
-> Silakan screenshot Windows Terminal yang menampilkan dropdown pilihan distro, dengan deepin25 sebagai salah satu opsi.
+![Windows Terminal — dropdown pilihan distro dengan deepin25](/images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png)
 
 ### 4.2 Buat Username & Password
 
@@ -303,8 +293,7 @@ uname -m
 sudo apt update && sudo apt upgrade -y
 ```
 
-> **🖼️ SCREENSHOT 11 — Terminal deepin 25 WSL Pertama Kali**
-> Silakan screenshot terminal deepin 25 WSL setelah login pertama, menampilkan output `cat /etc/deepin-version` dan `uname -r`.
+![Terminal deepin 25 WSL — login pertama dengan output cat /etc/deepin-version dan uname -r](/images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png)
 
 > **🎉 Selamat!** deepin 25 kini berjalan di Windows-mu! Lanjutkan membaca untuk tips manajemen dan integrasi.
 
@@ -356,8 +345,7 @@ Lalu dari PowerShell:
 wsl -t deepin25
 ```
 
-> **🖼️ SCREENSHOT 12 — Output `wsl -l -v`**
-> Silakan screenshot PowerShell yang menampilkan output `wsl -l -v` dengan deepin25 terdaftar.
+![PowerShell — output wsl -l -v menampilkan deepin25 dalam daftar distro](/images/deepin-wsl-tutorial/12-wsl-list-output.png)
 
 ### Uninstall deepin 25
 
@@ -419,8 +407,7 @@ Atau langsung:
 \\wsl$\deepin25\home\NAMAUSER\
 ```
 
-> **🖼️ SCREENSHOT 13 — File Explorer Akses deepin WSL**
-> Silakan screenshot File Explorer yang membuka `\\wsl$\deepin25\home\` menampilkan folder home user deepin.
+![File Explorer — akses \\wsl$\deepin25\home\ menampilkan folder home deepin](/images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png)
 
 > **⚠️ Penting:** JANGAN mengedit file Linux dari Windows (`/mnt/c` → Linux = OK, `\\wsl$\deepin25` → edit dari Windows = **HINDARI**). Edit file WSL dari Windows bisa menyebabkan korupsi permission. Selalu edit file WSL dari dalam WSL atau gunakan VS Code Remote WSL.
 
@@ -439,8 +426,7 @@ code .
 
 Ini akan membuka VS Code Windows yang terhubung langsung ke filesystem deepin 25 — dengan performa native!
 
-> **🖼️ SCREENSHOT 14 — VS Code Remote WSL**
-> Silakan screenshot VS Code yang menampilkan indicator "WSL: deepin25" di pojok kiri bawah.
+![VS Code — indicator Remote WSL: deepin25 di pojok kiri bawah](/images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png)
 
 ### 4. Jalankan Aplikasi GUI Linux
 
@@ -460,8 +446,7 @@ sudo apt install firefox-esr -y
 firefox &
 ```
 
-> **🖼️ SCREENSHOT 15 — Aplikasi GUI Linux di Windows**
-> Silakan screenshot desktop Windows yang menampilkan aplikasi Linux (misal Nautilus atau Gedit) berjalan berdampingan dengan aplikasi Windows — bukti integrasi WSLg.
+![Desktop Windows — aplikasi GUI Linux (Nautilus/Gedit) berjalan via WSLg](/images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png)
 
 ### 5. Akses Localhost
 
