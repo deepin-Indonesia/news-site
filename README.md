@@ -70,12 +70,24 @@ Push ke branch `main` → Cloudflare Pages auto-deploy.
 
 ## Contributing
 
-1. Branch dari `preview`: `git checkout -b feat/deskripsi preview`
-2. Commit & push ke branch kamu
+Semua orang bisa berkontribusi — tidak perlu jadi anggota organisasi.
+
+### Untuk kontributor luar (via Fork)
+
+1. **Fork** repo ini (klik tombol Fork di GitHub)
+2. Clone fork kamu: `git clone https://github.com/USERNAME/news-site.git`
+3. `git checkout preview && git checkout -b feat/deskripsi`
+4. Edit, commit, push ke fork kamu
+5. Buka **Pull Request** ke `deepin-Indonesia/news-site` → target: `preview`
+
+### Untuk anggota organisasi (push langsung)
+
+1. `git checkout preview && git checkout -b feat/deskripsi`
+2. Commit & push
 3. Buat PR ke `preview`
 4. Setelah review, merge `preview` → `main`
 
-> ⚠️ Jangan push langsung ke `main`.
+> ⚠️ Jangan push langsung ke `main` — harus lewat PR.
 
 ## Menulis Artikel
 
