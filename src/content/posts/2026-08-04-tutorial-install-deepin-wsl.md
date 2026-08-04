@@ -170,7 +170,7 @@ Sekarang kita akan mendownload file installer deepin 25 WSL.
 
 Buka browser dan kunjungi halaman download deepin Indonesia:
 
-👉 **[https://os.deepin.id](https://os.deepin.id)**
+👉 <a href="https://os.deepin.id" target="_blank" rel="noopener"><strong>https://os.deepin.id</strong></a>
 
 ![Halaman download deepin di os.deepin.id — tab WSL dengan pilihan arsitektur](/images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png)
 
