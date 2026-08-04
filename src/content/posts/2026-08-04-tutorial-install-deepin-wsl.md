@@ -68,7 +68,7 @@ Sebelum memulai, pastikan sistem Windows kamu memenuhi syarat berikut:
 | **Arsitektur** | x64 (AMD64) atau ARM64 | x64 (AMD64) |
 | **RAM** | 4 GB | 8 GB+ |
 | **Storage** | 5 GB free space | 15 GB+ untuk development |
-| **Virtualization** | Harus di-enable di BIOS/UEFI | — |
+| **Virtualization** | Harus di-enable di BIOS/UEFI | Intel VT-x / AMD-V enabled |
 
 ### Cara Cek Versi Windows
 
