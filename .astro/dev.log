@@ -32,3 +32,35 @@
 {"message":"program reload","label":"vite","level":"info"}
 {"message":"/src/styles/global.css","label":"watch","level":"info"}
 {"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 11ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 1ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-08-04-tutorial-install-deepin-wsl.md","label":"glob-loader","level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 9ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 8ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 7ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 6ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 3ms","label":null,"level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 74ms","label":null,"level":"info"}
+{"message":"[200] /2025-07-15-dummy-deepin-migration 9ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 8ms","label":null,"level":"info"}
+{"message":"[200] / 25ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 7ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 7ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 9ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 2ms","label":null,"level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 20ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-08-04-tutorial-install-deepin-wsl.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 80ms","label":null,"level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 12ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 558ms","label":null,"level":"info"}

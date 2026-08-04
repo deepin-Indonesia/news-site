@@ -26,7 +26,7 @@ Apakah kamu ingin mencoba **deepin 25** — sistem operasi Linux modern dengan a
 
 ---
 
-## Apa Itu WSL dan Kenapa Kamu Harus Pakai? {#apa-itu-wsl}
+<h2 id="apa-itu-wsl">Apa Itu WSL dan Kenapa Kamu Harus Pakai?</h2>
 
 **WSL (Windows Subsystem for Linux)** adalah fitur bawaan Microsoft yang memungkinkan kamu menjalankan lingkungan GNU/Linux secara native di dalam Windows — **tanpa virtual machine, tanpa dual-boot, tanpa overhead performa**.
 
@@ -56,7 +56,7 @@ Apakah kamu ingin mencoba **deepin 25** — sistem operasi Linux modern dengan a
 
 ---
 
-## Persiapan Sebelum Install {#persiapan}
+<h2 id="persiapan">Persiapan Sebelum Install</h2>
 
 ### Syarat Sistem Minimum
 
@@ -103,7 +103,7 @@ Jika tertulis **Disabled**, kamu perlu enable **Intel VT-x** atau **AMD-V** di B
 
 ---
 
-## Langkah 1 — Enable WSL di Windows {#langkah-1}
+<h2 id="langkah-1">Langkah 1 — Enable WSL di Windows</h2>
 
 Kita akan mengaktifkan WSL menggunakan **PowerShell dengan hak Administrator**. Ikuti langkah-langkah berikut:
 
@@ -164,7 +164,7 @@ Windows version: 10.x.x
 
 ---
 
-## Langkah 2 — Download deepin 25 WSL {#langkah-2}
+<h2 id="langkah-2">Langkah 2 — Download deepin 25 WSL</h2>
 
 Sekarang kita akan mendownload file installer deepin 25 WSL.
 
@@ -206,7 +206,7 @@ Klik tombol download yang sesuai. File berformat `.wsl` dengan ukuran sekitar **
 
 ---
 
-## Langkah 3 — Install deepin 25 WSL {#langkah-3}
+<h2 id="langkah-3">Langkah 3 — Install deepin 25 WSL</h2>
 
 Ini bagian paling mudah! deepin 25 menggunakan format `.wsl` yang support **instalasi offline penuh**.
 
@@ -234,7 +234,7 @@ Setelah selesai, kamu akan melihat notifikasi bahwa deepin 25 telah terinstall. 
 
 ---
 
-## Langkah 4 — Setup Awal & Buat User {#langkah-4}
+<h2 id="langkah-4">Langkah 4 — Setup Awal &amp; Buat User</h2>
 
 ### 4.1 Launch deepin 25 WSL
 
@@ -308,7 +308,7 @@ sudo apt update && sudo apt upgrade -y
 
 ---
 
-## Manajemen WSL Sehari-hari {#manajemen-wsl}
+<h2 id="manajemen-wsl">Manajemen WSL Sehari-hari</h2>
 
 Berikut adalah perintah-perintah penting yang akan sering kamu gunakan:
 
@@ -384,7 +384,7 @@ Ini sangat berguna untuk:
 
 ---
 
-## Integrasi deepin WSL dengan Windows {#integrasi-windows}
+<h2 id="integrasi-windows">Integrasi deepin WSL dengan Windows</h2>
 
 Salah satu keunggulan WSL adalah integrasi mendalam dengan Windows. Berikut tips-tips penting:
 
@@ -474,7 +474,7 @@ Lalu buka browser Windows → `http://localhost:8080` — langsung bisa!
 
 ---
 
-## Troubleshooting & FAQ {#troubleshooting}
+<h2 id="troubleshooting">Troubleshooting &amp; FAQ</h2>
 
 ### ❌ "WSL is not recognized"
 
@@ -548,7 +548,7 @@ wsl --install -d "D:\Downloads\deepin-wsl-25.2.0-amd64.wsl"
 
 ---
 
-## Penutup {#penutup}
+<h2 id="penutup">Penutup</h2>
 
 Selamat! Kamu sekarang sudah bisa menjalankan **deepin 25 di Windows via WSL** — dengan semua keunggulan toolchain Linux tanpa meninggalkan kenyamanan Windows.
 
