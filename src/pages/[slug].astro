@@ -78,10 +78,7 @@ const tagLabels: Record<string, string> = {
       </div>
     </div>
 
-    <div class="container-main max-w-7xl pb-10">
-      <div class="flex gap-10">
-      {/* Main Content */}
-      <div class="flex-1 min-w-0 max-w-3xl">
+    <div class="container-main max-w-3xl pb-10 relative">
       {/* Card Container */}
       <div class="bg-white -mt-0">
         <div class="flex flex-wrap items-center gap-4 text-sm text-gray-400 mb-8 pb-8 border-b border-gray-100">
@@ -142,11 +139,10 @@ const tagLabels: Record<string, string> = {
         </a>
       </div>
       </div>
-      </div>{/* close main content */}
 
-      {/* TOC Sidebar — ala Medium */}
+      {/* TOC Sidebar — floating di kanan, ala Medium */}
       {toc.length > 0 && (
-        <aside class="hidden xl:block w-56 shrink-0" id="toc-sidebar">
+        <aside class="hidden xl:block absolute top-0 right-0 translate-x-[calc(100%+2rem)] w-52" id="toc-sidebar">
           <div class="sticky top-[88px]">
             <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Daftar Isi</p>
             <nav class="border-l-2 border-gray-200" id="toc-nav">
@@ -163,8 +159,6 @@ const tagLabels: Record<string, string> = {
           </div>
         </aside>
       )}
-
-      </div>{/* close flex */}
     </div>
   </article>
 
