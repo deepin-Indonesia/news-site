@@ -11,19 +11,6 @@ Apakah kamu ingin mencoba **deepin 25** — sistem operasi Linux modern dengan a
 
 > **Artikel ini adalah panduan paling lengkap** untuk install deepin 25 WSL di Windows. Kami akan memandumu dari nol — mulai dari pengertian WSL, persiapan sistem, langkah instalasi, manajemen subsystem, troubleshooting umum, sampai tips integrasi dengan Windows. Ikuti sampai akhir agar tidak ada yang terlewat.
 
-## Daftar Isi
-
-1. [Apa Itu WSL dan Kenapa Kamu Harus Pakai?](#apa-itu-wsl)
-2. [Persiapan Sebelum Install](#persiapan)
-3. [Langkah 1 — Enable WSL di Windows](#langkah-1)
-4. [Langkah 2 — Download deepin 25 WSL](#langkah-2)
-5. [Langkah 3 — Install deepin 25 WSL](#langkah-3)
-6. [Langkah 4 — Menjalankan & Verifikasi deepin 25 WSL](#langkah-4)
-7. [Manajemen WSL Sehari-hari](#manajemen-wsl)
-8. [Integrasi deepin WSL dengan Windows](#integrasi-windows)
-9. [Troubleshooting & FAQ](#troubleshooting)
-10. [Penutup](#penutup)
-
 ---
 
 <h2 id="apa-itu-wsl">Apa Itu WSL dan Kenapa Kamu Harus Pakai?</h2>
