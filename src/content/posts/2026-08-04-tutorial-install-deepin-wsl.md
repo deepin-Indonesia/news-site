@@ -1,7 +1,7 @@
 ---
 title: "Tutorial Lengkap Install deepin 25 di Windows via WSL — Mudah, Offline, Tanpa Ribet!"
 date: 2026-08-04
-tags: [tutorial, wsl, deepin-25, tips-deepin, pemula]
+tags: [tutorial, tips-deepin]
 author: deepin Indonesia
 description: "Panduan langkah demi langkah install deepin 25 di Windows 10/11 menggunakan WSL (Windows Subsystem for Linux). Mulai dari enable WSL, download, install offline, manajemen subsystem, sampai integrasi dengan Windows. Cocok untuk developer, pelajar, dan pengguna awam yang ingin mencoba deepin tanpa dual-boot atau virtual machine."
 image: /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg
