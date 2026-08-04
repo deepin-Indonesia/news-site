@@ -192,13 +192,10 @@ deepin 25 WSL tersedia dalam dua arsitektur:
 
 ### 2.3 Download File .wsl
 
-Klik tombol download — file berformat `.wsl` dengan ukuran sekitar **2-4 GB**. Setelah download selesai, lanjut ke langkah instalasi.
+Klik tombol download — file berformat `.wsl`. Setelah download selesai, lanjut ke langkah instalasi.
 
-> **💡 Tips:** Gunakan **download manager** seperti IDM atau Free Download Manager untuk mempercepat download dan mencegah korupsi file jika koneksi terputus.
+> **💡 Tips:** Gunakan **download manager** seperti IDM atau Motrix untuk mempercepat download dan mencegah korupsi file jika koneksi terputus.
 
-> **💡 Tips:** Gunakan **download manager** seperti IDM atau Free Download Manager untuk mempercepat download dan mencegah korupsi file jika koneksi terputus.
-
-> **💡 Tips:** Gunakan **download manager** seperti IDM atau Free Download Manager untuk mempercepat download dan mencegah korupsi file jika koneksi terputus.
 
 ---
 
@@ -212,30 +209,56 @@ Buka folder tempat kamu menyimpan file `.wsl`, lalu **double-click** file terseb
 
 ![Windows Explorer — file .wsl deepin 25 siap di-double-click](/images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png)
 
-### 3.2 Installation Wizard
+### 3.2 Installation
 
-Akan muncul jendela instalasi. Ikuti langkah-langkah wizard:
+Akan otomatis membuka Terminal untuk instalasi deepin 25 WSL. Setelah instalasi selesai akan langsung membuka deepin 25 WSL di Terminal yang sama.
 
-1. Klik **Next** pada layar selamat datang
-2. Pilih **Install** untuk memulai proses
-3. Tunggu proses ekstraksi dan instalasi selesai (biasanya 2-5 menit)
+### 3.3 Buat Username & Password
 
-![WSL Installation Wizard — proses instalasi deepin 25 sedang berlangsung](/images/deepin-wsl-tutorial/08-wsl-installation-wizard.png)
+![Proses instalasi deepin 25 sedang berlangsung](/images/deepin-wsl-tutorial/instalasion-username.png)
+
+Saat pertama kali dijalankan, deepin 25 WSL akan meminta kamu membuat user:
+
+```
+Installing: deepin25-amd64.wsl
+Distribution successfully installed. It can be launched via 'wsl.exe -d deepin25'
+Launching deepin25...
+Please create a default user account. The username does not need to match your Windows username.
+For more information visit: https://aka.ms/wslusers
+Enter new username: _
+```
+
+Masukkan **username** pilihanmu (contoh: `deepin-id`, `developer`, `deepin-user`) lalu tekan Enter. Kemudian masukkan **password** (dua kali untuk konfirmasi).
+
+> **🔒 Tips Keamanan:**
+> - Password tidak akan ditampilkan saat diketik (tidak ada asterisk) — ini normal!
+> - Pilih password yang kuat meskipun ini lingkungan lokal
+> - Password ini adalah password sudo Linux — kamu akan membutuhkannya untuk install software
+
+```
+Enter new UNIX username: deepin-id
+New password:
+Retype new password:
+passwd: password updated successfully
+```
+
 
 ### 3.3 Instalasi Selesai
 
-Setelah selesai, kamu akan melihat notifikasi bahwa deepin 25 telah terinstall. Tidak perlu restart lagi!
+Setelah selesai mengatur username dan password, kamu otomatis akan langsung masuk ke deepin 25 WSL.
+
+![Masuk ke wsl otomatis](/images/deepin-wsl-tutorial/masuk.png)
 
 ---
 
-<h2 id="langkah-4">Langkah 4 — Setup Awal &amp; Buat User</h2>
+<h2 id="langkah-4">Langkah 4 — (judul sesuaikan)</h2>
 
 ### 4.1 Launch deepin 25 WSL
 
 Kamu bisa menjalankan deepin 25 WSL dengan beberapa cara:
 
 **Cara A — Dari Start Menu:**
-Klik Start → cari "deepin25" → klik ikonnya.
+Klik Start → cari "deepin25" → klik ikonnya. atau Klik Search dan cari "deepin25" → klik ikonnya.
 
 ![Start Menu Windows — aplikasi deepin25 muncul di daftar](/images/deepin-wsl-tutorial/09-start-menu-deepin25.png)
 
@@ -249,31 +272,6 @@ Buka Windows Terminal → klik dropdown (⌄) di tab bar → pilih **deepin25**.
 
 ![Windows Terminal — dropdown pilihan distro dengan deepin25](/images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png)
 
-### 4.2 Buat Username & Password
-
-Saat pertama kali dijalankan, deepin 25 WSL akan meminta kamu membuat user:
-
-```
-Installing, this may take a few minutes...
-Please create a default UNIX user account. The username does not need to match your Windows username.
-For more information visit: https://aka.ms/wslusers
-
-Enter new UNIX username: _
-```
-
-Masukkan **username** pilihanmu (contoh: `zaky`, `developer`, `deepin-user`) lalu tekan Enter. Kemudian masukkan **password** (dua kali untuk konfirmasi).
-
-> **🔒 Tips Keamanan:**
-> - Password tidak akan ditampilkan saat diketik (tidak ada asterisk) — ini normal!
-> - Pilih password yang kuat meskipun ini lingkungan lokal
-> - Password ini adalah password sudo Linux — kamu akan membutuhkannya untuk install software
-
-```
-Enter new UNIX username: zaky
-New password:
-Retype new password:
-passwd: password updated successfully
-```
 
 ### 4.3 Verifikasi Instalasi
 
@@ -281,7 +279,7 @@ Setelah login, cek apakah deepin 25 WSL berfungsi dengan benar:
 
 ```bash
 # Cek versi deepin
-cat /etc/deepin-version
+cat /etc/deepin_version
 
 # Cek kernel
 uname -r
@@ -323,12 +321,15 @@ wsl -l -v
 Output contoh:
 
 ```
-  NAME        STATE           VERSION
-* Ubuntu      Stopped         2
-  deepin25    Running         2
+  NAME          STATE           VERSION
+* deepin25      Running         2
+  kali-linux    Stopped         2
+  Ubuntu        Stopped         2
 ```
 
 Tanda `*` menunjukkan distro default.
+
+![PowerShell — output wsl -l -v menampilkan deepin25 dalam daftar distro](/images/deepin-wsl-tutorial/12-wsl-list-output.png)
 
 ### Shutdown deepin 25
 
@@ -344,8 +345,6 @@ Lalu dari PowerShell:
 ```powershell
 wsl -t deepin25
 ```
-
-![PowerShell — output wsl -l -v menampilkan deepin25 dalam daftar distro](/images/deepin-wsl-tutorial/12-wsl-list-output.png)
 
 ### Uninstall deepin 25
 
@@ -384,7 +383,7 @@ Drive Windows otomatis ter-mount di `/mnt/`:
 
 ```bash
 # Akses drive C:
-cd /mnt/c/Users/
+cd /mnt/c/
 
 # Akses folder Documents
 cd /mnt/c/Users/NAMAKAMU/Documents/
@@ -409,22 +408,22 @@ Atau langsung:
 
 ![File Explorer — akses \\wsl$\deepin25\home\ menampilkan folder home deepin](/images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png)
 
+Atau bisa langsung akses di sidebar "Linux", pilih deepin25.
+
+![File Explorer — akses sidebar Linux](/images/deepin-wsl-tutorial/13-1-file-explorer-akses-wsl.png)
+
 > **⚠️ Penting:** JANGAN mengedit file Linux dari Windows (`/mnt/c` → Linux = OK, `\\wsl$\deepin25` → edit dari Windows = **HINDARI**). Edit file WSL dari Windows bisa menyebabkan korupsi permission. Selalu edit file WSL dari dalam WSL atau gunakan VS Code Remote WSL.
 
 ### 3. Integrasi VS Code
 
-Install **Remote - WSL** extension di VS Code:
+Install **WSL** extension di VS Code:
 
 1. Buka VS Code di Windows
 2. Klik Extensions (Ctrl + Shift + X)
-3. Cari **"Remote - WSL"** — install
-4. Dari terminal deepin 25, jalankan:
+3. Cari **"WSL"** — install
+4. Dari VS Code, "Open a Remote Windows" ada di pojok kirir bawah, lalu pilih "Connect to WSL"
 
-```bash
-code .
-```
-
-Ini akan membuka VS Code Windows yang terhubung langsung ke filesystem deepin 25 — dengan performa native!
+Ini akan membuka VS Code Windows yang terhubung langsung ke filesystem WSL default — dengan performa native!
 
 ![VS Code — indicator Remote WSL: deepin25 di pojok kiri bawah](/images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png)
 
@@ -433,20 +432,12 @@ Ini akan membuka VS Code Windows yang terhubung langsung ke filesystem deepin 25
 WSL 2 mendukung aplikasi GUI Linux secara native via **WSLg** (WSL GUI). Coba install aplikasi GUI:
 
 ```bash
-# Install editor teks
-sudo apt install gedit -y
-gedit &
-
-# Install file manager
-sudo apt install nautilus -y
-nautilus &
-
-# Install browser
-sudo apt install firefox-esr -y
-firefox &
+# Install Deepin Calculator (Calculator for DDE)
+sudo apt install deepin-calculator -y
 ```
+Aplikasi GUI yang diinstall di WSL akan ada otomatis di menu aplikasi Windows.
 
-![Desktop Windows — aplikasi GUI Linux (Nautilus/Gedit) berjalan via WSLg](/images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png)
+![Desktop Windows — aplikasi GUI Linux (Deepin Calculator) berjalan via WSLg](/images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png)
 
 ### 5. Akses Localhost
 
@@ -458,6 +449,8 @@ python3 -m http.server 8080
 ```
 
 Lalu buka browser Windows → `http://localhost:8080` — langsung bisa!
+
+![localhost wsl di windows](/images/deepin-wsl-tutorial/localhost-wsl.png)
 
 ---
 
@@ -555,34 +548,10 @@ Setelah deepin 25 WSL terinstall, coba eksplorasi lebih jauh:
 ### Referensi
 
 - [Dokumentasi Resmi WSL Microsoft](https://learn.microsoft.com/en-us/windows/wsl/)
-- [Halaman Download deepin 25](https://os.deepin.id)
-- [Forum deepin Global](https://bbs.deepin.org/)
-- [GitHub deepin Indonesia](https://github.com/deepin-Indonesia)
+- [Halaman Download deepin Indonesia](https://os.deepin.id)
 
 ---
 
 > **📢 Punya pertanyaan?** Gabung di **[Komunitas Telegram deepin Indonesia](https://t.me/Linux_deepin_ID)** — ada ribuan pengguna yang siap membantu troubleshooting dan sharing tips seputar deepin. Gratis, ramah, dan berbahasa Indonesia!
 
----
 
-<details class="bg-deepin-50 p-6 rounded-xl my-8">
-<summary class="cursor-pointer font-bold text-deepin-800 text-lg">📸 Daftar Screenshot yang Perlu Disiapkan</summary>
-<div class="mt-4 space-y-3 text-sm text-gray-700">
-
-1. **Screenshot 1** — Jendela `winver` (Windows version)
-2. **Screenshot 2** — Task Manager → Performance → Virtualization: Enabled
-3. **Screenshot 3** — Start Menu → Klik Kanan → PowerShell Admin
-4. **Screenshot 4** — Output `wsl --version` di PowerShell
-5. **Screenshot 5** — Halaman download deepin di os.deepin.id (tab WSL)
-7. **Screenshot 7** — File Explorer menampilkan file `.wsl` siap di-double-click
-8. **Screenshot 8** — WSL Installation Wizard saat instalasi berlangsung
-9. **Screenshot 9** — Start Menu yang menampilkan aplikasi deepin25
-10. **Screenshot 10** — Windows Terminal dropdown distro dengan deepin25
-11. **Screenshot 11** — Terminal deepin 25 WSL pertama kali (output `cat /etc/deepin-version`)
-12. **Screenshot 12** — Output `wsl -l -v` di PowerShell
-13. **Screenshot 13** — File Explorer membuka `\\wsl$\deepin25\home\`
-14. **Screenshot 14** — VS Code dengan indicator WSL: deepin25
-15. **Screenshot 15** — Aplikasi GUI Linux berjalan di Windows (contoh: Nautilus/Gedit)
-
-</div>
-</details>
