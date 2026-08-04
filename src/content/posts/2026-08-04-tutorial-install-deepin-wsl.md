@@ -213,9 +213,9 @@ Buka folder tempat kamu menyimpan file `.wsl`, lalu **double-click** file terseb
 
 Akan otomatis membuka Terminal untuk instalasi deepin 25 WSL. Setelah instalasi selesai akan langsung membuka deepin 25 WSL di Terminal yang sama.
 
-### 3.3 Buat Username & Password
-
 ![Terminal — proses instalasi WSL dan input username](/images/deepin-wsl-tutorial/06-instalasi-wsl.png)
+
+### 3.3 Buat Username & Password
 
 Saat pertama kali dijalankan, deepin 25 WSL akan meminta kamu membuat user:
 
