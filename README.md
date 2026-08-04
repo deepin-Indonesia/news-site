@@ -8,7 +8,7 @@ Fitur: blog dengan tag filter, TOC sidebar ala Medium dengan Intersection Observ
 
 ## Tech Stack
 
-| | |
+| Technology | Detail |
 |---|---|
 | **Framework** | [Astro 7](https://astro.build) |
 | **Styling** | [Tailwind CSS v4](https://tailwindcss.com) + `@tailwindcss/typography` |
