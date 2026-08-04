@@ -16,3 +16,19 @@
 {"message":"An error happened during full reload\nFailed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\nError: Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\n    at loadAndTransform (file:///D:/GitHub/deepin-Indonesia/news-site/node_modules/vite/dist/node/chunks/node.js:20583:31)","label":"vite","level":"error"}
 {"message":"/src/styles/global.css","label":"watch","level":"info"}
 {"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 38ms","label":null,"level":"info"}
+{"message":"[200] / 22ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] /2025-04-25-dummy-workshop-ui 103ms","label":null,"level":"info"}
+{"message":"[200] / 31ms","label":null,"level":"info"}
+{"message":"Failed to reload 2026-08-04-tutorial-install-deepin-wsl.md: **posts → 2026-08-04-tutorial-install-deepin-wsl** data does not match collection schema.\n\n  **title**: **title**: Required\n  **date**: **date**: Required\n  **description**: **description**: Required\n","label":"glob-loader","level":"error"}
+{"message":"Reloaded data from 2026-08-04-tutorial-install-deepin-wsl.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 22ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 21ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/deepin-wsl-cover.jpg 1ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
