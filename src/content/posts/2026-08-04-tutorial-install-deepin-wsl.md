@@ -166,33 +166,39 @@ Windows version: 10.x.x
 
 Sekarang kita akan mendownload file installer deepin 25 WSL.
 
-### 2.1 Kunjungi Halaman Download Resmi
+### 2.1 Download dari GitHub Release
 
-Buka browser dan kunjungi halaman download deepin Indonesia:
+Kunjungi halaman release resmi deepin WSL di GitHub:
 
-👉 **[https://os.deepin.id](https://os.deepin.id)**
+👉 **[github.com/deepin-community/deepin-WSL/releases](https://github.com/deepin-community/deepin-WSL/releases/tag/v1.6.0)**
 
-![Halaman download deepin di os.deepin.id — tab WSL dengan pilihan arsitektur](/images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png)
+Pilih file `.wsl` sesuai arsitektur prosesormu — `amd64` untuk Intel/AMD, `arm64` untuk ARM.
 
-### 2.2 Pilih Arsitektur yang Tepat
+![Halaman GitHub Release deepin WSL — pilih file sesuai arsitektur](/images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png)
 
-deepin 25 WSL tersedia dalam dua arsitektur. **Pilih sesuai prosesor komputermu**:
+### 2.2 Alternatif: Google Drive
 
-| Arsitektur | Jenis Prosesor | File |
-|------------|---------------|------|
-| **AMD64** | Intel Core / AMD Ryzen (mayoritas laptop & PC) | `deepin-wsl-25.2.0-amd64.wsl` |
-| **ARM64** | Snapdragon, Apple M-series via VM, perangkat ARM | `deepin-wsl-25.2.0-arm64.wsl` |
+Tersedia juga mirror di Google Drive:
+
+👉 **[Google Drive — deepin WSL](https://drive.google.com/drive/folders/1NL0JHAs9S834zL1_g1Zjr6qAjD3_iL9f?usp=sharing)**
+
+### Pilih Arsitektur yang Tepat
+
+| Arsitektur | Jenis Prosesor | Contoh Perangkat |
+|------------|---------------|------------------|
+| **AMD64** | Intel Core / AMD Ryzen | Mayoritas laptop & PC |
+| **ARM64** | Snapdragon, Apple M-series via VM | Laptop ARM, Mac VM |
 
 > 🔍 **Cara cek arsitektur prosesor:**
 > Buka PowerShell → ketik `echo $env:PROCESSOR_ARCHITECTURE`
-> - Output `AMD64` → download versi **AMD64**
-> - Output `ARM64` → download versi **ARM64**
+> - Output `AMD64` → download versi **amd64**
+> - Output `ARM64` → download versi **arm64**
 
 ### 2.3 Download File .wsl
 
-Klik tombol download yang sesuai. File berformat `.wsl` dengan ukuran sekitar **2-4 GB** (tergantung versi).
+File berformat `.wsl` dengan ukuran sekitar **2-4 GB**. Setelah download selesai, lanjut ke langkah instalasi.
 
-![Browser — proses download file .wsl deepin 25 dengan progress bar](/images/deepin-wsl-tutorial/06-proses-download-file-wsl.png)
+> **💡 Tips:** Gunakan **download manager** seperti IDM atau Free Download Manager untuk mempercepat download dan mencegah korupsi file jika koneksi terputus.
 
 > **💡 Tips:** Gunakan **download manager** seperti IDM atau Free Download Manager untuk mempercepat download dan mencegah korupsi file jika koneksi terputus.
 
@@ -483,7 +489,7 @@ wsl --update
 
 ### ❌ "deepin25 tidak muncul di `wsl --list --online`"
 
-Ini **NORMAL**. deepin 25 WSL didistribusikan sebagai paket offline (`.wsl`), tidak melalui Microsoft Store WSL repository. Itulah kenapa kamu harus download manual dari [os.deepin.id](https://os.deepin.id) dan install via double-click. Lihat penjelasan Microsoft tentang [distribusi WSL kustom](https://learn.microsoft.com/en-us/windows/wsl/build-custom-distro).
+Ini **NORMAL**. deepin 25 WSL didistribusikan sebagai paket offline (`.wsl`) via GitHub Release dan Google Drive, tidak melalui Microsoft Store WSL repository. Lihat penjelasan Microsoft tentang [distribusi WSL kustom](https://learn.microsoft.com/en-us/windows/wsl/build-custom-distro).
 
 ### ❌ "Error: 0x80370102 — Virtualization not enabled"
 
@@ -551,7 +557,8 @@ Setelah deepin 25 WSL terinstall, coba eksplorasi lebih jauh:
 ### Referensi
 
 - [Dokumentasi Resmi WSL Microsoft](https://learn.microsoft.com/en-us/windows/wsl/)
-- [Halaman Download deepin 25](https://os.deepin.id)
+- [GitHub Release deepin WSL](https://github.com/deepin-community/deepin-WSL/releases/tag/v1.6.0)
+- [Google Drive Mirror deepin WSL](https://drive.google.com/drive/folders/1NL0JHAs9S834zL1_g1Zjr6qAjD3_iL9f?usp=sharing)
 - [Forum deepin Global](https://bbs.deepin.org/)
 - [GitHub deepin Indonesia](https://github.com/deepin-Indonesia)
 
@@ -569,8 +576,8 @@ Setelah deepin 25 WSL terinstall, coba eksplorasi lebih jauh:
 2. **Screenshot 2** — Task Manager → Performance → Virtualization: Enabled
 3. **Screenshot 3** — Start Menu → Klik Kanan → PowerShell Admin
 4. **Screenshot 4** — Output `wsl --version` di PowerShell
-5. **Screenshot 5** — Halaman download deepin di os.deepin.id (tab WSL)
-6. **Screenshot 6** — Browser saat mendownload file `.wsl`
+5. **Screenshot 5** — Halaman GitHub Release deepin WSL dengan daftar file `.wsl`
+6. **Screenshot 6** — Halaman Google Drive mirror deepin WSL
 7. **Screenshot 7** — File Explorer menampilkan file `.wsl` siap di-double-click
 8. **Screenshot 8** — WSL Installation Wizard saat instalasi berlangsung
 9. **Screenshot 9** — Start Menu yang menampilkan aplikasi deepin25
