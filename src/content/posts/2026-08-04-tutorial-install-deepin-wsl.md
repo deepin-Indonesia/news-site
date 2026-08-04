@@ -172,10 +172,6 @@ Buka browser dan kunjungi halaman download deepin Indonesia:
 
 👉 **[https://os.deepin.id](https://os.deepin.id)**
 
-Atau langsung ke halaman download resmi deepin:
-
-👉 **[https://www.deepin.org/en/download/](https://www.deepin.org/en/download/)**
-
 ![Halaman download deepin di os.deepin.id — tab WSL dengan pilihan arsitektur](/images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png)
 
 ### 2.2 Pilih Arsitektur yang Tepat
