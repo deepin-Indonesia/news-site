@@ -69,6 +69,7 @@ Sebelum memulai, pastikan sistem Windows kamu memenuhi syarat berikut:
 | **RAM** | 4 GB | 8 GB+ |
 | **Storage** | 5 GB free space | 15 GB+ untuk development |
 | **Virtualization** | Harus di-enable di BIOS/UEFI | Intel VT-x / AMD-V enabled |
+| | *Syarat mutlak WSL 2 — karena WSL 2 menjalankan kernel Linux asli via Virtual Machine Platform (subset Hyper‑V), hardware virtualization wajib aktif di tingkat perangkat keras.* | |
 
 ### Cara Cek Versi Windows
 
