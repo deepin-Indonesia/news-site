@@ -37,6 +37,14 @@ const latestPosts = [...otherPosts]
 const wordCount = post.body?.split(/\s+/).length ?? 0;
 const readTime = Math.max(1, Math.ceil(wordCount / 180));
 
+// Extract h2 headings for TOC
+const headings = (post.body || '').match(/<h2\s+id="([^"]+)"[^>]*>(.+?)<\/h2>/g) || [];
+const toc = headings.map((h) => {
+  const idMatch = h.match(/id="([^"]+)"/);
+  const textMatch = h.match(/<h2[^>]*>(.+?)<\/h2>/);
+  return { id: idMatch?.[1] || '', text: textMatch?.[1]?.replace(/&amp;/g, '&') || '' };
+});
+
 // Tag label mapping
 const tagLabels: Record<string, string> = {
   'release-notes': 'Release Notes',
@@ -70,7 +78,10 @@ const tagLabels: Record<string, string> = {
       </div>
     </div>
 
-    <div class="container-main max-w-3xl pb-10">
+    <div class="container-main max-w-7xl pb-10">
+      <div class="flex gap-10">
+      {/* Main Content */}
+      <div class="flex-1 min-w-0 max-w-3xl">
       {/* Card Container */}
       <div class="bg-white -mt-0">
         <div class="flex flex-wrap items-center gap-4 text-sm text-gray-400 mb-8 pb-8 border-b border-gray-100">
@@ -131,6 +142,29 @@ const tagLabels: Record<string, string> = {
         </a>
       </div>
       </div>
+      </div>{/* close main content */}
+
+      {/* TOC Sidebar — ala Medium */}
+      {toc.length > 0 && (
+        <aside class="hidden xl:block w-56 shrink-0" id="toc-sidebar">
+          <div class="sticky top-[88px]">
+            <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Daftar Isi</p>
+            <nav class="border-l-2 border-gray-200" id="toc-nav">
+              {toc.map((item) => (
+                <a
+                  href={`#${item.id}`}
+                  class="block py-1.5 pl-3 -ml-0.5 text-sm text-gray-500 hover:text-deepin-600 border-l-2 border-transparent hover:border-deepin-400 transition-all toc-link"
+                  data-toc={item.id}
+                >
+                  {item.text}
+                </a>
+              ))}
+            </nav>
+          </div>
+        </aside>
+      )}
+
+      </div>{/* close flex */}
     </div>
   </article>
 
@@ -171,3 +205,34 @@ const tagLabels: Record<string, string> = {
     </section>
   ))}
 </Layout>
+
+<script>
+  // Scroll spy for TOC sidebar
+  const tocLinks = document.querySelectorAll('.toc-link');
+  if (tocLinks.length > 0) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const link = document.querySelector(`.toc-link[data-toc="${entry.target.id}"]`);
+          if (link) {
+            if (entry.isIntersecting) {
+              document.querySelectorAll('.toc-link').forEach((l) => {
+                l.classList.remove('text-deepin-600', 'border-deepin-500', 'font-semibold');
+                l.classList.add('text-gray-500', 'border-transparent');
+              });
+              link.classList.remove('text-gray-500', 'border-transparent');
+              link.classList.add('text-deepin-600', 'border-deepin-500', 'font-semibold');
+            }
+          }
+        });
+      },
+      { rootMargin: '-80px 0px -70% 0px' }
+    );
+
+    tocLinks.forEach((link) => {
+      const id = link.getAttribute('data-toc');
+      const target = document.getElementById(id || '');
+      if (target) observer.observe(target);
+    });
+  }
+</script>
