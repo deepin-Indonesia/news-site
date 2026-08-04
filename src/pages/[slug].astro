@@ -141,15 +141,15 @@ const tagLabels: Record<string, string> = {
       </div>
     </div>
 
-    {/* TOC — fixed di kanan layar, artikel tetap center */}
+    {/* TOC — fixed di kanan, jarak dinamis dari artikel & tepi layar */}
     {toc.length > 0 && (
-      <aside class="hidden xl:block fixed top-[88px] z-30 w-48" style="left:calc(50% + 384px + 2rem)" id="toc-sidebar">
-        <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Daftar Isi</p>
+      <aside class="hidden xl:block fixed top-[88px] z-30 w-44" style="left:max(calc(50% + 384px + 2.5rem), calc(100vw - 14rem))" id="toc-sidebar">
+        <p class="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-3 select-none">Daftar Isi</p>
         <nav class="border-l-2 border-gray-200" id="toc-nav">
           {toc.map((item) => (
             <a
               href={`#${item.id}`}
-              class="block py-1.5 pl-3 -ml-0.5 text-sm text-gray-500 hover:text-deepin-600 border-l-2 border-transparent hover:border-deepin-400 transition-all toc-link leading-tight"
+              class="block py-1.5 pl-3 -ml-0.5 text-[13px] text-gray-500 hover:text-deepin-600 border-l-2 border-transparent hover:border-deepin-400 transition-all toc-link leading-snug"
               data-toc={item.id}
             >
               {item.text}
