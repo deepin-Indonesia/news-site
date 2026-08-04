@@ -1735,3 +1735,266 @@
 {"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 1ms","label":null,"level":"info"}
 {"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 1ms","label":null,"level":"info"}
 {"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 1ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-08-04-tutorial-install-deepin-wsl.md","label":"glob-loader","level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 69ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 47ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 10ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 6ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 6ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 6ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 3ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 3ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 3ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 7ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 7ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 5ms","label":null,"level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 8ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 3ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 6ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 5ms","label":null,"level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 8ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 6ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 3ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 9ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 7ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 6ms","label":null,"level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 9ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 5ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 3ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 3ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 4ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"Reloaded data from 2026-08-04-tutorial-install-deepin-wsl.md","label":"glob-loader","level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 14ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 10ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 1ms","label":null,"level":"info"}
+{"message":"Configuration file updated. Restarting...","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"Re-optimizing dependencies because lockfile has changed","label":"vite","level":"info"}
+{"message":"server restarted.","label":"vite","level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 51ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 40ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 39ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 39ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 39ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 39ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 1ms","label":null,"level":"info"}
+{"message":"Configuration file updated. Restarting...","label":null,"level":"info"}
+{"message":"`markdown.remarkPlugins`, `markdown.rehypePlugins`, and `markdown.remarkRehype` run on the `unified` processor from `@astrojs/markdown-remark`, which is no longer installed by default now that Sätteri is the default Markdown processor. Install it with:\n  npm install @astrojs/markdown-remark\n  Stack trace:\n    at D:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\config\\validate.js:46:11\n    [...] See full stack trace in the browser, or rerun with --verbose.\n","label":"config","level":"error"}
+{"message":"Continuing with previous valid configuration\n","label":null,"level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 4ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 3ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 3ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 1ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"An error happened during full reload\nFailed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\nError: Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\n    at loadAndTransform (file:///D:/GitHub/deepin-Indonesia/news-site/node_modules/vite/dist/node/chunks/node.js:20583:31)","label":"vite","level":"error"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 19ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 12ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 1ms","label":null,"level":"info"}
+{"message":"Configuration file updated. Restarting...","label":null,"level":"info"}
+{"message":"`markdown.remarkPlugins`, `markdown.rehypePlugins`, and `markdown.remarkRehype` run on the `unified` processor from `@astrojs/markdown-remark`, which is no longer installed by default now that Sätteri is the default Markdown processor. Install it with:\n  npm install @astrojs/markdown-remark\n  Stack trace:\n    at D:\\GitHub\\deepin-Indonesia\\news-site\\node_modules\\astro\\dist\\core\\config\\validate.js:46:11\n    [...] See full stack trace in the browser, or rerun with --verbose.\n","label":"config","level":"error"}
+{"message":"Continuing with previous valid configuration\n","label":null,"level":"error"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 12ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 10ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 2ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 1ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 21ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/01-winver-about-windows.png 12ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/02-task-manager-virtualization-enabled.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/03-start-menu-powershell-admin.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/04-wsl-version-output.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/08-wsl-installation-wizard.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/06-proses-download-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/07-file-explorer-file-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/09-start-menu-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/10-windows-terminal-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/11-terminal-deepin25-pertama-kali.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/12-wsl-list-output.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/13-file-explorer-akses-wsl.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/14-vscode-remote-wsl-deepin25.png 1ms","label":null,"level":"info"}
+{"message":"[404] /images/deepin-wsl-tutorial/15-aplikasi-gui-linux-wslg.png 1ms","label":null,"level":"info"}
+{"message":"[200] /2026-08-04-tutorial-install-deepin-wsl 4ms","label":null,"level":"info"}
