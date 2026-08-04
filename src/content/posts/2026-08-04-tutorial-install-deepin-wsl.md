@@ -18,7 +18,7 @@ Apakah kamu ingin mencoba **deepin 25** — sistem operasi Linux modern dengan a
 3. [Langkah 1 — Enable WSL di Windows](#langkah-1)
 4. [Langkah 2 — Download deepin 25 WSL](#langkah-2)
 5. [Langkah 3 — Install deepin 25 WSL](#langkah-3)
-6. [Langkah 4 — Setup Awal & Buat User](#langkah-4)
+6. [Langkah 4 — Menjalankan & Verifikasi deepin 25 WSL](#langkah-4)
 7. [Manajemen WSL Sehari-hari](#manajemen-wsl)
 8. [Integrasi deepin WSL dengan Windows](#integrasi-windows)
 9. [Troubleshooting & FAQ](#troubleshooting)
@@ -89,7 +89,7 @@ Atau via Settings → System → About → cek **Version** dan **OS Build**. Pas
 Buka **Task Manager** (Ctrl + Shift + Esc) → tab **Performance** → lihat bagian **Virtualization**:
 
 ```
-Virtualization: Enabled ✅  ← harusnya seperti ini
+Virtualization: Enabled  ← harusnya seperti ini
 ```
 
 Jika tertulis **Disabled**, kamu perlu enable **Intel VT-x** atau **AMD-V** di BIOS/UEFI. Caranya:
@@ -215,7 +215,7 @@ Akan otomatis membuka Terminal untuk instalasi deepin 25 WSL. Setelah instalasi 
 
 ### 3.3 Buat Username & Password
 
-![Proses instalasi deepin 25 sedang berlangsung](/images/deepin-wsl-tutorial/instalasion-username.png)
+![Terminal — proses instalasi WSL dan input username](/images/deepin-wsl-tutorial/06-instalasi-wsl.png)
 
 Saat pertama kali dijalankan, deepin 25 WSL akan meminta kamu membuat user:
 
@@ -243,15 +243,15 @@ passwd: password updated successfully
 ```
 
 
-### 3.3 Instalasi Selesai
+### 3.4 Instalasi Selesai
 
 Setelah selesai mengatur username dan password, kamu otomatis akan langsung masuk ke deepin 25 WSL.
 
-![Masuk ke wsl otomatis](/images/deepin-wsl-tutorial/masuk.png)
+![Terminal — berhasil masuk ke deepin 25 WSL setelah setup](/images/deepin-wsl-tutorial/07-wsl-berhasil-masuk.png)
 
 ---
 
-<h2 id="langkah-4">Langkah 4 — (judul sesuaikan)</h2>
+<h2 id="langkah-4">Langkah 4 — Menjalankan &amp; Verifikasi deepin 25 WSL</h2>
 
 ### 4.1 Launch deepin 25 WSL
 
@@ -552,6 +552,6 @@ Setelah deepin 25 WSL terinstall, coba eksplorasi lebih jauh:
 
 ---
 
-> **📢 Punya pertanyaan?** Gabung di **[Komunitas Telegram deepin Indonesia](https://t.me/Linux_deepin_ID)** — ada ribuan pengguna yang siap membantu troubleshooting dan sharing tips seputar deepin. Gratis, ramah, dan berbahasa Indonesia!
+> **📢 Punya pertanyaan?** Gabung di **[Komunitas Telegram deepin Indonesia](https://t.me/Linux_deepin_ID)** — kami siap membantu troubleshooting dan sharing tips seputar deepin. Gratis, ramah, dan berbahasa Indonesia!
 
 
