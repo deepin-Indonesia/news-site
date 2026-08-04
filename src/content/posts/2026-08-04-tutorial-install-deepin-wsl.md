@@ -166,23 +166,19 @@ Windows version: 10.x.x
 
 Sekarang kita akan mendownload file installer deepin 25 WSL.
 
-### 2.1 Download dari GitHub Release
+### 2.1 Kunjungi Halaman Download
 
-Kunjungi halaman release resmi deepin WSL di GitHub:
+Buka browser dan kunjungi halaman download deepin Indonesia — pilih tab **WSL**:
 
-👉 **[github.com/deepin-community/deepin-WSL/releases](https://github.com/deepin-community/deepin-WSL/releases/tag/v1.6.0)**
+👉 **[https://os.deepin.id](https://os.deepin.id)**
 
-Pilih file `.wsl` sesuai arsitektur prosesormu — `amd64` untuk Intel/AMD, `arm64` untuk ARM.
+Di halaman tersebut tersedia dua opsi download: **GitHub Release** (resmi) dan **Google Drive** (mirror).
 
-![Halaman GitHub Release deepin WSL — pilih file sesuai arsitektur](/images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png)
+![Halaman download deepin di os.deepin.id — tab WSL](/images/deepin-wsl-tutorial/05-halaman-download-deepin-wsl.png)
 
-### 2.2 Alternatif: Google Drive
+### 2.2 Pilih Arsitektur yang Tepat
 
-Tersedia juga mirror di Google Drive:
-
-👉 **[Google Drive — deepin WSL](https://drive.google.com/drive/folders/1NL0JHAs9S834zL1_g1Zjr6qAjD3_iL9f?usp=sharing)**
-
-### Pilih Arsitektur yang Tepat
+deepin 25 WSL tersedia dalam dua arsitektur:
 
 | Arsitektur | Jenis Prosesor | Contoh Perangkat |
 |------------|---------------|------------------|
@@ -196,7 +192,9 @@ Tersedia juga mirror di Google Drive:
 
 ### 2.3 Download File .wsl
 
-File berformat `.wsl` dengan ukuran sekitar **2-4 GB**. Setelah download selesai, lanjut ke langkah instalasi.
+Klik tombol download — file berformat `.wsl` dengan ukuran sekitar **2-4 GB**. Setelah download selesai, lanjut ke langkah instalasi.
+
+> **💡 Tips:** Gunakan **download manager** seperti IDM atau Free Download Manager untuk mempercepat download dan mencegah korupsi file jika koneksi terputus.
 
 > **💡 Tips:** Gunakan **download manager** seperti IDM atau Free Download Manager untuk mempercepat download dan mencegah korupsi file jika koneksi terputus.
 
@@ -489,7 +487,7 @@ wsl --update
 
 ### ❌ "deepin25 tidak muncul di `wsl --list --online`"
 
-Ini **NORMAL**. deepin 25 WSL didistribusikan sebagai paket offline (`.wsl`) via GitHub Release dan Google Drive, tidak melalui Microsoft Store WSL repository. Lihat penjelasan Microsoft tentang [distribusi WSL kustom](https://learn.microsoft.com/en-us/windows/wsl/build-custom-distro).
+Ini **NORMAL**. deepin 25 WSL didistribusikan sebagai paket offline (`.wsl`) via GitHub Release dan Google Drive, tidak melalui Microsoft Store WSL repository. Download dari [os.deepin.id](https://os.deepin.id) (tab WSL) lalu install via double-click. Lihat penjelasan Microsoft tentang [distribusi WSL kustom](https://learn.microsoft.com/en-us/windows/wsl/build-custom-distro).
 
 ### ❌ "Error: 0x80370102 — Virtualization not enabled"
 
@@ -557,8 +555,7 @@ Setelah deepin 25 WSL terinstall, coba eksplorasi lebih jauh:
 ### Referensi
 
 - [Dokumentasi Resmi WSL Microsoft](https://learn.microsoft.com/en-us/windows/wsl/)
-- [GitHub Release deepin WSL](https://github.com/deepin-community/deepin-WSL/releases/tag/v1.6.0)
-- [Google Drive Mirror deepin WSL](https://drive.google.com/drive/folders/1NL0JHAs9S834zL1_g1Zjr6qAjD3_iL9f?usp=sharing)
+- [Halaman Download deepin 25](https://os.deepin.id)
 - [Forum deepin Global](https://bbs.deepin.org/)
 - [GitHub deepin Indonesia](https://github.com/deepin-Indonesia)
 
@@ -576,8 +573,7 @@ Setelah deepin 25 WSL terinstall, coba eksplorasi lebih jauh:
 2. **Screenshot 2** — Task Manager → Performance → Virtualization: Enabled
 3. **Screenshot 3** — Start Menu → Klik Kanan → PowerShell Admin
 4. **Screenshot 4** — Output `wsl --version` di PowerShell
-5. **Screenshot 5** — Halaman GitHub Release deepin WSL dengan daftar file `.wsl`
-6. **Screenshot 6** — Halaman Google Drive mirror deepin WSL
+5. **Screenshot 5** — Halaman download deepin di os.deepin.id (tab WSL)
 7. **Screenshot 7** — File Explorer menampilkan file `.wsl` siap di-double-click
 8. **Screenshot 8** — WSL Installation Wizard saat instalasi berlangsung
 9. **Screenshot 9** — Start Menu yang menampilkan aplikasi deepin25
