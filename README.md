@@ -27,6 +27,7 @@ news-site/
 ├── src/
 │   ├── components/
 │   │   ├── Layout.astro      # Base layout (HTML head, GA4, SEO meta, JSON-LD)
+│   │   ├── Analytics.astro   # Google Analytics 4 + pelacakan perilaku pengguna
 │   │   ├── Header.astro      # Sticky header + nav + mobile menu
 │   │   └── Footer.astro      # Footer dengan social links
 │   ├── content/
@@ -122,6 +123,61 @@ Simpan di `public/images/nama-folder/`, referensikan dengan path absolut:
 ### 5. Link eksternal
 
 Otomatis `target="_blank"` via `rehype-external-links` — tidak perlu atur manual.
+
+## Analitik (Google Analytics 4)
+
+Measurement ID: `G-2J4TLB9W7H` (satu property untuk kelima subdomain).
+
+Pelacakan terpusat di `src/components/Analytics.astro` dan dirender sekali dari
+`src/components/Layout.astro` (`<Analytics />`), jadi **semua halaman otomatis
+terlacak** — termasuk homepage, setiap artikel (`[slug].astro`), dan 404.
+
+Setiap event membawa parameter `site` (dari `location.host`) supaya data tiap
+subdomain bisa dipisah di GA4. `site` juga dikirim sebagai *user property* agar
+`page_view` ikut terpisah.
+
+| Event | Dipicu oleh |
+| --- | --- |
+| `page_view` | Otomatis setiap halaman |
+| `page_context` | Referrer, viewport, ukuran layar, bahasa, `utm_*` |
+| `page_404` | Halaman tidak ditemukan (+ path-nya) |
+| `scroll_depth` | Scroll 25/50/75/90/100% |
+| `engaged_reader` | 30/60/180/600 detik benar-benar aktif (kualitas bacaan) |
+| `visibility_change` | Tab berpindah/aktif kembali |
+| `nav_click` | Klik menu di header atau drawer mobile |
+| `dropdown_toggle` | Buka/tutup dropdown header |
+| `menu_toggle` | Buka/tutup hamburger mobile |
+| `menu_section_toggle` | Buka/tutup seksi di drawer mobile |
+| `filter_click` | Klik filter tag di homepage |
+| `anchor_click` | Klik item Daftar Isi (TOC) atau lompat section |
+| `share_click` | Tombol bagikan (Telegram/WhatsApp/X/Facebook) |
+| `copy_text` | Menyalin teks artikel |
+| `cta_click` | Tombol `.btn-primary` / `.btn-outline` / `.btn-ghost` |
+| `footer_click` | Klik tautan di footer |
+| `internal_site_click` | Pindah ke subdomain `deepin.id` lain |
+| `outbound_click` | Keluar dari ekosistem `deepin.id` |
+| `faq_toggle` | Buka accordion (`<details>`) |
+| `contact_click` | Klik `mailto:` atau `tel:` |
+| `scroll_top` | Tombol kembali ke atas |
+| `form_submit` | Mengirim form |
+| `media_interaction` | Mulai memutar video/embed di dalam artikel |
+| `data_track` | Nama bebas dari atribut `data-track` di elemen `<a>` |
+
+### Event kustom
+
+Tempel `data-track` pada elemen `<a>` untuk mengirim event dengan nama sendiri:
+
+```html
+<a href="https://example.com" data-track="sponsor_click">Sponsor</a>
+```
+
+Atau panggil dari script mana pun:
+
+```js
+window.deepinTrack('read_complete', { slug: 'artikel-saya' });
+```
+
+`window.__gaReady === true` menandakan pelacakan siap (berguna untuk pengujian).
 
 ## Tag Filter
 

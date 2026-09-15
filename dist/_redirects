@@ -1,0 +1,11 @@
+# Redirect URL lama (Jekyll + /news/) ke struktur baru
+/news/*  /:splat  301
+/news  /  301
+/news/  /  301
+/tag/*  /  301
+/feed.xml  /  301
+
+# Redirect URL artikel lama (Jekyll, date-based) ke slug baru
+/tips/2025/11/12/deepin-nvidia-optimus-hdmi.html  /deepin-nvidia-optimus-hdmi/  301
+/tips/2025/11/30/deepin-cross-device-collaboration.html  /deepin-cross-device-collaboration/  301
+/release/2026/07/08/deepin-25-2-release.html  /deepin-25-2-release/  301
