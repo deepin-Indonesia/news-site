@@ -14,8 +14,14 @@
     });
 
     var SITE_HOST = window.location.host;
+    /* Semua event (termasuk page_view otomatis) ikut membawa dimensi `site`,
+       supaya kelima subdomain bisa dibandingkan dalam satu property GA4. */
+     gtag('set', 'user_properties', { site: SITE_HOST });
     var DOWNLOAD_RE = /\.(iso|torrent|deb|rpm|appimage|zip|img|sha256|sha512|sig|txt)(\?|#|$)/i;
     var SHARE_HOSTS = ['t.me', 'telegram.me', 'wa.me', 'whatsapp.com', 'x.com', 'twitter.com', 'facebook.com', 'linkedin.com', 'reddit.com'];
+     /* Subdomain deepin.id lain (deepin.id, os., news., donasi., about.) dihitung
+       sebagai "pindah situs internal", bukan keluar dari ekosistem. */
+     var SIBLING_RE = /(^|\.)deepin\.id$/i;
 
     /** Kirim event dengan konteks halaman + subdomain. */
     function track(name, params) {
@@ -59,6 +65,7 @@
         host: url.hostname,
         path: url.pathname,
         sameSite: sameSite,
+        sibling: !sameSite && SIBLING_RE.test(url.hostname),
         download: DOWNLOAD_RE.test(url.pathname),
         share: SHARE_HOSTS.some(function (h) {
           return url.hostname === h || url.hostname.endsWith('.' + h);
@@ -160,6 +167,20 @@
             return;
           }
 
+          /* 4b-2. Tombol dropdown di header (Tentang deepin, News, dll.) */
+          var dropdownBtn = target.closest('header button, header summary');
+          if (dropdownBtn) {
+            track('dropdown_toggle', { menu: labelOf(dropdownBtn) });
+            return;
+          }
+
+          /* 4b-3. Seksi yang dibuka/ditutup di drawer mobile */
+          var sectionToggle = target.closest('#mobile-menu summary');
+          if (sectionToggle) {
+            track('menu_section_toggle', { section: labelOf(sectionToggle) });
+            return;
+          }
+
           /* 4c. Tab (mis. arsitektur di halaman download) */
           var tab = target.closest('.arch-tab, [data-tab], [role="tab"]');
           if (tab && !target.closest('a[href]')) {
@@ -193,6 +214,12 @@
           var info = classify(anchor);
           if (!info) return;
 
+          /* 4f-2. Event kustom dari HTML: <a data-track="nama_event"> */
+          var customEvent = anchor.getAttribute('data-track');
+          if (customEvent) {
+            track(customEvent, { link_text: text, destination: info.url });
+          }
+
           /* 4g. Filter tag / kategori */
           if (anchor.closest('.tag-filter') || anchor.hasAttribute('data-tag')) {
             track('filter_click', {
@@ -212,13 +239,28 @@
             return;
           }
 
-          if (!info.sameSite) {
+          if (!info.sameSite && info.sibling) {
+            track('internal_site_click', {
+              destination_site: info.host,
+              link_url: info.url,
+              link_text: text,
+            });
+          } else if (!info.sameSite) {
             track('outbound_click', { link_domain: info.host, link_url: info.url, link_text: text });
           }
 
           /* Klik menu (header / drawer mobile) */
           if (anchor.closest('header') || anchor.closest('#mobile-menu')) {
             track('nav_click', {
+              link_text: text,
+              destination: info.url,
+              outbound: !info.sameSite,
+            });
+          }
+
+          /* Klik tautan di footer */
+          if (anchor.closest('footer')) {
+            track('footer_click', {
               link_text: text,
               destination: info.url,
               outbound: !info.sameSite,
@@ -298,7 +340,7 @@
       window.__gaReady = true;
     });
   })();
-})();</script><title>News — deepin Indonesia</title><link rel="stylesheet" href="/_astro/Layout.AFgIsfBh.css"></head><body class="min-h-screen flex flex-col"><header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b-2 border-gray-200 shadow-[0_1px_3px_rgba(0,0,0,0.08)]" id="header"><nav class="container-main flex items-center justify-between h-[72px]" aria-label="Main"><!-- Logo --><a href="https://deepin.id" class="flex items-center shrink-0" aria-label="deepin Indonesia home"><img src="/images/deepin-id-text.png" alt="deepin Indonesia" width="138" height="34" class="h-8 w-auto" loading="eager" decoding="async" fetchpriority="high"></a><!-- Desktop Nav --><div class="hidden lg:flex items-center gap-1"><a href="https://deepin.id" class="btn-ghost text-sm font-medium py-2">Home</a><a href="https://os.deepin.id" class="btn-ghost text-sm font-medium py-2">Download</a><div class="relative group"><button class="btn-ghost text-sm font-medium py-2">News<i class="fas fa-chevron-down text-[10px] ml-1 opacity-50 group-hover:rotate-180 transition-transform"></i></button><div class="absolute top-full left-0 mt-1 bg-white rounded-xl border border-gray-100 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[200px] py-2"><a href="https://news.deepin.id/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-deepin-600 transition-colors">Semua Artikel</a><a href="https://news.deepin.id/?tag=release-notes" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-deepin-600 transition-colors">Release Note</a><a href="https://news.deepin.id/?tag=tips-deepin" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-deepin-600 transition-colors">Tips deepin</a><a href="https://news.deepin.id/?tag=komunitas-update" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-deepin-600 transition-colors">Komunitas Update</a><a href="https://news.deepin.id/?tag=event" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-deepin-600 transition-colors">Event</a></div></div><a href="https://t.me/Linux_deepin_ID" class="btn-ghost text-sm font-medium py-2" target="_blank" rel="noopener">Gabung Komunitas</a><!-- Tentang deepin Dropdown --><div class="relative group"><button class="btn-ghost text-sm font-medium py-2">Tentang deepin<i class="fas fa-chevron-down text-[10px] ml-1 opacity-50 group-hover:rotate-180 transition-transform"></i></button><div class="absolute top-full right-0 mt-1 bg-white rounded-xl border border-gray-100 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[220px] py-2"><a href="https://about.deepin.id/product-planning/" class="block px-4 py-2 text-sm hover:bg-gray-50 hover:text-deepin-600 transition-colors text-gray-700">Product Planning</a><a href="https://about.deepin.id/original-apps/" class="block px-4 py-2 text-sm hover:bg-gray-50 hover:text-deepin-600 transition-colors text-gray-700">Original Apps</a><a href="https://about.deepin.id/desktop-environment/" class="block px-4 py-2 text-sm hover:bg-gray-50 hover:text-deepin-600 transition-colors text-gray-700">Desktop Environment</a><a href="https://about.deepin.id/Indonesia" class="block px-4 py-2 text-sm hover:bg-gray-50 hover:text-deepin-600 transition-colors text-deepin-600 font-semibold">deepin Indonesia</a></div></div><!-- Donasi CTA (paling kanan) --><a href="https://donasi.deepin.id" class="btn-primary text-sm py-2 px-4 ml-3 !rounded-lg"><i class="fas fa-heart text-xs"></i> Donasi</a></div><!-- Mobile Menu Button --><button class="lg:hidden flex flex-col gap-1.5 p-2 z-50" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span class="block w-6 h-0.5 bg-gray-700 rounded transition-transform origin-center menu-bar"></span><span class="block w-6 h-0.5 bg-gray-700 rounded transition-opacity menu-bar"></span><span class="block w-6 h-0.5 bg-gray-700 rounded transition-transform origin-center menu-bar"></span></button></nav></header><!--
+})();</script><title>News — deepin Indonesia</title><link rel="stylesheet" href="/_astro/Layout.BOt58TBm.css"></head><body class="min-h-screen flex flex-col"><header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b-2 border-gray-200 shadow-[0_1px_3px_rgba(0,0,0,0.08)]" id="header"><nav class="container-main flex items-center justify-between h-[72px]" aria-label="Main"><!-- Logo --><a href="https://deepin.id" class="flex items-center shrink-0" aria-label="deepin Indonesia home"><img src="/images/deepin-id-text.png" alt="deepin Indonesia" width="138" height="34" class="h-8 w-auto" loading="eager" decoding="async" fetchpriority="high"></a><!-- Desktop Nav --><div class="hidden lg:flex items-center gap-1"><a href="https://deepin.id" class="btn-ghost text-sm font-medium py-2">Home</a><a href="https://os.deepin.id" class="btn-ghost text-sm font-medium py-2">Download</a><div class="relative group"><button class="btn-ghost text-sm font-medium py-2">News<i class="fas fa-chevron-down text-[10px] ml-1 opacity-50 group-hover:rotate-180 transition-transform"></i></button><div class="absolute top-full left-0 mt-1 bg-white rounded-xl border border-gray-100 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[200px] py-2"><a href="https://news.deepin.id/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-deepin-600 transition-colors">Semua Artikel</a><a href="https://news.deepin.id/?tag=release-notes" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-deepin-600 transition-colors">Release Note</a><a href="https://news.deepin.id/?tag=tips-deepin" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-deepin-600 transition-colors">Tips deepin</a><a href="https://news.deepin.id/?tag=komunitas-update" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-deepin-600 transition-colors">Komunitas Update</a><a href="https://news.deepin.id/?tag=event" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-deepin-600 transition-colors">Event</a></div></div><a href="https://t.me/Linux_deepin_ID" class="btn-ghost text-sm font-medium py-2" target="_blank" rel="noopener">Gabung Komunitas</a><!-- Tentang deepin Dropdown --><div class="relative group"><button class="btn-ghost text-sm font-medium py-2">Tentang deepin<i class="fas fa-chevron-down text-[10px] ml-1 opacity-50 group-hover:rotate-180 transition-transform"></i></button><div class="absolute top-full right-0 mt-1 bg-white rounded-xl border border-gray-100 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[220px] py-2"><a href="https://about.deepin.id/product-planning/" class="block px-4 py-2 text-sm hover:bg-gray-50 hover:text-deepin-600 transition-colors text-gray-700">Product Planning</a><a href="https://about.deepin.id/original-apps/" class="block px-4 py-2 text-sm hover:bg-gray-50 hover:text-deepin-600 transition-colors text-gray-700">Original Apps</a><a href="https://about.deepin.id/desktop-environment/" class="block px-4 py-2 text-sm hover:bg-gray-50 hover:text-deepin-600 transition-colors text-gray-700">Desktop Environment</a><a href="https://about.deepin.id/Indonesia" class="block px-4 py-2 text-sm hover:bg-gray-50 hover:text-deepin-600 transition-colors text-deepin-600 font-semibold">deepin Indonesia</a></div></div><!-- Donasi CTA (paling kanan) --><a href="https://donasi.deepin.id" class="btn-primary text-sm py-2 px-4 ml-3 !rounded-lg"><i class="fas fa-heart text-xs"></i> Donasi</a></div><!-- Mobile Menu Button --><button class="lg:hidden flex flex-col gap-1.5 p-2 z-50" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span class="block w-6 h-0.5 bg-gray-700 rounded transition-transform origin-center menu-bar"></span><span class="block w-6 h-0.5 bg-gray-700 rounded transition-opacity menu-bar"></span><span class="block w-6 h-0.5 bg-gray-700 rounded transition-transform origin-center menu-bar"></span></button></nav></header><!--
   Menu mobile & backdrop sengaja diletakkan DI LUAR <header>.
   <header> memakai `backdrop-blur-xl` (backdrop-filter), dan properti tersebut
   membuat elemen menjadi containing block bagi semua `position: fixed` di
