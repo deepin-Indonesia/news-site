@@ -134,25 +134,25 @@ AI akan mengenali skill yang relevan, memuat dokumen arsitektur, penjelasan API,
 
 ## Pertanyaan Seputar deepin-skills
 
-<details>
+<details class="faq-item">
 <summary><strong>Apakah deepin-skills gratis?</strong></summary>
 
 Ya, deepin-skills **sepenuhnya gratis dan open source** di bawah lisensi open source. Kamu bisa menggunakan, memodifikasi, dan berkontribusi ke proyek ini tanpa biaya apapun.
 </details>
 
-<details>
+<details class="faq-item">
 <summary><strong>Apakah deepin-skills hanya untuk developer deepin?</strong></summary>
 
 Skill ini dioptimalkan untuk ekosistem **deepin 25** dan **UOS V25**, tapi pengetahuan DTK dan Qt di dalamnya juga relevan untuk pengembangan aplikasi Linux desktop secara umum.
 </details>
 
-<details>
+<details class="faq-item">
 <summary><strong>AI agent apa saja yang didukung?</strong></summary>
 
 deepin-skills menggunakan format standar yang kompatibel dengan berbagai AI coding agent yang mendukung sistem Skill, termasuk **小U同学** (deepin native), GitHub Copilot, dan Claude Code.
 </details>
 
-<details>
+<details class="faq-item">
 <summary><strong>Bagaimana cara berkontribusi ke deepin-skills?</strong></summary>
 
 Kamu bisa berkontribusi lewat GitHub: buat issue untuk melaporkan bug, submit pull request untuk menambahkan skill baru atau memperbaiki dokumentasi, dan ikut serta dalam diskusi komunitas di halaman proyek.

@@ -5,7 +5,7 @@ export const SITE: SiteConfig = {
   tagline: 'Komunitas Resmi Pengguna deepin Linux di Indonesia',
   description:
     'deepin Indonesia — Komunitas resmi deepin Linux di Indonesia. Download deepin 25, gabung komunitas, baca berita, tips, dan tutorial deepin terbaru.',
-  url: 'https://deepin.id',
+  url: 'https://news.deepin.id',
   email: 'deepin@siberin.id',
   locale: 'id_ID',
   ga4: 'G-2J4TLB9W7H',

@@ -110,7 +110,7 @@ Klik ikon title bar dan pilih **Settings** untuk mengakses konfigurasi lengkap:
 
 ## Pertanyaan yang Sering Muncul
 
-<details>
+<details class="faq-item">
 <summary><strong>Kenapa perangkat saya tidak muncul di device list?</strong></summary>
 
 Beberapa kemungkinan penyebabnya:
@@ -121,7 +121,7 @@ Beberapa kemungkinan penyebabnya:
 
 </details>
 
-<details>
+<details class="faq-item">
 <summary><strong>Bagaimana cara cek apakah dua perangkat ada di network segment yang sama?</strong></summary>
 
 Bandingkan **tiga bagian pertama IP address** kedua perangkat. Kalau sama, perangkat berada di segment yang sama.
@@ -130,21 +130,21 @@ Contoh: `192.168.1.10` dan `192.168.1.25` → segment sama. `192.168.1.10` dan `
 
 </details>
 
-<details>
+<details class="faq-item">
 <summary><strong>Apakah transfer data di Cross-Device Collaboration aman?</strong></summary>
 
 Ya, data di-serialisasi menggunakan **protobuf** dan dienkripsi dengan **SSL/TLS 1.3** — standar keamanan yang sama dengan yang digunakan perbankan online. Transfer file dan sharing clipboard semuanya terenkripsi end-to-end dalam jaringan lokal.
 
 </details>
 
-<details>
+<details class="faq-item">
 <summary><strong>Kenapa HP Android saya tidak bisa terkoneksi ke komputer?</strong></summary>
 
 Cross-Device Collaboration kini sudah mendukung **semua perangkat Android**. Pastikan HP dan komputer berada di jaringan Wi-Fi yang sama, dan aplikasi sudah terinstal di kedua perangkat.
 
 </details>
 
-<details>
+<details class="faq-item">
 <summary><strong>Bagaimana cara mengontrol HP dari komputer setelah screen mirroring?</strong></summary>
 
 Setelah screen mirroring aktif, buka **Settings HP → Accessibility → Installed Services**, cari **UOS Assistant**, dan aktifkan. Langkah pastinya tergantung model HP. Contoh untuk Huawei nova 9 Pro (HarmonyOS 4.2.0): Settings → Accessibility → Installed Services → UOS Assistant → Enable.
