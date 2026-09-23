@@ -39,7 +39,7 @@ Apakah kamu ingin mencoba **deepin 25** — sistem operasi Linux modern dengan a
 | **GUI Desktop** | ⭐⭐⭐ Bisa dengan trik | ⭐⭐⭐⭐⭐ Full desktop | ⭐⭐⭐⭐⭐ Full desktop |
 | **Cocok Untuk** | Developer, belajar Linux, CLI tools | Testing OS, GUI apps | Pengganti OS utama |
 
-> **Kesimpulan:** Jika tujuanmu adalah belajar Linux, development, atau menjalankan tools Linux di Windows — **WSL adalah pilihan terbaik**. Jika ingin pengalaman deepin desktop penuh, pertimbangkan [dual-boot atau install langsung](/2025-07-15-dummy-deepin-migration).
+> **Kesimpulan:** Jika tujuanmu adalah belajar Linux, development, atau menjalankan tools Linux di Windows — **WSL adalah pilihan terbaik**. Jika ingin pengalaman deepin desktop penuh, pertimbangkan [dual-boot atau install langsung](https://os.deepin.id).
 
 ---
 
