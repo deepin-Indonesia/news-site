@@ -1,0 +1,40 @@
+# deepin Indonesia — News
+
+> Berita, release notes, tips, dan tutorial deepin dalam Bahasa Indonesia. Dikelola oleh komunitas
+> resmi deepin Indonesia. Semua artikel ditulis dalam Bahasa Indonesia dengan istilah teknis tetap
+> dalam Bahasa Inggris agar konsisten dengan dokumentasi resmi deepin.
+
+Kontak: deepin@siberin.id
+Bahasa: Indonesia (id-ID). Istilah teknis tetap dalam Bahasa Inggris.
+
+## Kategori Artikel
+
+- [Semua Artikel](https://news.deepin.id/): Seluruh berita dan artikel deepin.
+- [Release Notes](https://news.deepin.id/?tag=release-notes): Catatan rilis setiap versi deepin.
+- [Tips deepin](https://news.deepin.id/?tag=tips-deepin): Tips, panduan, dan tutorial penggunaan deepin.
+- [Komunitas Update](https://news.deepin.id/?tag=komunitas-update): Kabar terbaru seputar komunitas.
+- [Event](https://news.deepin.id/?tag=event): Agenda dan laporan acara komunitas.
+
+## Artikel Release Notes
+
+- [deepin 25.2.1 Resmi Dirilis: Intelligent Search & Patch Keamanan](https://news.deepin.id/2026-08-04-deepin-25-2-1-update/): Intelligent semantic search, perbaikan Immutable System, Linyaps 1.13.8, dan patch keamanan.
+- [deepin 25.2.0 Resmi Dirilis: Treeland Stabil, AI Image Search, dan Ratusan Bug Fix](https://news.deepin.id/2026-07-08-deepin-25-2-release/): Treeland stabil, AI image search, taskbar split mode, dan kernel 6.18.
+- [deepin 25.1.0 Resmi Dirilis: Kernel 6.18 & UOS AI Claw Mode](https://news.deepin.id/2026-04-10-deepin-25-1-release/): Kernel naik ke 6.18 dengan BORE scheduler, UOS AI Claw Mode, AI Writing Agent, dan Skills Center.
+
+## Artikel Tips & Tutorial
+
+- [Tutorial Lengkap Install deepin 25 di Windows via WSL](https://news.deepin.id/2026-08-04-tutorial-install-deepin-wsl/): Cara menjalankan deepin 25 di Windows tanpa dual boot.
+- [deepin-skills Resmi Open Source: Panduan Lengkap Developer deepin & UOS](https://news.deepin.id/2026-07-31-deepin-skills-open-source/): Skill library untuk pengembangan aplikasi native deepin dan UOS.
+- [Panduan Cross-Device Collaboration deepin](https://news.deepin.id/2025-11-30-deepin-cross-device-collaboration/): Transfer file, sharing keyboard, dan mirror HP.
+- [NVIDIA Optimus di deepin: HDMI Tetap Jalan, Baterai Tetap Hemat](https://news.deepin.id/2025-11-12-deepin-nvidia-optimus-hdmi/): Cara deepin menangani dual GPU.
+
+## Situs Lain dalam Ekosistem
+
+- [deepin.id](https://deepin.id/): Beranda komunitas deepin Indonesia.
+- [os.deepin.id](https://os.deepin.id/): Halaman download deepin 25.
+- [about.deepin.id](https://about.deepin.id/): Tentang deepin — profil komunitas, product planning, dan DDE.
+
+## Catatan Penggunaan
+
+Konten di situs ini boleh dikutip, diringkas, dan dijadikan rujukan oleh asisten AI, dengan
+penyebutan sumber (deepin Indonesia, https://news.deepin.id).
