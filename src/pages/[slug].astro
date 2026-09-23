@@ -37,6 +37,19 @@ const latestPosts = [...otherPosts]
 const wordCount = post.body?.split(/\s+/).length ?? 0;
 const readTime = Math.max(1, Math.ceil(wordCount / 180));
 
+/**
+ * Dimensi sebenarnya setiap gambar thumbnail (untuk og:image:width/height).
+ * Diperbarui manual saat menambah artikel baru; jika tidak terdaftar,
+ * Layout memakai default 1200x630.
+ */
+const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }> = {
+  '/images/deepin-25-2-1-update/deepin-25-2-1-update.jpg': { width: 1600, height: 900 },
+  '/images/deepin-25-2-release/deepin-25-2-release.jpg': { width: 1200, height: 675 },
+  '/images/deepin-wsl-tutorial/deepin-wsl-cover.jpg': { width: 1274, height: 910 },
+  '/images/deepin-skills-open-source/deepin-Skills.png': { width: 1200, height: 675 },
+};
+const imageDimensions = post.data.image ? IMAGE_DIMENSIONS[post.data.image] : undefined;
+
 // Extract h2 headings for TOC (supports both <h2 id=""> HTML and ## Markdown)
 function slugify(text: string) {
   return text
@@ -69,7 +82,17 @@ const tagLabels: Record<string, string> = {
 };
 ---
 
-<Layout title={post.data.title} description={post.data.description} image={post.data.image} type="article" date={post.data.date.toISOString()} authorName={post.data.author} tags={post.data.tags}>
+<Layout
+  title={post.data.title}
+  description={post.data.description}
+  image={post.data.image}
+  imageWidth={imageDimensions?.width}
+  imageHeight={imageDimensions?.height}
+  type="article"
+  date={post.data.date.toISOString()}
+  authorName={post.data.author}
+  tags={post.data.tags}
+>
   <article class="bg-white">
     {/* Soft gradient header */}
     <div class="bg-gradient-to-b from-deepin-50 to-white pt-10 pb-4">
@@ -119,10 +142,15 @@ const tagLabels: Record<string, string> = {
           prose-blockquote:border-l-4 prose-blockquote:border-deepin-500 prose-blockquote:bg-deepin-50 prose-blockquote:px-5 prose-blockquote:py-3 prose-blockquote:rounded-r-xl prose-blockquote:not-italic prose-blockquote:text-gray-600 prose-blockquote:text-[15px]
           prose-strong:text-gray-900 prose-strong:font-semibold
           prose-hr:border-gray-100
-          [&_details]:my-5 [&_details]:rounded-xl [&_details]:border [&_details]:border-gray-200 [&_details]:overflow-hidden
-          [&_summary]:cursor-pointer [&_summary]:font-semibold [&_summary]:text-gray-800 [&_summary]:bg-gray-50 [&_summary]:px-5 [&_summary]:py-3 [&_summary]:text-sm
-          [&_details[open]_summary]:border-b [&_details[open]_summary]:border-gray-200
-          [&_details>p]:px-5 [&_details>p]:pb-3 [&_details>p]:pt-2
+          [&_details]:my-4
+          [&_details_h4]:px-5 [&_details_h4]:mt-5 [&_details_h4]:mb-2
+          [&_details_h4]:text-[13px] [&_details_h4]:font-bold [&_details_h4]:text-deepin-700
+          [&_details_h4]:uppercase [&_details_h4]:tracking-wider
+          [&_details_ul]:pl-9 [&_details_ul]:pr-5 [&_details_ul]:my-0 [&_details_ul]:pb-3
+          [&_details_ol]:pl-9 [&_details_ol]:pr-5 [&_details_ol]:my-0 [&_details_ol]:pb-3
+          [&_details_li]:text-sm [&_details_li]:leading-relaxed [&_details_li]:mb-1.5
+          [&_details_li]:marker:text-deepin-400
+          [&_details>ul:last-child]:pb-5 [&_details>ol:last-child]:pb-5
           [&_iframe]:rounded-xl [&_iframe]:shadow-lg [&_iframe]:my-6 [&_iframe]:w-full [&_iframe]:aspect-video [&_iframe]:h-auto
           [&_table]:w-full [&_table]:my-5 [&_table]:rounded-xl [&_table]:overflow-hidden [&_table]:border [&_table]:border-gray-200
           [&_p:has(+_p_em)]:mb-1
