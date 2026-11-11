@@ -316,7 +316,7 @@ Atau melalui terminal:
 sudo apt update && sudo apt dist-upgrade
 ```
 
-Bagi yang ingin memasang dari awal, image ISO deepin 25.3.0 dapat diunduh melalui halaman download komunitas di **[os.deepin.id](https://os.deepin.id)** atau kanal resmi deepin di **[deepin.org/en/download](https://www.deepin.org/en/download/)**.
+Bagi yang ingin memasang dari awal, image ISO deepin 25.3.0 dapat diunduh melalui halaman download resmi komunitas deepin Indonesia di **[os.deepin.id](https://os.deepin.id)**.
 
 ### Known Issues pada deepin 25.3.0
 
@@ -373,7 +373,7 @@ Buka **Control Center → System Update → Check for Updates → Update Now**, 
 <details class="faq-item">
 <summary><strong>Di mana saya bisa download deepin 25.3.0?</strong></summary>
 
-Image deepin 25.3.0 tersedia di halaman download komunitas Indonesia **[os.deepin.id](https://os.deepin.id)** maupun kanal resmi **[deepin.org/en/download](https://www.deepin.org/en/download/)**.
+Image deepin 25.3.0 tersedia di halaman download resmi komunitas Indonesia **[os.deepin.id](https://os.deepin.id)**. Di sana tersedia mirror untuk AMD64, ARM64, Loong64, RISC-V, dan WSL.
 
 </details>
 
