@@ -16,6 +16,8 @@ interface Props {
   date?: string;
   authorName?: string;
   tags?: string[];
+  /** Item FAQ halaman ini, untuk rich result FAQPage. */
+  faq?: { question: string; answer: string }[];
 }
 
 const {
@@ -28,6 +30,7 @@ const {
   date,
   authorName,
   tags = [],
+  faq = [],
 } = Astro.props;
 
 const pageTitle = title ? `${title} — ${SITE.name}` : `${SITE.name} — ${SITE.tagline}`;
@@ -102,6 +105,18 @@ const canonicalUrl = Astro.url.href;
         mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
         keywords: tags,
         isPartOf: { '@type': 'WebSite', name: SITE.name, url: SITE.url },
+      })} />
+    )}
+
+    {faq.length > 0 && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faq.map((item) => ({
+          '@type': 'Question',
+          name: item.question,
+          acceptedAnswer: { '@type': 'Answer', text: item.answer },
+        })),
       })} />
     )}
 

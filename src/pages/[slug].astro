@@ -75,6 +75,27 @@ for (const m of body.matchAll(/^##\s+(.+?)(?:\s*\{#[^}]*\})?\s*$/gm)) {
   toc.push({ id: slugify(text), text });
 }
 
+// Extract FAQ entries for FAQPage structured data.
+// Only items placed after an explicit FAQ heading are used, so the collapsible
+// "full release notes" blocks are never mistaken for FAQ answers.
+const faq: { question: string; answer: string }[] = [];
+const faqHeading = body.match(/(?:<h2[^>]*id="faq"[^>]*>|^##\s*Pertanyaan)/im);
+if (faqHeading && faqHeading.index !== undefined) {
+  const faqSection = body.slice(faqHeading.index);
+  for (const m of faqSection.matchAll(/<details[^>]*class="faq-item"[^>]*>([\s\S]*?)<\/details>/gi)) {
+    const inner = m[1];
+    const qm = inner.match(/<summary[^>]*>([\s\S]*?)<\/summary>/i);
+    if (!qm) continue;
+    const question = qm[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    const answer = inner
+      .replace(/<summary[^>]*>[\s\S]*?<\/summary>/i, ' ')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (question && answer) faq.push({ question, answer });
+  }
+}
+
 // Tag label mapping
 const tagLabels: Record<string, string> = {
   'release-notes': 'Release Notes',
@@ -94,6 +115,7 @@ const tagLabels: Record<string, string> = {
   date={post.data.date.toISOString()}
   authorName={post.data.author}
   tags={post.data.tags}
+  faq={faq}
 >
   <article class="bg-white">
     {/* Soft gradient header */}
