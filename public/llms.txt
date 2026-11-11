@@ -17,6 +17,7 @@ Bahasa: Indonesia (id-ID). Istilah teknis tetap dalam Bahasa Inggris.
 
 ## Artikel Release Notes
 
+- [deepin 25.3.0 Resmi Dirilis: Freeze Protection, UOS AI Agent, dan Kernel 6.6.159](https://news.deepin.id/2026-11-11-deepin-25-3-release/): Freeze protection, UOS AI Agent dengan whole-disk knowledge base, PC Manager bawaan, snapshot ke USB, Linyaps GPU acceleration, dan kernel 6.6.159/6.18.56.
 - [deepin 25.2.1 Resmi Dirilis: Intelligent Search & Patch Keamanan](https://news.deepin.id/2026-08-04-deepin-25-2-1-update/): Intelligent semantic search, perbaikan Immutable System, Linyaps 1.13.8, dan patch keamanan.
 - [deepin 25.2.0 Resmi Dirilis: Treeland Stabil, AI Image Search, dan Ratusan Bug Fix](https://news.deepin.id/2026-07-08-deepin-25-2-release/): Treeland stabil, AI image search, taskbar split mode, dan kernel 6.18.
 - [deepin 25.1.0 Resmi Dirilis: Kernel 6.18 & UOS AI Claw Mode](https://news.deepin.id/2026-04-10-deepin-25-1-release/): Kernel naik ke 6.18 dengan BORE scheduler, UOS AI Claw Mode, AI Writing Agent, dan Skills Center.
