@@ -116,6 +116,11 @@ const tagLabels: Record<string, string> = {
   authorName={post.data.author}
   tags={post.data.tags}
   faq={faq}
+  breadcrumbs={[
+    { name: 'Home', url: 'https://deepin.id/' },
+    { name: 'News', url: 'https://news.deepin.id/' },
+    { name: post.data.title, url: `/${post.id}/` },
+  ]}
 >
   <article class="bg-white">
     {/* Soft gradient header */}
