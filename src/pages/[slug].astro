@@ -212,7 +212,7 @@ const tagLabels: Record<string, string> = {
     {toc.length > 0 && (
       <aside class="hidden xl:block fixed top-[88px] z-30 w-44" style="left:max(calc(50% + 384px + 2.5rem), calc(100vw - 14rem))" id="toc-sidebar">
         <p class="text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-3 select-none">Daftar Isi</p>
-        <nav class="border-l-2 border-gray-200" id="toc-nav">
+        <nav class="border-l-2 border-gray-200 max-h-[calc(100vh-148px)] overflow-y-auto pr-1 toc-scroll" id="toc-nav">
           {toc.map((item) => (
             <a
               href={`#${item.id}`}
@@ -295,3 +295,21 @@ const tagLabels: Record<string, string> = {
     });
   }
 </script>
+
+<style>
+  /* Scrollbar tipis untuk daftar isi agar tetap rapi ketika artikel panjang. */
+  .toc-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #d1d5db transparent;
+  }
+  .toc-scroll::-webkit-scrollbar {
+    width: 4px;
+  }
+  .toc-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .toc-scroll::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 9999px;
+  }
+</style>

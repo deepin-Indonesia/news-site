@@ -31,6 +31,19 @@ Berikut gambaran cepat lima area terpenting pada rilis deepin 25.3.0:
 | **Maintenance & Data** | **PC Manager** terpasang default, alur backup/rollback sebelum upgrade lebih efisien |
 | **Kernel & Hardware** | Kernel default **6.6.159**, higher kernel **6.18.56**, GPU acceleration untuk **Linyaps** |
 
+### Apa yang Berubah Dibanding deepin 25.2.x?
+
+| Aspek | deepin 25.2.x | deepin 25.3.0 |
+| --- | --- | --- |
+| **UOS AI** | Asisten dengan pencarian dan percakapan | **Agent OS** + whole-disk knowledge base + MCP/Skills unified entry |
+| **Freeze protection** | ❌ Belum ada | ✅ Taskbar, Launcher, dan System Monitor tetap bisa dibuka |
+| **PC Manager** | Perlu dipasang manual | ✅ Terpasang default dalam image |
+| **Snapshot** | Terbatas di local disk | ✅ Local disk, USB drive, dan portable hard drive |
+| **Kernel default** | 6.6 versi sebelumnya | **6.6.159** |
+| **Hardware acceleration** | GPU acceleration terbatas | ✅ Linyaps + nvidia-container-toolkit |
+| **Document Viewer** | Mode baca dasar | ✅ Posisi baca tersimpan + 3 eye-care mode |
+| **Text Editor** | Plain text | ✅ **Markdown rendering** |
+
 <h2 id="uos-ai">UOS AI: Dari Asisten Sistem Menjadi Agent OS</h2>
 
 Sorotan terbesar deepin 25.3.0 ada di sisi kecerdasan buatan. **UOS AI** kini naik level menjadi *system-level intelligence* untuk **Agent OS** — pendekatan di mana AI tidak hanya menjawab pertanyaan, tetapi benar-benar mengeksekusi tugas di dalam sistem operasi.
@@ -53,9 +66,9 @@ Sejumlah peningkatan lain membuat UOS AI terasa seperti rekan kerja sungguhan:
 - **Conversation memory** dan **automatic context summarization** yang lebih baik, plus **task queuing** serta riwayat yang diorganisasi per workspace
 - **Permission mode per conversation** dengan kontrol izin penyimpanan file yang aman, sehingga mengurangi approval berulang
 
-<h2 id="stabilitas-performa">Stabilitas dan Performa: Freeze Protection hingga Startup Lebih Cepat</h2>
+<h2 id="stabilitas-performa">Stabilitas, Performa, dan Kernel</h2>
 
-deepin 25.3.0 membawa peningkatan performa yang langsung terasa, terutama saat sistem sedang dibebani banyak aplikasi.
+deepin 25.3.0 membawa peningkatan performa yang langsung terasa, terutama saat sistem sedang dibebani banyak aplikasi. Fondasi kernel dan dukungan hardware juga ikut diperkuat di rilis ini.
 
 ### Freeze Protection: Tetap Bisa Menyelamatkan Diri Saat Sistem Macet
 
@@ -71,7 +84,30 @@ Fitur baru **freeze protection** dirancang untuk skenario terburuk. Ketika siste
 
 Log sistem kini dibatasi **maksimal 5 GB secara default**, terlepas dari pengaturan debug mode. Log otomatis berhenti bertambah ketika ruang disk tersisa di bawah **5%**, sehingga log tidak lagi menghabiskan ruang penyimpanan secara berlebihan.
 
-<h2 id="immutable-system">Immutable System: Snapshot dan Restore yang Lebih Fleksibel</h2>
+### Kernel 6.6.159 dan Kompatibilitas Hardware
+
+Fondasi sistem diperkuat melalui pembaruan kernel yang signifikan:
+
+| Kernel | Versi | Catatan |
+| --- | --- | --- |
+| **Default kernel** | **6.6.159** | Memperbaiki celah keamanan di x86, arm64, dan loong64, serta mengatasi masalah boot pada perangkat tertentu |
+| **Higher-version kernel** | **6.18.56** | Dapat dipasang melalui **Kernel Manager** untuk dukungan hardware platform terbaru |
+
+Selain itu, opsi **NVIDIA driver** saat instalasi kini **otomatis mencocokkan GPU** yang terpasang, sehingga Anda tidak perlu menebak versi driver yang tepat.
+
+### GPU Acceleration untuk Linyaps dan Driver NVIDIA
+
+Ekosistem hardware deepin 25.3.0 juga tumbuh, khususnya untuk pengguna yang menjalankan aplikasi dalam format **Linyaps**:
+
+- **GPU acceleration untuk container Linyaps** didukung penuh, dengan **nvidia-container-toolkit** yang sudah terpasang sebelumnya
+- Aplikasi Linyaps kini dapat memanfaatkan akselerasi GPU untuk **pemutaran video** dan **rendering grafis** yang lebih mulus
+- **GPU driver** mendapat dukungan **CDI** baru dan pembaruan **integrated GPU driver**, memperkuat dukungan grafis lintas platform hardware
+
+<h2 id="system-maintenance">Perawatan Sistem dan Perlindungan Data</h2>
+
+Selain performa, deepin 25.3.0 memudahkan Anda menjaga sistem tetap sehat dan data tetap aman melalui penyempurnaan **Immutable System** dan kehadiran **PC Manager** bawaan.
+
+### Immutable System: Snapshot dan Restore yang Lebih Fleksibel
 
 **Immutable System** deepin mendapat penyempurnaan pada alur **snapshot dan restore**:
 
@@ -81,7 +117,7 @@ Log sistem kini dibatasi **maksimal 5 GB secara default**, terlepas dari pengatu
 
 Dengan perubahan ini, menjaga titik pemulihan sistem menjadi lebih praktis — termasuk ketika Anda ingin menyimpan snapshot ke media eksternal sebelum melakukan eksperimen atau upgrade besar.
 
-<h2 id="pc-manager">PC Manager Bawaan: Cek Kesehatan Sistem dalam Satu Klik</h2>
+### PC Manager Bawaan: Cek Kesehatan Sistem dalam Satu Klik
 
 **PC Manager** kini disertakan langsung di dalam image deepin 25.3.0. Aplikasi ini menggabungkan deteksi, pembersihan, dan perbaikan dalam satu tempat, menjadikan perawatan sistem semudah melakukan *health check*:
 
@@ -90,28 +126,9 @@ Dengan perubahan ini, menjaga titik pemulihan sistem menjadi lebih praktis — t
 - **Manajemen startup application**
 - **Tool troubleshooting** umum untuk masalah sehari-hari
 
-<h2 id="kernel-hardware">Kernel 6.6.159 dan Kompatibilitas Hardware</h2>
-
-Fondasi sistem juga diperkuat melalui pembaruan kernel yang signifikan:
-
-| Kernel | Versi | Catatan |
-| --- | --- | --- |
-| **Default kernel** | **6.6.159** | Memperbaiki celah keamanan di x86, arm64, dan loong64, serta mengatasi masalah boot pada perangkat tertentu |
-| **Higher-version kernel** | **6.18.56** | Dapat dipasang melalui **Kernel Manager** untuk dukungan hardware platform terbaru |
-
-Selain itu, opsi **NVIDIA driver** saat instalasi kini **otomatis mencocokkan GPU** yang terpasang, sehingga Anda tidak perlu menebak versi driver yang tepat.
-
-<h2 id="gpu-linyaps">GPU Acceleration untuk Linyaps dan Driver NVIDIA</h2>
-
-Ekosistem hardware deepin 25.3.0 juga tumbuh, khususnya untuk pengguna yang menjalankan aplikasi dalam format **Linyaps**:
-
-- **GPU acceleration untuk container Linyaps** didukung penuh, dengan **nvidia-container-toolkit** yang sudah terpasang sebelumnya
-- Aplikasi Linyaps kini dapat memanfaatkan akselerasi GPU untuk **pemutaran video** dan **rendering grafis** yang lebih mulus
-- **GPU driver** mendapat dukungan **CDI** baru dan pembaruan **integrated GPU driver**, memperkuat dukungan grafis lintas platform hardware
-
 <h2 id="desktop-aplikasi">Desktop dan Aplikasi Bawaan yang Semakin Nyaman</h2>
 
-Pengalaman desktop sehari-hari ikut dipoles di rilis ini.
+Pengalaman desktop sehari-hari ikut dipoles di rilis ini, mulai dari taskbar hingga aplikasi bawaan.
 
 ![Desktop deepin 25.3.0 dengan DDE (Deepin Desktop Environment) — taskbar, Launcher, dan Control Center yang lebih responsif](/images/deepin-25-3-release/dde-desktop.webp)
 
@@ -144,7 +161,7 @@ Anda dapat langsung mengedit gambar tepat setelah melihatnya, tanpa membuka tool
 - **File Manager**: **tree-style directory view** di sidebar, yang bisa diatur expand atau collapse secara default melalui antarmuka grafis
 - **Installer**: animasi loading dan ikon yang lebih jelas sebagai umpan balik progres instalasi
 
-<h2 id="treeland">Treeland: Fondasi Wayland yang Semakin Matang</h2>
+### Treeland: Fondasi Wayland yang Semakin Matang
 
 **Treeland**, Wayland compositor deepin, terus dimatangkan:
 
@@ -271,29 +288,20 @@ Selain fitur baru, deepin 25.3.0 membawa daftar perbaikan bug yang panjang. Beri
 
 </details>
 
-<h2 id="perbandingan">Apa yang Berubah Dibanding Versi Sebelumnya?</h2>
+<h2 id="cara-upgrade">Cara Upgrade dan Catatan Penting</h2>
 
-| Aspek | deepin 25.2.x | deepin 25.3.0 |
-| --- | --- | --- |
-| **UOS AI** | Asisten dengan pencarian dan percakapan | **Agent OS** + whole-disk knowledge base + MCP/Skills unified entry |
-| **Freeze protection** | ❌ Belum ada | ✅ Taskbar, Launcher, dan System Monitor tetap bisa dibuka |
-| **PC Manager** | Perlu dipasang manual | ✅ Terpasang default dalam image |
-| **Snapshot** | Terbatas di local disk | ✅ Local disk, USB drive, dan portable hard drive |
-| **Kernel default** | 6.6 versi sebelumnya | **6.6.159** |
-| **Hardware acceleration** | GPU acceleration terbatas | ✅ Linyaps + nvidia-container-toolkit |
-| **Document Viewer** | Mode baca dasar | ✅ Posisi baca tersimpan + 3 eye-care mode |
-| **Text Editor** | Plain text | ✅ **Markdown rendering** |
+deepin 25.3.0 adalah rilis **feature-enhancement dan bug-fix**, jadi beberapa pengguna sebaiknya memasang dari awal, sementara sisanya cukup upgrade.
 
-<h2 id="siapa-install">Siapa yang Perlu Install deepin 25.3.0?</h2>
+### Siapa yang Perlu Install deepin 25.3.0?
 
-deepin 25.3.0 adalah rilis **feature-enhancement dan bug-fix**. Instalasi bersih (fresh install) sangat disarankan untuk:
+Instalasi bersih (fresh install) sangat disarankan untuk:
 
 1. **Perangkat baru** yang baru pertama kali memasang deepin 25, agar langsung mendapatkan fitur dan patch terbaru
 2. Pengguna **rilis deepin 25 lama** yang sudah lama tidak memperbarui, dan ingin pindah ke versi terbaru sekaligus tanpa upgrade panjang
 
 > **Catatan penting:** Jika sistem Anda saat ini berjalan normal dan rutin diperbarui (versi terakhir: **25.2.2**), Anda dapat **langsung upgrade ke deepin 25.3.0** melalui **Control Center → System Update**, atau dengan perintah terminal `sudo apt update && sudo apt dist-upgrade` — tanpa perlu instalasi ulang.
 
-<h2 id="cara-upgrade">Cara Upgrade ke deepin 25.3.0</h2>
+### Cara Upgrade ke deepin 25.3.0
 
 Bagi pengguna yang sudah menjalankan deepin 25, proses upgrade cukup sederhana:
 
@@ -310,7 +318,7 @@ sudo apt update && sudo apt dist-upgrade
 
 Bagi yang ingin memasang dari awal, image ISO deepin 25.3.0 dapat diunduh melalui halaman download komunitas di **[os.deepin.id](https://os.deepin.id)** atau kanal resmi deepin di **[deepin.org/en/download](https://www.deepin.org/en/download/)**.
 
-<h2 id="known-issues">Known Issues pada deepin 25.3.0</h2>
+### Known Issues pada deepin 25.3.0
 
 Beberapa masalah minor yang tidak mengganggu penggunaan normal masih ada dan sedang diperbaiki:
 
@@ -369,7 +377,7 @@ Image deepin 25.3.0 tersedia di halaman download komunitas Indonesia **[os.deepi
 
 </details>
 
-<h2 id="penutup">Penutup</h2>
+---
 
 deepin 25.3.0 adalah rilis yang padat dan berdampak nyata: **freeze protection** dan startup yang lebih cepat membuat sistem lebih tahan beban, **UOS AI** naik kelas menjadi **Agent OS** dengan whole-disk knowledge base, sementara **PC Manager**, **Immutable System**, kernel baru, serta dukungan GPU untuk **Linyaps** memperkuat fondasi deepin untuk penggunaan harian, produktivitas, dan kompatibilitas hardware.
 
