@@ -1,9 +1,9 @@
 ---
-title: "deepin 25.3.0 Resmi Dirilis: Freeze Protection, UOS AI Agent, dan Kernel 6.6.159"
+title: "deepin 25.3.0 Resmi Dirilis: Freeze Protection, UOS AI Agent, dan Kernel 6.6.159 & 6.18.56"
 date: 2026-11-11
 tags: [release-notes]
 author: deepin Indonesia
-description: "deepin 25.3.0 resmi rilis! Freeze protection, UOS AI Agent dengan whole-disk knowledge base, PC Manager bawaan, snapshot ke USB, dan kernel 6.6.159. Cek semua fitur barunya."
+description: "deepin 25.3.0 resmi rilis! Freeze protection, UOS AI Agent dengan whole-disk knowledge base, PC Manager bawaan, dan kernel 6.6.159 & 6.18.56. Cek semua fitur barunya."
 image: /images/deepin-25-3-release/deepin-25-3-0-released.jpg
 ---
 
@@ -84,7 +84,7 @@ Fitur baru **freeze protection** dirancang untuk skenario terburuk. Ketika siste
 
 Log sistem kini dibatasi **maksimal 5 GB secara default**, terlepas dari pengaturan debug mode. Log otomatis berhenti bertambah ketika ruang disk tersisa di bawah **5%**, sehingga log tidak lagi menghabiskan ruang penyimpanan secara berlebihan.
 
-### Kernel 6.6.159 dan Kompatibilitas Hardware
+### Kernel 6.6.159 dan 6.18.56
 
 Fondasi sistem diperkuat melalui pembaruan kernel yang signifikan:
 
