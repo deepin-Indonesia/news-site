@@ -1,269 +1,249 @@
+<div align="center">
+
 # deepin Indonesia — News Site
 
-Portal artikel & berita resmi komunitas deepin Indonesia: **[news.deepin.id](https://news.deepin.id)**
+**Portal berita, release notes, tips, dan tutorial deepin**
 
-Fitur: blog dengan tag filter, TOC sidebar ala Medium dengan Intersection Observer scroll spy, artikel terkait/random/terbaru, share buttons, dan SEO metadata lengkap.
+[news.deepin.id](https://news.deepin.id) · 🇮🇩 **Bahasa Indonesia** · [🇬🇧 English](README.en.md)
+
+</div>
 
 ---
 
+Portal artikel & berita resmi komunitas deepin Indonesia. Dibangun dengan [Astro 7](https://astro.build) + [Tailwind CSS v4](https://tailwindcss.com) + Astro Content Collections, sepenuhnya statis.
+
+## Daftar Isi
+
+- [Tentang Proyek](#tentang-proyek)
+- [Fitur](#fitur)
+- [Tech Stack](#tech-stack)
+- [Struktur Proyek](#struktur-proyek)
+- [Memulai](#memulai)
+- [Menulis Artikel](#menulis-artikel)
+- [Format & Konvensi Artikel](#format--konvensi-artikel)
+- [SEO Artikel](#seo-artikel)
+- [Deployment](#deployment)
+- [AdSense & Privasi](#adsense--privasi)
+- [Analitik](#analitik)
+- [Berkontribusi](#berkontribusi)
+- [Lisensi](#lisensi)
+
+## Tentang Proyek
+
+`news-site` adalah portal berita komunitas deepin Indonesia di **https://news.deepin.id**. Isinya mencakup:
+
+- **Release notes** setiap versi deepin (ditulis ulang dalam Bahasa Indonesia).
+- **Tips deepin**, tutorial, dan panduan praktis.
+- **Kabar komunitas** dan **event**.
+
+Artikel ditulis dalam Bahasa Indonesia dengan istilah teknis tetap dalam Bahasa Inggris agar konsisten dengan dokumentasi resmi deepin.
+
+### Ekosistem deepin Indonesia
+
+| Subdomain | Repo | Fungsi |
+|---|---|---|
+| [deepin.id](https://deepin.id) | `home-site` | Halaman utama |
+| [os.deepin.id](https://os.deepin.id) | `download-site` | Download image deepin |
+| [news.deepin.id](https://news.deepin.id) | `news-site` ← repo ini | Berita & artikel |
+| [about.deepin.id](https://about.deepin.id) | `about-site` | Tentang & product planning |
+| [donasi.deepin.id](https://donasi.deepin.id) | `donasi-site` | Donasi komunitas |
+
+## Fitur
+
+- **Tag filter** di beranda (Semua, Release Notes, Tips deepin, Komunitas Update, Event).
+- **Sidebar Daftar Isi (TOC)** dengan *scroll-spy* ala Medium.
+- **Artikel terkait**, **artikel random**, dan **artikel terbaru** di akhir setiap artikel.
+- **Tombol bagikan** (Telegram, WhatsApp, X, Facebook).
+- **FAQ accordion** yang otomatis menjadi schema `FAQPage`.
+- **Breadcrumb** + schema `BreadcrumbList`.
+- **Optimasi gambar artikel** otomatis (lebar/tinggi + lazy-load).
+- **SEO lengkap** dan **Google AdSense**.
+
 ## Tech Stack
 
-| Technology | Detail |
+| Teknologi | Detail |
 |---|---|
 | **Framework** | [Astro 7](https://astro.build) |
 | **Styling** | [Tailwind CSS v4](https://tailwindcss.com) + `@tailwindcss/typography` |
-| **Content** | Astro Content Collections (glob loader) |
+| **Konten** | Astro Content Collections (`glob` loader) |
 | **Markdown** | `@astrojs/markdown-remark` + `rehype-external-links` |
-| **Icons** | [Font Awesome 6](https://fontawesome.com) (CDN) |
+| **Gambar** | `sharp` (plugin rehype khusus untuk `width`/`height`) |
+| **Ikon** | [Font Awesome 6](https://fontawesome.com) (CDN) |
 | **Sitemap** | `@astrojs/sitemap` |
+| **Analitik** | Google Analytics 4 — `G-2J4TLB9W7H` |
+| **Iklan** | Google AdSense — `ca-pub-1345939033565649` |
 | **Deploy** | [Cloudflare Pages](https://pages.cloudflare.com) |
-| **Analytics** | Google Analytics 4 (`G-2J4TLB9W7H`) |
-| **Runtime** | Node.js 24 |
+| **Runtime** | Node.js 20+ |
 
-## Project Structure
+## Struktur Proyek
 
 ```
 news-site/
 ├── src/
 │   ├── components/
-│   │   ├── Layout.astro      # Base layout (HTML head, GA4, SEO meta, JSON-LD)
-│   │   ├── Analytics.astro   # Google Analytics 4 + pelacakan perilaku pengguna
-│   │   ├── Header.astro      # Sticky header + nav + mobile menu
-│   │   └── Footer.astro      # Footer dengan social links
+│   │   ├── Layout.astro      # <head>, meta SEO, schema, AdSense, GA
+│   │   ├── Header.astro
+│   │   ├── Footer.astro
+│   │   └── Analytics.astro
 │   ├── content/
-│   │   └── posts/             # Artikel Markdown (*.md)
+│   │   ├── config.ts         # Schema frontmatter artikel
+│   │   └── posts/            # Artikel Markdown (*.md)
 │   │       └── YYYY-MM-DD-slug.md
 │   ├── data/
-│   │   └── site.ts           # Site config, MAIN_NAV, ABOUT_NAV, social
+│   │   └── site.ts           # Konfigurasi situs & navigasi
 │   ├── pages/
-│   │   ├── index.astro       # Homepage — hero, tag filter, post grid
-│   │   ├── [slug].astro      # Post detail — article, TOC sidebar, related posts
-│   │   └── 404.astro         # Custom 404
+│   │   ├── index.astro       # Beranda — hero, tag filter, grid artikel
+│   │   ├── [slug].astro      # Halaman artikel — konten, TOC, artikel terkait
+│   │   └── 404.astro         # 404 (noindex)
 │   └── styles/
-│       └── global.css        # Tailwind import + @theme colors
+│       └── global.css        # Tailwind + typography + palet deepin
 ├── public/
-│   ├── images/               # Logo, favicon, artikel images
-│   └── robots.txt            # Crawler rules + Sitemap directive
-├── astro.config.mjs          # site: https://news.deepin.id, rehype-external-links
-├── package.json
-└── tsconfig.json
+│   ├── images/               # Thumbnail & gambar artikel
+│   ├── _redirects            # Redirect URL lama + /privacy/ → deepin.id
+│   ├── ads.txt
+│   ├── robots.txt
+│   ├── llms.txt              # Ringkasan situs + daftar artikel untuk LLM
+│   └── site.webmanifest
+├── astro.config.mjs          # rehype plugin gambar, sitemap, external links
+├── tsconfig.json
+└── package.json
 ```
 
-## Getting Started
+## Memulai
+
+### Prasyarat
+
+- [Node.js](https://nodejs.org) 20+
+- npm
+
+### Instalasi & pengembangan
 
 ```bash
 git clone https://github.com/deepin-Indonesia/news-site.git
 cd news-site
 npm install
-npm run dev        # → http://localhost:4324
-npm run build      # Production build → dist/
+npm run dev        # → http://localhost:4321 (atau port berikutnya)
 ```
 
-## Deployment
+### Perintah
 
-Push ke branch `main` → Cloudflare Pages auto-deploy.
-
-| Setting | Value |
+| Perintah | Kegunaan |
 |---|---|
-| Build command | `npm run build` |
-| Output directory | `dist` |
-| Branch | `main` |
-
-## Contributing
-
-Semua orang bisa berkontribusi — tidak perlu jadi anggota organisasi.
-
-### Untuk kontributor luar (via Fork)
-
-1. **Fork** repo ini (klik tombol Fork di GitHub)
-2. Clone fork kamu: `git clone https://github.com/USERNAME/news-site.git`
-3. `git checkout preview && git checkout -b feat/deskripsi`
-4. Edit, commit, push ke fork kamu
-5. Buka **Pull Request (PR)** ke `deepin-Indonesia/news-site` → target: `preview`
-
-### Untuk anggota organisasi (push langsung)
-
-1. `git checkout preview && git checkout -b feat/deskripsi`
-2. Commit & push
-3. Buat PR ke `preview`
-4. Setelah review, merge `preview` → `main`
-
-> ⚠️ Jangan push langsung ke `main` — harus lewat PR (Pull Request).
+| `npm run dev` | Server pengembangan |
+| `npm run build` | Build produksi ke `dist/` |
+| `npm run preview` | Preview hasil build |
 
 ## Menulis Artikel
 
 ### 1. Buat file di `src/content/posts/`
 
-Format nama: `YYYY-MM-DD-slug-judul.md`
+Format nama: **`YYYY-MM-DD-slug-judul.md`** (slug inilah yang menjadi URL `/YYYY-MM-DD-slug-judul/`).
 
 ### 2. Frontmatter
 
 ```yaml
 ---
-title: "Judul Artikel — Subjudul SEO"
-date: YYYY-MM-DD
-tags: [tips-deepin]       # Hanya: release-notes, tips-deepin, komunitas-update, event
+title: "Judul Artikel yang Jelas — Subjudul SEO"
+date: 2026-11-11
+tags: [release-notes]        # release-notes | tips-deepin | komunitas-update | event
 author: deepin Indonesia
-description: "Meta description 150-160 karakter untuk SEO."
+description: "Meta description 150–160 karakter, memuat keyword utama."
 image: /images/nama-folder/cover.jpg
 ---
 ```
 
-### 3. Heading untuk TOC
+> Skema divalidasi oleh `src/content/config.ts`. `tags` wajib diisi.
 
-Gunakan `## Heading` markdown atau `<h2 id="slug">Heading</h2>` — otomatis muncul di TOC sidebar.
+### 3. Heading & TOC
+
+Gunakan `## Heading` markdown **atau** `<h2 id="slug">Heading</h2>`. Keduanya otomatis muncul di sidebar TOC.
+
+> 💡 **Jaga jumlah H2 tetap wajar** (±8). Jika terlalu banyak, TOC akan memanjang. Gabungkan topik terkait menjadi sub-bagian `###`.
 
 ### 4. Gambar
 
-Simpan di `public/images/nama-folder/`, referensikan dengan path absolut:
+Simpan di `public/images/nama-folder/` dan referensikan dengan path absolut:
+
 ```markdown
-![Alt text deskriptif](/images/nama-folder/gambar.png)
+![Alt deskriptif untuk SEO](/images/nama-folder/gambar.webp)
 ```
 
-### 5. Link eksternal
+- Kompres gambar sebelum commit (target < 200 KB; WebP sangat disarankan).
+- Plugin rehype otomatis menambahkan `width`/`height` (mencegah CLS) dan `loading="lazy"` untuk gambar setelah yang pertama.
+- Untuk thumbnail sosmed, daftarkan dimensinya di `IMAGE_DIMENSIONS` pada `src/pages/[slug].astro` (agar `og:image:width`/`height` akurat).
 
-Otomatis `target="_blank"` via `rehype-external-links` — tidak perlu atur manual.
-
-## Analitik (Google Analytics 4)
-
-Measurement ID: `G-2J4TLB9W7H` (satu property untuk kelima subdomain).
-
-Pelacakan terpusat di `src/components/Analytics.astro` dan dirender sekali dari
-`src/components/Layout.astro` (`<Analytics />`), jadi **semua halaman otomatis
-terlacak** — termasuk homepage, setiap artikel (`[slug].astro`), dan 404.
-
-Setiap event membawa parameter `site` (dari `location.host`) supaya data tiap
-subdomain bisa dipisah di GA4. `site` juga dikirim sebagai *user property* agar
-`page_view` ikut terpisah.
-
-| Event | Dipicu oleh |
-| --- | --- |
-| `page_view` | Otomatis setiap halaman |
-| `page_context` | Referrer, viewport, ukuran layar, bahasa, `utm_*` |
-| `page_404` | Halaman tidak ditemukan (+ path-nya) |
-| `scroll_depth` | Scroll 25/50/75/90/100% |
-| `engaged_reader` | 30/60/180/600 detik benar-benar aktif (kualitas bacaan) |
-| `visibility_change` | Tab berpindah/aktif kembali |
-| `nav_click` | Klik menu di header atau drawer mobile |
-| `dropdown_toggle` | Buka/tutup dropdown header |
-| `menu_toggle` | Buka/tutup hamburger mobile |
-| `menu_section_toggle` | Buka/tutup seksi di drawer mobile |
-| `filter_click` | Klik filter tag di homepage |
-| `anchor_click` | Klik item Daftar Isi (TOC) atau lompat section |
-| `share_click` | Tombol bagikan (Telegram/WhatsApp/X/Facebook) |
-| `copy_text` | Menyalin teks artikel |
-| `cta_click` | Tombol `.btn-primary` / `.btn-outline` / `.btn-ghost` |
-| `footer_click` | Klik tautan di footer |
-| `internal_site_click` | Pindah ke subdomain `deepin.id` lain |
-| `outbound_click` | Keluar dari ekosistem `deepin.id` |
-| `faq_toggle` | Buka accordion (`<details>`) |
-| `contact_click` | Klik `mailto:` atau `tel:` |
-| `scroll_top` | Tombol kembali ke atas |
-| `form_submit` | Mengirim form |
-| `media_interaction` | Mulai memutar video/embed di dalam artikel |
-| `data_track` | Nama bebas dari atribut `data-track` di elemen `<a>` |
-
-### Event kustom
-
-Tempel `data-track` pada elemen `<a>` untuk mengirim event dengan nama sendiri:
+### 5. FAQ accordion
 
 ```html
-<a href="https://example.com" data-track="sponsor_click">Sponsor</a>
-```
-
-Atau panggil dari script mana pun:
-
-```js
-window.deepinTrack('read_complete', { slug: 'artikel-saya' });
-```
-
-`window.__gaReady === true` menandakan pelacakan siap (berguna untuk pengujian).
-
-## Tag Filter
-
-Tag yang tersedia (didefinisikan di `src/pages/index.astro`):
-
-| Tag | Slug |
-|---|---|
-| 📋 Release Notes | `release-notes` |
-| 💡 Tips deepin | `tips-deepin` |
-| 🤝 Komunitas Update | `komunitas-update` |
-| 📅 Event | `event` |
-```
-
-### 3. Gambar
-
-- Simpan di `assets/images/`
-- Kompres sebelum commit (target < 100KB)
-- Alt text wajib untuk SEO: `![Deskripsi gambar](path)`
-- Caption sumber (jika dari dokumen resmi): `*Sumber: Manual deepin*`
-
-### 4. Video YouTube
-
-```html
-<div style="max-width:720px;margin:1.5rem auto">
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px">
-<iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID?rel=0"
-  style="position:absolute;inset:0;width:100%;height:100%"
-  frameborder="0" allowfullscreen loading="lazy"></iframe>
-</div>
-</div>
-```
-
-### 5. FAQ Accordion
-
-```html
-<details open markdown="1">
+<details class="faq-item">
 <summary><strong>Pertanyaan di sini?</strong></summary>
 
-Jawaban di sini dengan **Markdown** support.
+Jawaban dengan **Markdown** didukung.
 
 </details>
 ```
 
-Gunakan `open` hanya untuk pertanyaan pertama.
+FAQ di bawah heading `<h2 id="faq">` otomatis menjadi schema `FAQPage`.
 
-### 6. SEO Checklist
+### 6. Link eksternal
 
-- [ ] Title 50-70 karakter, keyword utama di depan
-- [ ] Meta description 150-160 karakter
-- [ ] `tags:` wajib diisi (Tips deepin, Release Notes, dll)
-- [ ] Heading terstruktur: H2 untuk section, H3 untuk sub
-- [ ] Gambar punya alt text + caption (jika perlu)
-- [ ] Internal link ke artikel lain atau Telegram
-- [ ] FAQ section untuk long-tail keywords
-- [ ] Tabel perbandingan (jika relevan)
-- [ ] `image:` untuk thumbnail sosmed
+Otomatis mendapat `target="_blank"` + `rel="noopener noreferrer"` lewat `rehype-external-links` — tidak perlu diatur manual.
 
-## Tag yang Tersedia
+## Format & Konvensi Artikel
 
-| Tag | File | Deskripsi |
-|---|---|---|
-| Release Notes | `tag/release-notes.md` | Changelog & rilis resmi deepin |
-| Tips deepin | `tag/tips-deepin.md` | Tutorial, tips & trik |
-| Komunitas Update | `tag/komunitas-update.md` | Update komunitas Indonesia |
-| Event | `tag/event.md` | Meetup, workshop, acara |
+- **Bahasa Indonesia** untuk narasi; **istilah teknis tetap Bahasa Inggris** (mis. *Immutable System*, *kernel*, *snapshot*).
+- Satu **H1** (dari frontmatter `title`), H2 untuk bagian, H3 untuk sub-bagian.
+- Sertakan **tabel** dan **blockquote** bila membantu keterbacaan.
+- Tambahkan **"Baca juga"** ke artikel internal yang relevan.
+- Arahkan tautan download/resource ke situs deepin Indonesia (`os.deepin.id`), bukan ke situs komunitas global.
+- Perbarui `public/llms.txt` (daftar artikel) saat menambah artikel baru.
 
-Untuk menambah tag baru: buat file di `tag/` + tambahkan ke `all_tags` di `_layouts/tag.html` dan `index.md`.
+## SEO Artikel
 
-## Tema (Submodule)
+- **`BlogPosting`** JSON-LD (headline, deskripsi, gambar + dimensi, tanggal, author, publisher, keywords).
+- **`BreadcrumbList`** (Home → News → Artikel).
+- **`FAQPage`** bila artikel punya FAQ.
+- **Canonical** memakai pathname (URL `?tag=` tidak dianggap duplikat).
+- **Open Graph / Twitter Card** lengkap, termasuk `og:image:type`, `width`, `height`, `alt`.
+- **Sitemap** otomatis + `robots.txt` + `llms.txt` (khusus crawler AI).
+- **Performa**: gambar artikel diberi dimensi + lazy-load; Font Awesome non-blocking; `preconnect` ke cdnjs/GTM/AdSense.
 
-```bash
-# Cek update tema
-cd _theme && git fetch origin && git status
+## Deployment
 
-# Update tema ke versi terbaru
-cd _theme && git pull origin master
-cd .. && git add _theme && git commit -m "Update theme submodule"
-```
+Push ke `main` → **Cloudflare Pages** otomatis build & deploy.
 
-## CSS
+| Setting | Nilai |
+|---|---|
+| Build command | `npm run build` |
+| Output directory | `dist` |
+| Production branch | `main` |
 
-`assets/css/main.scss` adalah **copy penuh** dari `_theme/assets/css/main.scss` + style news-specific di-append di akhir. Jika tema diupdate, CSS **harus di-sync ulang**:
+## AdSense & Privasi
 
-```bash
-# Backup style news-specific
-# Copy tema terbaru
-cp _theme/assets/css/main.scss assets/css/main.scss
-# Append kembali style news-specific
-```
+- **AdSense**: script + `google-adsense-account` di `<head>`, `public/ads.txt` berisi client ID.
+- **Kebijakan Privasi** dipusatkan di **https://deepin.id/privacy/**; `public/_redirects` mengarahkan `/privacy/` di situs ini ke sana dengan **301**.
+
+## Analitik
+
+Satu property GA4 (`G-2J4TLB9W7H`) untuk semua subdomain; setiap event membawa parameter `site`. Event penting: `scroll_depth`, `engaged_reader`, `share_click`, `faq_toggle`, `anchor_click` (TOC), dan `outbound_click`.
+
+## Berkontribusi
+
+1. Fork repo, lalu buat branch dari `preview`: `git checkout preview && git checkout -b feat/artikel-baru`.
+2. Tulis artikel (lihat [Menulis Artikel](#menulis-artikel)), lalu commit dengan pesan jelas.
+3. Push ke fork dan buka **Pull Request** ke `deepin-Indonesia/news-site` (target: **`preview`**).
+4. Setelah review, merge `preview` → `main`.
+
+> ⚠️ Jangan push langsung ke `main` — branch itu otomatis tayang.
+
+## Lisensi
+
+Dirilis di bawah [MIT License](LICENSE) © deepin Indonesia.
+
+---
+
+<div align="center">
+
+Dibuat dengan ❤️ oleh komunitas [deepin Indonesia](https://deepin.id) · [Telegram](https://t.me/Linux_deepin_ID) · [GitHub](https://github.com/deepin-Indonesia)
+
+</div>
