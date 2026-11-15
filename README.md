@@ -229,19 +229,20 @@ Satu property GA4 (`G-2J4TLB9W7H`) untuk semua subdomain; setiap event membawa p
 
 ## Berkontribusi
 
-1. Fork repo, lalu buat branch dari `preview`: `git checkout preview && git checkout -b feat/artikel-baru`.
+1. Fork repo, lalu buat branch fitur baru dari `main`: `git checkout main && git pull && git checkout -b feat/artikel-baru`.
 2. Tulis artikel (lihat [Menulis Artikel](#menulis-artikel)), lalu commit dengan pesan jelas.
-3. Push ke fork dan buka **Pull Request** ke `deepin-Indonesia/news-site` (target: **`preview`**).
-4. Setelah review, merge `preview` → `main`.
+3. Push ke fork dan buka **Pull Request** ke `deepin-Indonesia/news-site` (target: **`main`**).
+4. Setelah review, merge lewat **Pull Request**, lalu hapus branch fitur.
 
 > ⚠️ Jangan push langsung ke `main` — branch itu otomatis tayang.
 
 ## Pemecahan Masalah & Kontak
 
-### Branch `main` vs `preview`
+### Alur branch
 
-- **`main`** — produksi. Hanya push ke `main` yang memicu **Cloudflare Pages**, dan hasilnya otomatis tayang di domain utama.
-- **`preview`** — staging untuk review. Push ke `preview` **tidak** memicu deploy; perubahan dicek secara **lokal** (`npm run dev`) sebelum di-merge ke `main`.
+- **`main`** — produksi. Hanya merge ke `main` yang memicu **Cloudflare Pages** dan tayang di domain utama. Branch ini dilindungi; perubahan masuk lewat **Pull Request**.
+- **Branch fitur** — setiap perubahan dibuat di branch baru dari `main`, mis. `feat/nama-fitur`, `fix/nama-bug`, atau `docs/nama-dokumen`. Setelah PR di-merge, branch fitur dihapus.
+- **`preview`** — sudah tidak dipakai. Semua review dilakukan lewat PR dan server lokal (`npm run dev`).
 
 ### Masalah umum
 
