@@ -229,19 +229,20 @@ One GA4 property (`G-2J4TLB9W7H`) for all subdomains; every event carries a `sit
 
 ## Contributing
 
-1. Fork the repo, then branch from `preview`: `git checkout preview && git checkout -b feat/new-article`.
+1. Fork the repo, then create a feature branch from `main`: `git checkout main && git pull && git checkout -b feat/new-article`.
 2. Write the article (see [Writing Articles](#writing-articles)), then commit with a clear message.
-3. Push to your fork and open a **Pull Request** against `deepin-Indonesia/news-site` (target: **`preview`**).
-4. After review, merge `preview` → `main`.
+3. Push to your fork and open a **Pull Request** against `deepin-Indonesia/news-site` (target: **`main`**).
+4. After review, merge through a **Pull Request**, then delete the feature branch.
 
 > ⚠️ Do not push directly to `main` — that branch goes live automatically.
 
 ## Troubleshooting & Contact
 
-### Branch `main` vs `preview`
+### Branch workflow
 
-- **`main`** — production. Only pushes to `main` trigger **Cloudflare Pages**, which deploys automatically to the main domain.
-- **`preview`** — staging for review. Pushing to `preview` does **not** trigger a deploy; changes are reviewed **locally** (`npm run dev`) before merging into `main`.
+- **`main`** — production. Only merges into `main` trigger **Cloudflare Pages** and go live on the main domain. This branch is protected; changes go through **Pull Requests**.
+- **Feature branch** — every change lives on a new branch from `main`, e.g. `feat/feature-name`, `fix/bug-name`, or `docs/doc-name`. After the PR is merged, the feature branch is deleted.
+- **`preview`** — no longer used. All review happens through PRs and the local dev server (`npm run dev`).
 
 ### Common issues
 
