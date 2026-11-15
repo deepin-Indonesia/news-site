@@ -24,8 +24,8 @@ Bahasa: Indonesia (id-ID). Istilah teknis tetap dalam Bahasa Inggris.
 
 ## Artikel Komunitas Update
 
-- [UOS AI deepin Raih 'AI + Software' Peak Practice Award di OSCAR 2026](https://news.deepin.id/2026-11-15-oscar-2026-uos-ai/): UOS AI (小U同学) meraih penghargaan CAICT di OSCAR 2026 Beijing untuk integrasi AI dan software.
-- [deepin Skills Resmi Masuk deepin Store, UOS AI Bisa Langsung Memanggilnya](https://news.deepin.id/2026-11-15-deepin-skills-store/): deepin Skills (6 skill) tersedia di deepin Store untuk deepin 25/UOS V25; UOS AI bisa langsung memanggilnya.
+- [UOS AI deepin Raih 'AI + Software' Peak Practice Award di OSCAR 2026](https://news.deepin.id/2026-11-10-oscar-2026-uos-ai/): UOS AI (小U同学) meraih penghargaan CAICT di OSCAR 2026 Beijing untuk integrasi AI dan software.
+- [deepin Skills Resmi Masuk deepin Store, UOS AI Bisa Langsung Memanggilnya](https://news.deepin.id/2026-11-06-deepin-skills-store/): deepin Skills (6 skill) tersedia di deepin Store untuk deepin 25/UOS V25; UOS AI bisa langsung memanggilnya.
 
 ## Artikel Tips & Tutorial
 

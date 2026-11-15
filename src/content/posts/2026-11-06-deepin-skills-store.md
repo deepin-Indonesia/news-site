@@ -1,19 +1,19 @@
 ---
 title: "deepin Skills Resmi Masuk deepin Store, UOS AI Bisa Langsung Memanggilnya"
-date: 2026-11-15
+date: 2026-11-06
 tags: [komunitas-update]
 author: deepin Indonesia
 description: "deepin Skills resmi hadir di deepin Store: 6 skill untuk deepin 25/UOS V25, dari dtk-development hingga deepin-desktop-environment. UOS AI bisa langsung memanggilnya."
-image: /images/deepin-skills-store/deepin-skills-cover.jpg
+image: /images/deepin-skills-store/deepin-skills-store.jpg
 ---
 
 **deepin Skills** kini resmi tersedia di **deepin Store**. Bagi pengguna **UOS AI (小U同学)**, ini berarti Anda bisa mengunduh paket skill resmi langsung dari store, lalu meminta UOS AI mengembangkan aplikasi, memperluas desktop, atau menulis modul pengaturan sistem — cukup dengan **natural language**.
 
 Bagi pengguna alat AI coding lain, deepin Skills juga dapat diunduh dan dipasang lewat repositori resminya, sehingga kemampuan native deepin bisa dihubungkan ke **Agent** milik Anda sendiri.
 
-> **Baca juga:** [UOS AI deepin Raih 'AI + Software' Peak Practice Award di OSCAR 2026](/2026-11-15-oscar-2026-uos-ai) — pengakuan industri atas integrasi AI dan software deepin.
+> **Baca juga:** [UOS AI deepin Raih 'AI + Software' Peak Practice Award di OSCAR 2026](/2026-11-10-oscar-2026-uos-ai) — pengakuan industri atas integrasi AI dan software deepin.
 
-![deepin Skills resmi hadir di deepin Store](/images/deepin-skills-store/deepin-skills-cover.jpg)
+![deepin Skills resmi hadir di deepin Store](/images/deepin-skills-store/deepin-skills-store.jpg)
 
 ## Ringkasan
 
@@ -35,8 +35,6 @@ Sederhananya, ini adalah **paket skill native deepin berbasis skenario** yang:
 
 Dengan kata lain, AI tidak hanya membantu menulis kode, tetapi juga dapat memanggil kemampuan sistem, mengecek status, dan melakukan verifikasi sesuai dokumentasi.
 
-![deepin Skills di deepin Store](/images/deepin-skills-store/deepin-skills-store.webp)
-
 <h2 id="enam-skill">6 Skill yang Didukung</h2>
 
 deepin Skills telah berevolusi dari **4 skill pengembangan inti** menjadi **6 skill**, mencakup berbagai skenario dan kebutuhan personal. Cakupannya membentang dari "menulis aplikasi" hingga "mengelola desktop", dan kompatibel dengan **deepin 25 / UOS V25**.
@@ -51,6 +49,8 @@ deepin Skills telah berevolusi dari **4 skill pengembangan inti** menjadi **6 sk
 | `deepin-desktop-environment` | Mengkueri & mengonfigurasi desktop **DDE** dan status sistem |
 
 Empat skill pertama berfokus pada **"membuat aplikasi & plugin"**, sedangkan dua terakhir pada **"menggunakan antarmuka & mengelola desktop"**. AI pun bukan hanya menulis kode, tetapi juga dapat memanggil kemampuan sistem, mengecek status, dan melakukan verifikasi berdasarkan dokumentasi.
+
+![Menu Skills di UOS AI](/images/deepin-skills-store/deepin-skills-menu.webp)
 
 <h2 id="cara-menggunakan">Cara Menggunakan deepin Skills</h2>
 
@@ -72,7 +72,7 @@ Unduh dan pasang paket skill dari repositori deepin Skills. Semua **Agent** yang
 bash <(curl -fsSL https://raw.githubusercontent.com/linuxdeepin/deepin-skills/master/scripts/install.sh)
 ```
 
-![Alur penggunaan deepin Skills di UOS AI](/images/deepin-skills-store/deepin-skills-usage.webp)
+![Halaman My Skills untuk mengaktifkan skill deepin](/images/deepin-skills-store/deepin-skills-my-skills.webp)
 
 <h2 id="open-source">Open Source & Kontribusi</h2>
 
