@@ -26,6 +26,7 @@ Bahasa: Indonesia (id-ID). Istilah teknis tetap dalam Bahasa Inggris.
 
 - [UOS AI deepin Raih 'AI + Software' Peak Practice Award di OSCAR 2026](https://news.deepin.id/2026-11-10-oscar-2026-uos-ai/): UOS AI (小U同学) meraih penghargaan CAICT di OSCAR 2026 Beijing untuk integrasi AI dan software.
 - [deepin Skills Resmi Masuk deepin Store, UOS AI Bisa Langsung Memanggilnya](https://news.deepin.id/2026-11-06-deepin-skills-store/): deepin Skills (6 skill) tersedia di deepin Store untuk deepin 25/UOS V25; UOS AI bisa langsung memanggilnya.
+- [DeepHub: Speaker Xiaomi LX04 Disulap Jadi Layar Kedua PC deepin](https://news.deepin.id/2026-11-02-deephub-lx04-secondary-screen/): Proyek DIY komunitas deepin yang mengubah speaker Xiaomi LX04 jadi layar kedua PC deepin — dashboard, remote control, dan layar musik, via LAN lokal.
 
 ## Artikel Tips & Tutorial
 
