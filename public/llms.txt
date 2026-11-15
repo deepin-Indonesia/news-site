@@ -22,6 +22,10 @@ Bahasa: Indonesia (id-ID). Istilah teknis tetap dalam Bahasa Inggris.
 - [deepin 25.2.0 Resmi Dirilis: Treeland Stabil, AI Image Search, dan Ratusan Bug Fix](https://news.deepin.id/2026-07-08-deepin-25-2-release/): Treeland stabil, AI image search, taskbar split mode, dan kernel 6.18.
 - [deepin 25.1.0 Resmi Dirilis: Kernel 6.18 & UOS AI Claw Mode](https://news.deepin.id/2026-04-10-deepin-25-1-release/): Kernel naik ke 6.18 dengan BORE scheduler, UOS AI Claw Mode, AI Writing Agent, dan Skills Center.
 
+## Artikel Komunitas Update
+
+- [UOS AI deepin Raih 'AI + Software' Peak Practice Award di OSCAR 2026](https://news.deepin.id/2026-11-15-oscar-2026-uos-ai/): UOS AI (小U同学) meraih penghargaan CAICT di OSCAR 2026 Beijing untuk integrasi AI dan software.
+
 ## Artikel Tips & Tutorial
 
 - [Tutorial Lengkap Install deepin 25 di Windows via WSL](https://news.deepin.id/2026-08-04-tutorial-install-deepin-wsl/): Cara menjalankan deepin 25 di Windows tanpa dual boot.
