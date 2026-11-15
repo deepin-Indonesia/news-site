@@ -63,18 +63,21 @@ function slugify(text: string) {
     .replace(/-+/g, '-')
     .replace(/^-|-$/g, '');
 }
-const toc: { id: string; text: string }[] = [];
 const body = post.body || '';
+const tocItems: { id: string; text: string; index: number }[] = [];
 
 // Match <h2 id="...">...</h2>
 for (const m of body.matchAll(/<h2\s+id="([^"]+)"[^>]*>(.+?)<\/h2>/g)) {
-  toc.push({ id: m[1], text: m[2].replace(/&amp;/g, '&').replace(/<[^>]+>/g, '') });
+  tocItems.push({ id: m[1], text: m[2].replace(/&amp;/g, '&').replace(/<[^>]+>/g, ''), index: m.index ?? 0 });
 }
 // Match ## Heading (markdown)
 for (const m of body.matchAll(/^##\s+(.+?)(?:\s*\{#[^}]*\})?\s*$/gm)) {
   const text = m[1].trim();
-  toc.push({ id: slugify(text), text });
+  tocItems.push({ id: slugify(text), text, index: m.index ?? 0 });
 }
+// Urutkan sesuai posisi di dokumen, agar heading `##` dan `<h2 id>` tidak terpisah.
+tocItems.sort((a, b) => a.index - b.index);
+const toc: { id: string; text: string }[] = tocItems.map(({ id, text }) => ({ id, text }));
 
 // Extract FAQ entries for FAQPage structured data.
 // Only items placed after an explicit FAQ heading are used, so the collapsible
@@ -184,7 +187,7 @@ const tagLabels: Record<string, string> = {
           [&_iframe]:rounded-xl [&_iframe]:shadow-lg [&_iframe]:my-6 [&_iframe]:w-full [&_iframe]:aspect-video [&_iframe]:h-auto
           [&_table]:w-full [&_table]:my-5 [&_table]:rounded-xl [&_table]:overflow-hidden [&_table]:border [&_table]:border-gray-200
           [&_p:has(+_p_em)]:mb-1
-          [&_p_+_p_>em]:block [&_p_+_p_>em]:text-center [&_p_+_p_>em]:text-sm [&_p_+_p_>em]:text-gray-400 [&_p_+_p_>em]:mt-0 [&_p_+_p_>em]:-mt-4 [&_p_+_p_>em]:mb-6
+          [&_p_+_p_>em:only-child]:block [&_p_+_p_>em:only-child]:text-center [&_p_+_p_>em:only-child]:text-sm [&_p_+_p_>em:only-child]:text-gray-400 [&_p_+_p_>em:only-child]:mt-0 [&_p_+_p_>em:only-child]:-mt-4 [&_p_+_p_>em:only-child]:mb-6
           [&_figcaption]:text-center [&_figcaption]:text-sm [&_figcaption]:text-gray-400 [&_figcaption]:mt-2 [&_figcaption]:mb-6
         ">
           <Content />
