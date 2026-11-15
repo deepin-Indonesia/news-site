@@ -52,6 +52,8 @@ Halaman utama speaker menampilkan status PC secara **real-time** — cukup melir
 
 Geser ke kiri untuk membuka panel **quick launch**. DeepHub memanfaatkan **D-Bus** dan spesifikasi **XDG** deepin untuk memindai aplikasi di PC, lalu mengirim perintah lewat LAN untuk mengendalikan komputer.
 
+![Panel quick launch penuh dengan grid aplikasi PC](/images/deephub/deephub-quick-launch.webp)
+
 **Reverse control** — dari speaker, Anda bisa mengoperasikan PC:
 - Klik **File Manager** → PC langsung membuka daftar disk.
 - Klik **Multitask View** → efek **Kwin** muncul.
