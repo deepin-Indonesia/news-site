@@ -86,4 +86,6 @@ Jika Anda memiliki standar pengembangan, pengalaman menghindari jebakan (pitfall
 
 Coba langsung: cari **deepin Skills** di **deepin Store** dan buka cara baru pengembangan cerdas bersama deepin.
 
+---
+
 Source: [Komunitas deepin] deepin（深度） 社区  - weixin.
